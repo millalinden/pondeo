@@ -1,3 +1,4 @@
+
 # GitHub 
 
 Branches
@@ -13,12 +14,10 @@ Never work in main and do not merge unless everyone agrees.
 
 Naming: Make it clear what it is and use uppercase.
 
-
 # Functions & Variables
 
 Naming: Use Camelcase
 Only use arrow functions when necessary.
-
 
 # TailwindCss
 
@@ -39,3 +38,5 @@ Use this for longer comments:
  *
  */
 
+# Tests
+<!-- ADD guidelines about tests here  -->
