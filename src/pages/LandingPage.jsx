@@ -1,3 +1,14 @@
 export default function LandingPage() {
-  return <>Landing Page</>;
+  return (
+    <>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </>
+  );
 }
