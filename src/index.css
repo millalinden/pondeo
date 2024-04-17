@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.collapsed {
+  transition: height 0.5s ease; /* Adjust timing and easing as needed */
+  height: 5rem; /* Initial height */
+}
+
+.expanded {
+  transition: height 0.5s ease; /* Adjust timing and easing as needed */
+  height: 200px; /* Height when clicked */
+}
