@@ -9,16 +9,23 @@ export default function FaqCard() {
         isClicked ? "expanded" : "collapsed"
       } rounded-lg p-4 overflow-hidden`}
     >
-      <div className="w-[80%]">
+      <div className={`${isClicked ? "" : ""} w-[80%]`}>
         <p className="text-xl text-slate-500 font-semibold">
           Why is Pondeo so great?
         </p>
 
-        <p>
-          {isClicked
-            ? "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam. Odit natus earum dolorem ipsam perspiciatis nemo, porro fugiat maiores error explicabo nihil voluptas unde delectus sit commodi doloribus placeat!"
-            : "..."}
-        </p>
+        {isClicked ? "" : <p>...</p>}
+
+        {isClicked ? (
+          <p className="py-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, laboriosam. Odit natus earum dolorem ipsam
+            perspiciatis nemo, porro fugiat maiores error explicabo nihil
+            voluptas unde delectus sit commodi doloribus placeat!
+          </p>
+        ) : (
+          ""
+        )}
       </div>
 
       {isClicked ? (
