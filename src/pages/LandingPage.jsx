@@ -14,7 +14,9 @@ export default function LandingPage() {
             technology and a human-centric approach to redefine how you connect
             with leads.
           </p>
-          <Button label={"Book a Demo"} />
+          <div className="flex justify-flex-start">
+            <Button label={"Book a Demo"} />
+          </div>
         </div>
         <div className="bg-slate-400 w-[500px] h-[500px] "></div>
       </section>
@@ -150,6 +152,19 @@ export default function LandingPage() {
         <FaqCard />
         <FaqCard />
         <FaqCard />
+      </section>
+      <section className="flex flex-col justify-center items-center m-28 p-10 rounded-2xl bg-stone-100 ">
+        <div className="flex flex-col items-center gap-8">
+          <h1 className="text-5xl text-center font-bold text-slate-500">
+            Let's get started!
+          </h1>
+          <p className="text-slate-400 text-lg text-center w-[80%]">
+            Transform cold outreach into engaging conversations. Pondeo blends
+            technology and a human-centric approach to redefine how you connect
+            with leads.
+          </p>
+          <Button label={"Book a Demo"} color={"bg-slate-600 text-white"} />
+        </div>
       </section>
     </>
   );
