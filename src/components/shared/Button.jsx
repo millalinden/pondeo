@@ -1,14 +1,14 @@
 // EXAMPLE OF REUSABLE BUTTON STRUCTURE
 
-// export default function Button(props) {
-//   const { onClick } = props;
+export default function Button(props) {
+  const { color, onClick, label } = props;
 
-//   return (
-//     <button
-//       className={`padding-2 shadow-none hover:shadow background-light-${color} hover:background-dark-${color}`}
-//       onClick={onClick}
-//     >
-//       {label}
-//     </button>
-//   );
-// }
+  return (
+    <button
+      className={`p-3 shadow-none border border-solid rounded-full background-light-${color}`}
+      onClick={onClick}
+    >
+      {label}
+    </button>
+  );
+}
