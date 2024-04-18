@@ -60,7 +60,7 @@ export default function ContactPage() {
               </label>
             </div>
             <div className="flex justify-end mt-10">
-              <button className="bg-black text-white px-3 py-2 rounded-3xl">Send Message</button>
+              <button className="bg-black text-white text-lg px-6 py-4 rounded-3xl">Send Message</button>
             </div>
           </form>
         </section>
