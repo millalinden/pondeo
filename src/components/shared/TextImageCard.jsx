@@ -7,7 +7,7 @@ export default function TextImageCard() {
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s
         </p>
-        <div className="h-80 w-64 rounded-3xl mt-7 bg-gray-100"></div>
+        <div className="h-80 w-64 rounded-3xl mt-7 bg-black"></div>
       </div>
     );
   }

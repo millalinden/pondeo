@@ -44,7 +44,7 @@ export default function AboutPage() {
       </section>
 
       {/* PRIVACY SECTION */}
-      <section className="mt-10 w-full h-svh flex justify-center items-center">
+      <section className="mt-10 w-full flex justify-center items-center">
         <div className="bg-white w-full py-16 text-center">
           <h2 className="text-5xl p-2 mx-10 mb-4">Ensuring your privacy</h2>
           <h3 className="text-4xl p-2 mx-10 mb-20 leading-none">
@@ -61,8 +61,10 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <div className="bg-gray-300 w-full h-24"></div>
+
       {/* TEAM SECTION */}
-      <section className="mt-80 bg-gray-200 w-full h-svh flex justify-center items-center">
+      <section className="mt-10 flex justify-center items-center">
         <div className="bg-white w-full py-16 text-center px-20">
           <div className="text-center">
             <h2 className="text-5xl p-2 mx-10 mb-4">Meet Our Team:</h2>
@@ -71,7 +73,7 @@ export default function AboutPage() {
             </h3>
           </div>
           <hr className="border-slate-200 mb-7 mx-9" />
-          <div className="flex justify-center items-center justify-around">
+          <div className="flex justify-center items-center justify-around mb-10">
             <TextImageCard />
             <TextImageCard />
             <TextImageCard />
@@ -79,6 +81,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <div className="bg-gray-300 w-full h-24"></div>
+
     </>
   );
 }
