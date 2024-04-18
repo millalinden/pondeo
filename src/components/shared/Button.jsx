@@ -1,11 +1,12 @@
-// EXAMPLE OF REUSABLE BUTTON STRUCTURE
+import React from "react";
 
 export default function Button(props) {
-  const { color, onClick, label } = props;
+  const { onClick, label, color } = props;
 
   return (
     <button
-      className={`p-3 shadow-none border border-solid rounded-full background-light-${color}`}
+      className={`py-2 px-4 border border-slate-800 ${color ? color : ""
+        } shadow-none rounded-full  hover:shadow  hover:bg-slate-300`}
       onClick={onClick}
     >
       {label}
