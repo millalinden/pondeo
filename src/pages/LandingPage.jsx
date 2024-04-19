@@ -1,3 +1,8 @@
+import LoginSignup from "./LoginSignup";
 export default function LandingPage() {
-  return <>Landing Page</>;
+  return (
+    <>
+      <LoginSignup />
+    </>
+  );
 }
