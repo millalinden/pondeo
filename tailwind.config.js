@@ -6,7 +6,7 @@ export default {
       colors: {
         "neon-green": "#CAFF33",
         "graymatter-gray": "#1C1C1C",
-        "adventurous-white": "#E4E4E7",
+        "adventure-white": "#E4E4E7",
         "deep-black": "#000000",
         "error-red": "rgba(255, 107, 107, 1)",
         "success-green": "rgba(76, 175, 80, 1)",
