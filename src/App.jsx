@@ -7,6 +7,7 @@ import DemoPage from "./pages/DemoPage";
 import ProductPage from "./pages/ProductPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import PricingPage from "./pages/PricingPage";
+import LoginSignup from "./pages/LoginSignup";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/product" element={<ProductPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/login" element={<LoginSignup />} />
       </Routes>
     </BrowserRouter>
   );

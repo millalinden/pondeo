@@ -1,4 +1,3 @@
-
 import React from "react";
 
 export default function Button(props) {
@@ -6,13 +5,12 @@ export default function Button(props) {
 
   return (
     <button
-      className={`py-2 px-4 border border-slate-800 ${color ? color : ""
-        } shadow-none rounded-full  hover:shadow  hover:bg-slate-300`}
+      className={` text-sm  py-3 px-4 border  shadow-none rounded-full  hover:shadow  hover:bg-slate-300 ${
+        color ? color : ""
+      }`}
       onClick={onClick}
     >
       {label}
     </button>
   );
 }
-
-

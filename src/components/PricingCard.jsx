@@ -22,7 +22,7 @@ export default function PricingCard(props) {
         className={`flex flex-col ${color} p-10 w-[22rem] h-[37rem]  rounded-3xl gap-4 relative`}
       >
         {popular ? (
-          <div className="absolute mx-4 my-6 top-0 right-0 bg-lime-300 py-2 px-4 rounded-lg text-xs">
+          <div className="absolute mx-4 my-6 top-0 right-0 bg-white bg-opacity-20 py-2 px-4 rounded-lg text-xs">
             Popular
           </div>
         ) : (

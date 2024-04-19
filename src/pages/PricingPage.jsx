@@ -7,8 +7,8 @@ export default function PricingPage() {
     <div>
       <section className="flex gap-12 p-24 w-full bg-black text-white">
         <div className="flex flex-col py-10 gap-8 w-1/2">
-          <h1 className="text-5xl font-bold">
-            <span className="text-lime-400">PRICING</span> TAILORED TO MEETING
+          <h1 className="text-5xl font-semibold">
+            <span className="text-neon-green">PRICING</span> TAILORED TO MEETING
             YOUR BUSINESS GOALS
           </h1>
           <p className="text-gray-400 font-semibold">
@@ -21,13 +21,13 @@ export default function PricingPage() {
             Pondeo!
           </p>
           <div className="flex justify-flex-start">
-            <Button label={"Book a Demo"} color={"bg-lime-400 text-black"} />
+            <Button label={"Book a Demo"} color={"bg-neon-green text-black"} />
           </div>
         </div>
         <div className="bg-slate-400 w-[500px] h-[500px] rounded-3xl"></div>
       </section>
       <section className="bg-neutral-900 p-28 gap-10 flex flex-col items-center">
-        <h1 className="text-5xl font-semibold text-lime-400 text-center">
+        <h1 className="text-5xl font-semibold text-neon-green text-center">
           Discover our pricing plans
         </h1>
         <p className="text-white text-4xl text-center">
@@ -61,7 +61,7 @@ export default function PricingPage() {
             popular={false}
           />
           <PricingCard
-            color="bg-lime-400"
+            color="bg-neon-green"
             text={{
               for: "For startups",
               name: "Pro",
