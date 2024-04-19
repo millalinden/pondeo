@@ -11,3 +11,14 @@
   transition: height 0.5s ease; /* Adjust timing and easing as needed */
   height: 200px; /* Height when clicked */
 }
+
+/* Hide the increment and decrement buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
