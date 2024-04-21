@@ -9,16 +9,16 @@ import PrivacyPage from "./pages/PrivacyPage"
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" index element={<LandingPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/demo" element={<DemoPage />} />
-          <Route path="/product" element={<ProductPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
-      </Routes>
-    </BrowserRouter>
+
+    <Routes>
+      <Route path="/" index element={<LandingPage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/demo" element={<DemoPage />} />
+      <Route path="/product" element={<ProductPage />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
+    </Routes>
+
   );
 }
 
