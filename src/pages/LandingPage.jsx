@@ -206,10 +206,10 @@ export default function LandingPage() {
       <section className="bg-black p-28">
         <div className="flex flex-col justify-center items-center p-10 rounded-xl bg-graymatter-gray ">
           <div className="flex flex-col items-center gap-8">
-            <h1 className="text-5xl text-center font-bold text-neon-green">
+            <h1 className="text-4xl text-center font-bold text-neon-green">
               Let's get started!
             </h1>
-            <p className="text-adventure-white text-lg text-center w-[80%]">
+            <p className="text-adventure-white text-center w-[80%]">
               Hundreds of BDRs & SDRs are already closing more sales with Pondeo
             </p>
             <Button
