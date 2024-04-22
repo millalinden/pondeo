@@ -3,7 +3,7 @@ import Button from "./shared/Button";
 
 export default function Footer() {
   return (
-    <footer className="bg-deep-black py-10 text-adventurous-white border-t-2 border-neon-green">
+    <footer className="bg-deep-black py-10 text-adventure-white border-t-2 border-neon-green">
       <div className="flex">
         <div className="px-16">
           <h2 className="text-[2rem] font-semibold mb-4">Pondeo</h2>
@@ -93,7 +93,7 @@ export default function Footer() {
             <h3 className="font-semibold text-xl mb-10">
               Suscribe to our newsletter
             </h3>
-            <form className="flex flex-col items-start text-adventurous-white">
+            <form className="flex flex-col items-start text-adventure-white">
               <input
                 type="email"
                 placeholder="Enter your email"
