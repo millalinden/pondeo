@@ -5,7 +5,7 @@ export default function Button(props) {
 
   return (
     <button
-      className={` text-sm  py-3 px-4 border  shadow-none rounded-full  hover:shadow  hover:bg-slate-300 ${
+      className={` text-sm  py-3 px-4  shadow-none rounded-full  hover:shadow  ${
         color ? color : ""
       }`}
       onClick={onClick}

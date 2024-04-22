@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Comic Neue";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fonts.gstatic.com/s/comicneue/v1/4UaHrEJCrhhnVA3DgluAx60AmwKM4nNCVJI4G0rRvU8.woff2")
+    format("woff2");
+}
+
+.comic {
+  font-family: "Comic Neue", cursive; /* Fallback to generic cursive font */
+}
+
 .collapsed {
   transition: height 0.5s ease; /* Adjust timing and easing as needed */
-  height: 5rem; /* Initial height */
+  /*height: 5rem; /* Initial height */
 }
 
 .expanded {
