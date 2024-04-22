@@ -209,10 +209,8 @@ export default function LandingPage() {
             <h1 className="text-5xl text-center font-bold text-neon-green">
               Let's get started!
             </h1>
-            <p className="text-slate-400 text-lg text-center w-[80%]">
-              Transform cold outreach into engaging conversations. Pondeo blends
-              technology and a human-centric approach to redefine how you
-              connect with leads.
+            <p className="text-adventure-white text-lg text-center w-[80%]">
+              Hundreds of BDRs & SDRs are already closing more sales with Pondeo
             </p>
             <Button
               label={"Book a Demo"}
