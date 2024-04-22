@@ -56,7 +56,7 @@ const nextSlideHandler = () => setCurrent((current) => (current === slides.lengt
     </div>
     </div>
 
-    <div className="flex bg-black text-white text-3xl">
+    <div className="flex bg-black w-96 justify-center items-center mx-auto text-white text-3xl">
             <button onClick={previousSlideHandler}>
             <SlArrowLeft />
             </button>
