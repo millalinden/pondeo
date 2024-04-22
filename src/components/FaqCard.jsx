@@ -1,36 +1,25 @@
 import { useState } from "react";
 
-export default function FaqCard() {
+export default function FaqCard(props) {
   const [isClicked, setIsClicked] = useState(false);
+
+  const { header, body } = props;
 
   return (
     <div
-      className={`flex bg-slate-200 w-[80%] ${
+      className={`flex items-start bg-neon-green w-[80%] h-16 ${
         isClicked ? "expanded" : "collapsed"
-      } rounded-lg p-4 overflow-hidden`}
+      } rounded-lg px-4 pt-5 overflow-hidden`}
     >
       <div className={`${isClicked ? "" : ""} w-[80%]`}>
-        <p className="text-xl text-slate-500 font-semibold">
-          Why is Pondeo so great?
-        </p>
+        <p className="text-lg text-black font-medium  ">{header}</p>
 
-        {isClicked ? "" : <p>...</p>}
-
-        {isClicked ? (
-          <p className="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem, laboriosam. Odit natus earum dolorem ipsam
-            perspiciatis nemo, porro fugiat maiores error explicabo nihil
-            voluptas unde delectus sit commodi doloribus placeat!
-          </p>
-        ) : (
-          ""
-        )}
+        {isClicked ? <p className="py-6 text-sm text-black">{body}</p> : ""}
       </div>
 
       {isClicked ? (
         <div
-          className="w-20 text-3xl text-slate-500 font-bold ml-auto flex justify-center items-center"
+          className="comic mt-[-17px] text-5xl text-black ml-auto flex justify-center items-center"
           onClick={() => {
             setIsClicked(false);
           }}
@@ -39,7 +28,7 @@ export default function FaqCard() {
         </div>
       ) : (
         <div
-          className="w-20 text-3xl text-slate-500 font-bold ml-auto flex justify-center items-center"
+          className="comic mt-[-15px] text-5xl text-black ml-auto flex justify-center items-center"
           onClick={() => {
             setIsClicked(true);
           }}

@@ -1,6 +1,10 @@
 import Button from "../components/shared/Button";
-import TestimonialsCard from "../components/TestimonialsCard";
+import FeatureCard from "../components/FeatureCard";
 import FaqCard from "../components/FaqCard";
+
+import FeatureCardImage1 from "../assets/FeatureCard1.svg";
+import FeatureCardImage2 from "../assets/FeatureCard2.svg";
+import FeatureCardImage3 from "../assets/FeatureCard3.svg";
 
 export default function LandingPage() {
   return (
@@ -27,7 +31,7 @@ export default function LandingPage() {
         </div>
         <div className="bg-slate-400 w-[500px] h-[500px]  "></div>
       </section>
-      <section className="flex justify-center p-10 bg-neutral-900 border-neon-green border-t-4 ">
+      <section className="flex justify-center p-10 bg-graymatter-gray border-neon-green border-t-4 ">
         <div className="flex flex-col  gap-4 w-1/2">
           <h1 className="text-4xl text-neon-green text-center">
             Talk to Humans as Humans, but with Lorem Ipsum
@@ -96,7 +100,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section className="flex p-20 w-full justify-center align-middle  bg-neutral-900">
+      <section className="flex p-20 w-full justify-center align-middle  bg-graymatter-gray">
         <div className="flex w-1/2 justify-center items-center align-middle">
           <div className="bg-white w-[400px] h-[300px] rounded-xl "></div>
         </div>
@@ -114,65 +118,107 @@ export default function LandingPage() {
           </p>
         </div>
       </section>
-      <section className="p-28 gap-10 flex flex-col items-center">
-        <h1 className="text-4xl font-semibold text-slate-500 text-center">
+      <section className="bg-black h-full p-28 pb-40 gap-10 flex flex-col items-center">
+        <h1 className="text-4xl text-neon-green text-center">
           De-risk your revenue strategy with <br /> account-based sales
         </h1>
-        <p className="text-gray-900 text-center">
+        <p className="text-adventure-white text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut lab
         </p>
         <div className="flex">
-          <div className="inline-grid grid-cols-3 gap-10 gap-y-16 justify-items-center">
-            <TestimonialsCard />
-            <TestimonialsCard />
-            <TestimonialsCard />
-            <TestimonialsCard />
-            <TestimonialsCard />
-            <TestimonialsCard />
+          <div className="inline-grid grid-cols-3 gap-4 gap-y-16 justify-items-center">
+            <FeatureCard
+              image={FeatureCardImage1}
+              heading={"PROSPECT RESEARCH"}
+              body={
+                "Explore your prospects' landscape with precision. Pondeo uncovers and interprets key data, enriching your approach with tailored insights."
+              }
+            />
+            <FeatureCard
+              image={FeatureCardImage2}
+              heading={"MESSAGE PERSONALIZATION"}
+              body={
+                "Fine-tune your approach with Pondeo. We crafts your message to echo your prospects’ objectives, ensuring your pitch not only aligns with their needs."
+              }
+            />
+            <FeatureCard
+              image={FeatureCardImage3}
+              heading={"OUTREACH OPTIMIZATION"}
+              body={
+                "Shape impactful interactions with Pondeo AI. It refines your message and timing, enhancing connection and response rates."
+              }
+            />
           </div>
         </div>
       </section>
-      <section className="flex gap-12 p-24 w-full justify-center  bg-stone-100">
-        <div className="flex flex-col py-10 gap-8 w-1/2">
-          <h1 className="text-6xl font-bold text-slate-600">Lorem Ipsum </h1>
-          <p className="text-slate-400">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, quos
-            animi debitis saepe id eveniet blanditiis ducimus totam dicta
-            ratione. Iste sint, aliquid harum iure reiciendis eius temporibus
-            repellendus consequuntur.
+      <section className=" flex gap-12 px-24 py-8 w-full justify-center  bg-graymatter-gray">
+        <div className="flex flex-col py-10 gap-4 w-1/2">
+          <h1 className="text-5xl  text-neon-green">
+            Prepare to see a significant shift in your engagement metrics{" "}
+          </h1>
+          <h2 className="  text-neon-green text-2xl">
+            And start meaningful conversations.{" "}
+          </h2>
+          <p className="text-adventure-white">
+            By focusing on relevant and engaging communication, you can deepen
+            your rapport with prospects, enhancing the likelihood of successful
+            outcomes.
           </p>
         </div>
-        <div className="flex w-1/2 justify-center">
-          <div className="bg-white w-[400px] h-[400px] "></div>
+        <div className="flex items-center">
+          <div className="bg-white w-[400px] h-[250px] "></div>
         </div>
       </section>
-      <section className="flex justify-center p-10 bg-stone-50 ">
+      <div className="bg-black h-40">Hej</div>
+      <section className="flex justify-center p-10 bg-graymatter-gray border-neon-green border-t-4 ">
         <div className="flex flex-col  gap-4 w-1/2">
-          <h1 className="text-5xl font-semibold text-slate-500 text-center">
+          <h1 className="text-4xl text-neon-green text-center">
             Frequently asked question{" "}
           </h1>
-          <p className="text-gray-900 text-center">
+          <p className="text-adventure-white text-center">
             Ask everything you need to know about our product.
           </p>
         </div>
       </section>{" "}
-      <section className="p-20 gap-4 flex flex-col items-center">
-        <FaqCard />
-        <FaqCard />
-        <FaqCard />
+      <section className="bg-black p-20 gap-4 flex flex-col items-center">
+        <FaqCard
+          header={"What is Pondeo?"}
+          body={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam. Odit natus earum dolorem ipsam perspiciatis nemo, porro fugiat maiores error explicabo nihil voluptas unde delectus sit commodi doloribus placeat!"
+          }
+        />
+        <FaqCard
+          header={"Can I train the platform with my company's information?"}
+          body={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam. Odit natus earum dolorem ipsam perspiciatis nemo, porro fugiat maiores error explicabo nihil voluptas unde delectus sit commodi doloribus placeat!"
+          }
+        />
+        <FaqCard
+          header={
+            "What type of research does Pondeo do to personalize the message?"
+          }
+          body={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam. Odit natus earum dolorem ipsam perspiciatis nemo, porro fugiat maiores error explicabo nihil voluptas unde delectus sit commodi doloribus placeat!"
+          }
+        />
       </section>
-      <section className="flex flex-col justify-center items-center m-28 p-10 rounded-2xl bg-stone-100 ">
-        <div className="flex flex-col items-center gap-8">
-          <h1 className="text-5xl text-center font-bold text-slate-500">
-            Let's get started!
-          </h1>
-          <p className="text-slate-400 text-lg text-center w-[80%]">
-            Transform cold outreach into engaging conversations. Pondeo blends
-            technology and a human-centric approach to redefine how you connect
-            with leads.
-          </p>
-          <Button label={"Book a Demo"} color={"bg-slate-600 text-white"} />
+      <section className="bg-black p-28">
+        <div className="flex flex-col justify-center items-center p-10 rounded-xl bg-graymatter-gray ">
+          <div className="flex flex-col items-center gap-8">
+            <h1 className="text-5xl text-center font-bold text-neon-green">
+              Let's get started!
+            </h1>
+            <p className="text-slate-400 text-lg text-center w-[80%]">
+              Transform cold outreach into engaging conversations. Pondeo blends
+              technology and a human-centric approach to redefine how you
+              connect with leads.
+            </p>
+            <Button
+              label={"Book a Demo"}
+              color={"bg-neon-green text-black hover:bg-purple-500"}
+            />
+          </div>
         </div>
       </section>
     </>
