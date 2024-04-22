@@ -3,29 +3,38 @@ import Button from "./shared/Button";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#D3DCE7] py-10">
+    <footer className="bg-deep-black py-10 text-adventurous-white border-t-2 border-neon-green">
       <div className="flex">
-        <div className="px-20">
-          <h2 className="text-2xl font-semibold mb-4">Pondeo</h2>
+        <div className="px-16">
+          <h2 className="text-[2rem] font-semibold mb-4">Pondeo</h2>
           <p className="text-base w-64 mb-7">
             Elevate engagement with Pondeo's AI-Powered Personalization.
           </p>
           <div className="flex gap-4 mb-20">
-            <div className="bg-white rounded-full p-1">
+            <a
+              href="mailto:example@example.com"
+              className="bg-white rounded-full p-1.5"
+            >
               <img src="/src/assets/Mail.svg" alt="Mail icon" />
-            </div>
-            <div className="bg-white rounded-full p-1">
+            </a>
+            <a
+              href="https://discord.com/invite/zxFvvQMu9K"
+              className="bg-white rounded-full p-1.5"
+            >
               <img src="/src/assets/Discord.svg" alt="Discord icon" />
-            </div>
-            <div className="bg-white rounded-full p-1">
+            </a>
+            <a
+              href="https://www.linkedin.com/company/graymatterhq/"
+              className="bg-white rounded-full p-1.5"
+            >
               <img src="/src/assets/Linkedin.svg" alt="LinkedIn icon" />
-            </div>
+            </a>
           </div>
 
           {/* ADRESS SECTION */}
           <div>
             <div className="flex">
-              <img src="/src/assets/Phone.svg" alt="Phone icon" />
+              <img src="/src/assets/PhoneIcon.svg" alt="Phone icon" />
               <p className="text-sm">+1 (234) 567-980</p>
             </div>
             <p className="w-44 text-sm">
@@ -39,7 +48,7 @@ export default function Footer() {
           {/* SECTIONS LINKS*/}
           <div className="flex">
             {/* SECTIONS */}
-            <div className="flex mr-32">
+            <div className="flex mr-28">
               <div>
                 <h3 className="font-semibold text-xl mb-12">Sections</h3>
                 <Link to="/product" className="block mb-5">
@@ -51,7 +60,7 @@ export default function Footer() {
                 <Link to="/pricing" className="block mb-5">
                   Pricing
                 </Link>
-                <Link to="/faq" className="block mb-5">
+                <Link to="/" className="block mb-5">
                   FAQ
                 </Link>
                 <Link to="/contact" className="block mb-5">
@@ -84,22 +93,22 @@ export default function Footer() {
             <h3 className="font-semibold text-xl mb-10">
               Suscribe to our newsletter
             </h3>
-            <form className="flex flex-col items-start">
+            <form className="flex flex-col items-start text-adventurous-white">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="py-2 mr-2 mb-5 border-b border-black w-72 rounded-none bg-transparent focus:outline-none"
+                className="py-1 mr-2 mb-5 border-b border-neon-green w-[18.63169rem] rounded-none bg-transparent focus:outline-none"
               />
-              <Button label={"Send"} color={"bg-slate-600 text-white"} />
+              <Button label={"Send"} color={"bg-neon-green text-deep-black"} />
             </form>
           </div>
         </div>
       </div>
 
       {/* COPYRIGHT SECTION */}
-      <div className="px-20">
-        <hr className="border-slate-400 py-1" />
-        <p className="text-right">©2024 Pondeo. All rights reserved</p>
+      <div className="px-16">
+        <hr className="border-blue py-1" />
+        <p className="text-right text-base">©2024 Pondeo. All rights reserved</p>
       </div>
     </footer>
   );
