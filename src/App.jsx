@@ -19,6 +19,8 @@ function App() {
       <Route path="/demo" element={<DemoPage />} />
       <Route path="/product" element={<ProductPage />} />
       <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/login" element={<LoginSignup />} />
+      <Route path="/pricing" element={<PricingPage />} />
     </Routes>
 
   );
