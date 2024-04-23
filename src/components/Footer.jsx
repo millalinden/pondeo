@@ -3,10 +3,10 @@ import Button from "./shared/Button";
 
 export default function Footer() {
   return (
-   <footer className="w-full bg-deep-black py-8 px-16 text-adventure-white border-t-2 border-neon-green">
+    <footer className="w-full bg-deep-black py-8 px-16 text-adventure-white border-t-2 border-neon-green overflow-hidden">
       <div className="flex justify-between">
         {/* Pondeo Section */}
-        <div className="flex flex-col gap-20 pr-[9.62rem]">
+        <div className="flex flex-col gap-20">
           <div className="flex flex-col space-between">
             <h2 className="text-custom-heading-3 pb-2">Pondeo</h2>
             <p className="text-custom-body-2 font-normal w-[20rem] pb-8">
@@ -23,7 +23,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/graymatterhq/"
                 className="bg-white rounded-full p-1"
               >
-                <img src="/src/assets/Linkedin.svg" alt="LinkedIn icon"/>
+                <img src="/src/assets/Linkedin.svg" alt="LinkedIn icon" />
               </a>
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          
+
           {/* Subscribe to Newsletter Section */}
           <div className="flex flex-col mb-[1.875rem]">
             <h3 className="text-custom-subtitle-1 mb-[2rem]">
