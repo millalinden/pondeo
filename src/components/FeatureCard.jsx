@@ -2,7 +2,7 @@ export default function FeatureCard(props) {
   const { image, heading, body } = props;
 
   return (
-    <div className="bg-graymatter-gray w-[340px] h-48 rounded-3xl py-6 px-8">
+    <div className="bg-graymatter-gray max-w-[340px]  rounded-3xl py-6 px-8">
       <div className="flex items-center gap-4">
         <div
           style={{
