@@ -23,7 +23,7 @@ export default function FaqCard(props) {
 
       {isClicked ? (
         <div
-          className="comic mt-[-15px] text-4xl text-adventure-white ml-auto flex justify-center items-center"
+          className="cursor-pointer comic mt-[-15px] text-4xl text-adventure-white ml-auto flex justify-center items-center"
           onClick={() => {
             setIsClicked(false);
           }}
@@ -32,7 +32,7 @@ export default function FaqCard(props) {
         </div>
       ) : (
         <div
-          className="comic mt-[-13px] text-4xl text-adventure-white ml-auto flex justify-center items-center"
+          className="cursor-pointer comic mt-[-13px] text-4xl text-adventure-white ml-auto flex justify-center items-center"
           onClick={() => {
             setIsClicked(true);
           }}
