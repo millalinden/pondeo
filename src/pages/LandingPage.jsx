@@ -1,6 +1,7 @@
 import Button from "../components/shared/Button";
 import FeatureCard from "../components/FeatureCard";
 import FaqCard from "../components/FaqCard";
+import { Carousel } from "../components/Carousel";
 
 import FeatureCardImage1 from "../assets/FeatureCard1.svg";
 import FeatureCardImage2 from "../assets/FeatureCard2.svg";
@@ -152,6 +153,9 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+      <section>
+        <Carousel />
+      </section>
       <section className=" flex gap-12 px-24 py-8 w-full justify-center  bg-graymatter-gray">
         <div className="flex flex-col py-10 gap-4 w-1/2">
           <h1 className="text-5xl  text-neon-green">
@@ -203,7 +207,6 @@ export default function LandingPage() {
           }
         />
       </section>
-      <section></section>
       <section className="bg-black p-28">
         <div className="flex flex-col justify-center items-center p-10 rounded-xl bg-graymatter-gray ">
           <div className="flex flex-col items-center gap-8">
