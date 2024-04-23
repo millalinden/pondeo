@@ -44,13 +44,13 @@ export default function LandingPage() {
           </p>
         </div>
       </section>
-      <section className="flex gap-8 p-24 w-full  bg-black">
+      <section className="flex gap-8 p-24 w-full  bg-graymatter-gray">
         <div className="bg-gray-300 w-[1000px] h-[480px] rounded-xl "></div>
 
         <div className="flex flex-col py-16 gap-4">
           <div className="flex gap-4 h-32">
             <div>
-              <div className="flex justify-center w-11 h-11 rounded-lg bg-neon-green pt-0.5 text-black text-4xl font-semibold">
+              <div className="flex justify-center w-11 h-11 rounded-lg bg-neon-green pt-0.5 text-graymatter-gray text-4xl font-semibold">
                 1
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function LandingPage() {
           </div>
           <div className="flex gap-4 h-32">
             <div>
-              <div className="flex justify-center w-11 h-11 rounded-lg bg-neon-green pt-0.5 text-black text-4xl font-semibold">
+              <div className="flex justify-center w-11 h-11 rounded-lg bg-neon-green pt-0.5 text-graymatter-gray text-4xl font-semibold">
                 2
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function LandingPage() {
           </div>
           <div className="flex gap-4 h-32">
             <div>
-              <div className="flex justify-center w-11 h-11 rounded-lg bg-neon-green pt-0.5 text-black text-4xl font-semibold">
+              <div className="flex justify-center w-11 h-11 rounded-lg bg-neon-green pt-0.5 text-graymatter-gray text-4xl font-semibold">
                 3
               </div>
             </div>
