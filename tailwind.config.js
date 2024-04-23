@@ -7,10 +7,13 @@ export default {
         "neon-green": "#CAFF33",
         "graymatter-gray": "#1C1C1C",
         "adventure-white": "#E4E4E7",
+        "adventure-whitegray": "rgba(228, 228, 231, 1)",
         "deep-black": "#000000",
         "error-red": "rgba(255, 107, 107, 1)",
         "success-green": "rgba(76, 175, 80, 1)",
         "information-blue": "rgba(0, 116, 217, 1)",
+        'rgba-green-20': 'rgba(202, 255, 51, 0.2)',
+        'rgba-green-10': 'rgba(202, 255, 51, 0.1)',
         blue: "rgba(72, 98, 132, 0.16)",
       },
       fontFamily: {
@@ -68,7 +71,7 @@ export default {
           {
             lineHeight: "2.5rem",
             letterSpacing: "0.02813rem",
-            fontWeight: "400",
+            fontWeight: "400"
           },
         ],
         // SUBTITLE 2

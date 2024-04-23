@@ -181,7 +181,7 @@ export default function LandingPage() {
           </p>
         </div>
       </section>{" "}
-      <section className="bg-black p-20 gap-4 flex flex-col items-center">
+      <section className="bg-black gap-4 p-20  flex flex-col items-center overflow-hidden">
         <FaqCard
           header={"What is Pondeo?"}
           body={
@@ -203,6 +203,7 @@ export default function LandingPage() {
           }
         />
       </section>
+      <section></section>
       <section className="bg-black p-28">
         <div className="flex flex-col justify-center items-center p-10 rounded-xl bg-graymatter-gray ">
           <div className="flex flex-col items-center gap-8">
