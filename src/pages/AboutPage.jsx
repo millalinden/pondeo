@@ -4,9 +4,7 @@ import ImageCaptionCard from "../components/shared/ImageCaptionCard";
 import TextImageCard from "../components/shared/TextImageCard";
 import VisionCard from "../components/shared/VisionCard";
 
-import plugIcon from "/src/assets/Plug.svg"
-
-
+import plugIcon from "/src/assets/Plug.svg";
 
 export default function AboutPage() {
   const handleClick = () => {
@@ -15,15 +13,15 @@ export default function AboutPage() {
 
   return (
     <>
-      <section className="flex justify-center items-center px-16 gap-32 py-16 w-full bg-black">
-        <div className="flex flex-col py-10 w-1/2">
+      <section className="flex px-16 gap-26 py-16 w-full bg-black">
+        <div className="flex flex-col py-10">
           <h2 className="text-custom-heading-2 font-bold text-adventure-white uppercase">
             Pondeo:
           </h2>
           <h2 className="text-custom-heading-2 font-bold uppercase text-neon-green mb-2">
             Empowering Engagement Through AI
           </h2>
-          <p className="text-adventure-whitegray text-custom-subtitle-1 font-normal mb-8">
+          <p className="text-adventure-whitegray text-custom-subtitle-1 font-light mb-8 mr-10">
             We believe in the power of personalized connections.
             <br /> Founded on the principle that every interaction should be
             meaningful and tailored to its recipient, we're on a mission to
@@ -38,7 +36,10 @@ export default function AboutPage() {
             </Link>
           </div>
         </div>
-        <img src="/src/assets/aboutHero.png"className="bg-slate-400 w-[34.46669rem] h-[32.3125rem] rounded-3xl"/>
+        <img
+          src="/src/assets/aboutHero.png"
+          className="bg-slate-400 w-[34.46669rem] h-[32.3125rem] rounded-3xl"
+        />
       </section>
 
       {/* VISION SECTION */}
