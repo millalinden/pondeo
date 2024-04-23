@@ -1,0 +1,12 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Country Flags/Asia/Japan">
+<rect id="Mask" y="5.71436" width="40" height="28.5714" rx="4" fill="white"/>
+<mask id="mask0_387_3746" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="5" width="40" height="30">
+<rect id="Mask_2" y="5.71436" width="40" height="28.5714" rx="4" fill="white"/>
+</mask>
+<g mask="url(#mask0_387_3746)">
+<rect id="Mask Copy" y="5.71436" width="40" height="28.5714" fill="#157CBB"/>
+<path id="Rectangle 2" fill-rule="evenodd" clip-rule="evenodd" d="M0 22.8572H11.4286V34.2858H17.1429V22.8572H40V17.1429H17.1429V5.71436H11.4286V17.1429H0V22.8572Z" fill="#FFD34D"/>
+</g>
+</g>
+</svg>

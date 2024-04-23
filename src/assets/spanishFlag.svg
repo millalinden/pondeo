@@ -1,0 +1,19 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Country Flags/Asia/Japan">
+<rect id="Mask" y="5.71436" width="40" height="28.5714" rx="4" fill="white"/>
+<mask id="mask0_387_3687" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="5" width="40" height="30">
+<rect id="Mask_2" y="5.71436" width="40" height="28.5714" rx="4" fill="white"/>
+</mask>
+<g mask="url(#mask0_387_3687)">
+<path id="Rectangle 2" fill-rule="evenodd" clip-rule="evenodd" d="M0 13.3334H40V5.71436H0V13.3334Z" fill="#DD172C"/>
+<path id="Rectangle 2_2" fill-rule="evenodd" clip-rule="evenodd" d="M0 34.2858H40V26.6667H0V34.2858Z" fill="#DD172C"/>
+<path id="Rectangle 2_3" fill-rule="evenodd" clip-rule="evenodd" d="M0 26.6666H40V13.3333H0V26.6666Z" fill="#FFD133"/>
+<path id="Rectangle 139 Copy" fill-rule="evenodd" clip-rule="evenodd" d="M10.4762 19.0476H12.381V20H10.4762V19.0476Z" fill="#FFEDB1"/>
+<path id="Rectangle 137" d="M8.87992 19.4839C8.84753 19.0952 9.15426 18.7619 9.54429 18.7619H11.4081C11.7981 18.7619 12.1048 19.0952 12.0724 19.4839L11.8748 21.856C11.8141 22.5833 11.2061 23.1428 10.4762 23.1428C9.74627 23.1428 9.13821 22.5833 9.07759 21.856L8.87992 19.4839Z" stroke="#A41517" stroke-width="1.33333"/>
+<path id="Rectangle 139" fill-rule="evenodd" clip-rule="evenodd" d="M8.57141 20H12.3809V20.9524H11.4286L10.4762 22.8571L9.52379 20.9524H8.57141V20Z" fill="#A41517"/>
+<rect id="Rectangle 135" x="5.71429" y="17.1428" width="1.90476" height="6.66667" rx="0.952381" fill="#A41517"/>
+<rect id="Rectangle 135 Copy" x="13.3333" y="17.1428" width="1.90476" height="6.66667" rx="0.952381" fill="#A41517"/>
+<path id="Rectangle 138" fill-rule="evenodd" clip-rule="evenodd" d="M8.57141 16.7618C8.57141 15.9203 9.25364 15.238 10.0952 15.238H10.8571C11.6987 15.238 12.3809 15.9203 12.3809 16.7618C12.3809 16.9722 12.2104 17.1428 12 17.1428H8.95236C8.74197 17.1428 8.57141 16.9722 8.57141 16.7618Z" fill="#A41517"/>
+</g>
+</g>
+</svg>
