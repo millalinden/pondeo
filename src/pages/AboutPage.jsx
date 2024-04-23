@@ -5,6 +5,7 @@ import TextImageCard from "../components/shared/TextImageCard";
 import VisionCard from "../components/shared/VisionCard";
 
 import plugIcon from "/src/assets/Plug.svg";
+import heroImage from "/src/assets/aboutHero.png";
 
 export default function AboutPage() {
   const handleClick = () => {
@@ -37,7 +38,7 @@ export default function AboutPage() {
           </div>
         </div>
         <img
-          src="/src/assets/aboutHero.png"
+          src={heroImage}
           className="bg-slate-400 w-[34.46669rem] h-[32.3125rem] rounded-3xl"
         />
       </section>
