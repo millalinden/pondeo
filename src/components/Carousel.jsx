@@ -1,71 +1,55 @@
-import { useState } from "react";
-import data from "../testimonialsData/data";
-import { SlArrowLeft } from "react-icons/sl";
-import { SlArrowRight } from "react-icons/sl";
+import { useSnapCarousel } from "react-snap-carousel";
 
-function Carousel() {
-  let [current, setCurrent] = useState(0);
-
-  const slides = data;
-
-  const previousSlideHandler = () =>
-    setCurrent((current) => (current === 0 ? slides.length - 1 : current - 1));
-
-  const nextSlideHandler = () =>
-    setCurrent((current) => (current === slides.length - 1 ? 0 : current + 1));
-
+export default function Carousel() {
+  const { scrollRef, snapPointIndexes, next, prev, pages, goTo } =
+    useSnapCarousel();
   return (
     <>
-      <div className="overflow-hidden relative">
-        <div className="flex transition ease-out duration-40 absolute top-0 left-0">
-          {slides.map((item, index) => {
-            const { id, star, img, comment, name } = item;
-            return (
-              <div
-                key={id}
-                className="w-full"
-                style={{ left: `${index * 100}%` }}
-              >
-                <img src={img} alt={name} />
-
-                <div className="flex-col items-center">
-                  <h3>{star}</h3>
-                  <h3 className="text-s font-bold my-6">{comment}</h3>
-                  <p className="text-sl">{name}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <div className="flex bg-black w-96 justify-center items-center mx-auto text-white text-3xl">
-        <button onClick={previousSlideHandler}>
-          <SlArrowLeft />
+      <ul
+        className="flex overflow-x-auto snap-x snap-mandatory"
+        style={{ scrollbarWidth: "none" }}
+        ref={scrollRef}
+      >
+        {Array.from({ length: 18 }).map((_, i) => (
+          <li
+            key={i}
+            className="flex-shrink-0"
+            style={{
+              scrollSnapAlign: snapPointIndexes.has(i) ? "start" : "",
+            }}
+          >
+            <img
+              src={`https://picsum.photos/500?${i}`}
+              width="250"
+              height="250"
+              alt={`Item ${i}`}
+            />
+          </li>
+        ))}
+      </ul>
+      <div className="flex justify-center space-x mt-2" aria-hidden>
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded mx-2"
+          onClick={() => prev()}
+        >
+          Previous
         </button>
-
-        <div className="flex justify-center gap-5 w-full">
-          {slides.map((item, index) => {
-            return (
-              <div
-                onClick={() => {
-                  setCurrent(index);
-                }}
-                key={"circle" + index}
-                className={`rounded-full w-5 h-5 cursor-pointer ${
-                  index == current ? "bg-white" : "bg-gray-300"
-                }`}
-              ></div>
-            );
-          })}
-        </div>
-
-        <button onClick={nextSlideHandler}>
-          <SlArrowRight />
+        {pages.map((_, i) => (
+          <button
+            key={i}
+            className="bg-blue-500 hover:bg-blue-700 text-black font-bold py-1 px-2 rounded mx-2"
+            onClick={() => goTo(i)}
+          >
+            {i + 1}
+          </button>
+        ))}
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded"
+          onClick={() => next()}
+        >
+          Next
         </button>
       </div>
     </>
   );
 }
-
-export default Carousel;
