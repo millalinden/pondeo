@@ -4,6 +4,8 @@ import ImageCaptionCard from "../components/shared/ImageCaptionCard";
 import TextImageCard from "../components/shared/TextImageCard";
 import VisionCard from "../components/shared/VisionCard";
 
+import plugIcon from "../src/assets/Plug.svg"
+
 export default function AboutPage() {
   const handleClick = () => {
     console.log("Button clicked!");
@@ -52,7 +54,7 @@ export default function AboutPage() {
               text="Transform B2B sales conversations through personalized engagement"
             />
             <VisionCard
-              image="/src/assets/Plug.svg"
+              image={plugIcon}
               alt="plug icon"
               text="Empower businesses to connect with customers on a deeper level"
             />
