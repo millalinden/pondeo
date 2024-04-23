@@ -11,18 +11,18 @@ import LoginSignup from "./pages/LoginSignup";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" index element={<LandingPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/demo" element={<DemoPage />} />
-        <Route path="/product" element={<ProductPage />} />
-        <Route path="/privacy" element={<PrivacyPage />} />
-        <Route path="/pricing" element={<PricingPage />} />
-        <Route path="/login" element={<LoginSignup />} />
-      </Routes>
-    </BrowserRouter>
+
+    <Routes>
+      <Route path="/" index element={<LandingPage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/demo" element={<DemoPage />} />
+      <Route path="/product" element={<ProductPage />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/login" element={<LoginSignup />} />
+      <Route path="/pricing" element={<PricingPage />} />
+    </Routes>
+
   );
 }
 
