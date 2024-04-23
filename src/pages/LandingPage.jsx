@@ -135,7 +135,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section className=" flex flex-col bg-graymatter-gray py-28 gap-12">
+      <section className=" flex flex-col bg-graymatter-gray py-24 gap-20">
         <div className="text-neon-green text-center text-5xl">
           Hear from our customers!
         </div>
@@ -177,8 +177,7 @@ export default function LandingPage() {
           <div className="bg-white w-[400px] h-[250px] "></div>
         </div>
       </section>
-      <div className="bg-black h-40">Hej</div>
-      <section className="flex justify-center p-10 bg-graymatter-gray border-neon-green border-t-4 ">
+      <section className="flex justify-center px-10 pt-24 bg-black ">
         <div className="flex flex-col  gap-4 w-1/2">
           <h1 className="text-4xl text-neon-green text-center">
             Frequently asked question{" "}
@@ -188,7 +187,7 @@ export default function LandingPage() {
           </p>
         </div>
       </section>{" "}
-      <section className="bg-black gap-4 p-20  flex flex-col items-center overflow-hidden">
+      <section className="bg-black p-20  flex flex-col items-center overflow-hidden">
         <FaqCard
           header={"What is Pondeo?"}
           body={
