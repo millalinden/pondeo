@@ -4,11 +4,11 @@ export default function ContactPage() {
   return (
     <>
       <section className="bg-deep-black flex flex-col items-center">
-        <div className="">
-          <h1 className="text-custom-heading-2-uppercase text-neon-green text-5xl uppercase self-stretch">Contact Us</h1>
-          <p className="font-custom-body-1 text-white">Any questions or remarks? Just write us a message!</p>
+        <div className="flex flex-col align-center text-center self-stretch">
+          <h1 className="text-custom-heading-2-uppercase text-neon-green text-5xl uppercase">Contact Us</h1>
+          <p className="font-custom-body-1 text-white mt-[20px]">Any questions or remarks? Just write us a message!</p>
         </div>
-        <form className="flex flex-col text-white mt-[82px]">
+        <form className="flex flex-col text-white mt-[30px]">
           <label className="flex flex-col  w-[583px] h-[50px] flex-shrink-0">First Name
             <input type="text" className="bg-deep-black rounded-[5px] text-white border border-white ">
             </input>
@@ -26,9 +26,8 @@ export default function ContactPage() {
             </input>
           </label>
         </form>
+        <button className="">Send Message</button>
       </section>
-
-      <Footer></Footer>
     </>
   )
 }
