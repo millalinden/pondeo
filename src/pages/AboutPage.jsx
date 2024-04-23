@@ -4,7 +4,7 @@ import ImageCaptionCard from "../components/shared/ImageCaptionCard";
 import TextImageCard from "../components/shared/TextImageCard";
 import VisionCard from "../components/shared/VisionCard";
 
-import plugIcon from "../src/assets/Plug.svg"
+import plugIcon from "/src/assets/Plug.svg"
 
 export default function AboutPage() {
   const handleClick = () => {
