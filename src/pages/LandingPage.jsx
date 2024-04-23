@@ -101,24 +101,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section className="flex p-20 w-full justify-center align-middle  bg-graymatter-gray">
-        <div className="flex w-1/2 justify-center items-center align-middle">
-          <div className="bg-white w-[400px] h-[300px] rounded-xl "></div>
-        </div>
-
-        <div className="flex flex-col py-10 gap-8 w-1/2">
-          <h1 className="text-5xl  text-neon-green">
-            Effective Connections, <br /> Effortlessly Crafted
-          </h1>
-          <p className="text-adventure-white font-semibold">
-            Pondeo acts as a co-pilot for Business Development Representives,
-            simplifying the creation of personalized outreach. By automatically
-            finding and analyzing customer signals, it helps BDRs craft messages
-            that resonate, without the deep research usually needed. This makes
-            outreach more effective and saves time.
-          </p>
-        </div>
-      </section>
       <section className="bg-black h-full p-28 pb-40 gap-10 flex flex-col items-center">
         <h1 className="text-4xl text-neon-green text-center">
           De-risk your revenue strategy with <br /> account-based sales
@@ -153,8 +135,29 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section>
+      <section className=" flex flex-col bg-graymatter-gray py-28 gap-12">
+        <div className="text-neon-green text-center text-5xl">
+          Hear from our customers!
+        </div>
         <Carousel />
+      </section>
+      <section className="flex p-20 w-full justify-center align-middle  bg-black">
+        <div className="flex w-1/2 justify-center items-center align-middle">
+          <div className="bg-white w-[400px] h-[300px] rounded-xl "></div>
+        </div>
+
+        <div className="flex flex-col py-10 gap-8 w-1/2">
+          <h1 className="text-5xl  text-neon-green">
+            Effective Connections, <br /> Effortlessly Crafted
+          </h1>
+          <p className="text-adventure-white font-semibold">
+            Pondeo acts as a co-pilot for Business Development Representives,
+            simplifying the creation of personalized outreach. By automatically
+            finding and analyzing customer signals, it helps BDRs craft messages
+            that resonate, without the deep research usually needed. This makes
+            outreach more effective and saves time.
+          </p>
+        </div>
       </section>
       <section className=" flex gap-12 px-24 py-8 w-full justify-center  bg-graymatter-gray">
         <div className="flex flex-col py-10 gap-4 w-1/2">
