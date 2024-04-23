@@ -5,6 +5,17 @@ import TextImageCard from "../components/shared/TextImageCard";
 import VisionCard from "../components/shared/VisionCard";
 
 import plugIcon from "/src/assets/Plug.svg"
+import arrowIcon from "/src/assets/ArrowRight.svg"
+import intersectIcon from "/src/assets/intersect.svg"
+import aboutHero from "/src/assets/aboutHero.png"
+import transparency from "/src/assets/about1.png"
+import security from "/src/assets/security.png"
+import controlled from "/src/assets/controlled.png"
+import kwadwo from "/src/assets/Kwadwo1.png"
+import belen from "/src/assets/Belen.png"
+import carlos from "/src/assets/Carlos.png"
+import santiago from "/src/assets/santiago.png"
+
 
 export default function AboutPage() {
   const handleClick = () => {
@@ -36,7 +47,7 @@ export default function AboutPage() {
             </Link>
           </div>
         </div>
-        <img src="/src/assets/aboutHero.png"className="bg-slate-400 w-[34.46669rem] h-[32.3125rem] rounded-3xl"/>
+        <img src={aboutHero} className="bg-slate-400 w-[34.46669rem] h-[32.3125rem] rounded-3xl"/>
       </section>
 
       {/* VISION SECTION */}
@@ -49,7 +60,7 @@ export default function AboutPage() {
           </h2>
           <div className="flex justify-center gap-20">
             <VisionCard
-              image="/src/assets/Intersect.svg"
+              image={intersectIcon}
               alt="intersect icon"
               text="Transform B2B sales conversations through personalized engagement"
             />
@@ -59,7 +70,7 @@ export default function AboutPage() {
               text="Empower businesses to connect with customers on a deeper level"
             />
             <VisionCard
-              image="/src/assets/ArrowRight.svg"
+              image={arrowIcon}
               alt="Arrow icon"
               text="Lead the way in targeted lead generation and customer understanding
            "
@@ -80,17 +91,17 @@ export default function AboutPage() {
             <ImageCaptionCard
               heading="Transparency in Data Handling"
               text="We prioritize openness about how we collect, use, and store data."
-              image="/src/assets/about1.png"
+              image={transparency}
             />
             <ImageCaptionCard
               heading="Robust Security Measures"
               text="Our strict security protocols ensure the protection of customer information."
-              image="/src/assets/security.png"
+              image={security}
             />
             <ImageCaptionCard
               heading="User-Controlled Data"
               text="We follow opt-in principles, giving users authority over their data usage and privacy preferences."
-              image="/src/assets/controlled.png"
+              image={controlled}
             />
           </div>
           <div className="mt-16">
@@ -121,22 +132,22 @@ export default function AboutPage() {
             <TextImageCard
               heading="Person 1"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
-              image="/src/assets/Kwadwo1.png"
+              image={kwadwo}
             />
             <TextImageCard
               heading="Person 2"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
-              image="/src/assets/Belen.png"
+              image={belen}
             />
             <TextImageCard
               heading="Person 3"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
-              image="/src/assets/Carlos.png"
+              image={carlos}
             />
             <TextImageCard
               heading="Person 4"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
-              image="/src/assets/santiago.png"
+              image={santiago}
             />
           </div>
         </div>
