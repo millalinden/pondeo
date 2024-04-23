@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 
 export default function DemoPage() {
     return (
@@ -46,7 +45,6 @@ export default function DemoPage() {
                     </div>
                 </div>
             </section>
-            <Footer></Footer>
         </>
     )
 }
