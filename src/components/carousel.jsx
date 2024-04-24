@@ -20,6 +20,8 @@ export default function Carousel() {
 
   const slides = data;
 
+  console.log(next);
+
   return (
     <>
       <ul
