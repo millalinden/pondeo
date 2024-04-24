@@ -11,7 +11,6 @@ import LoginSignup from "./pages/LoginSignup";
 
 function App() {
   return (
-
     <Routes>
       <Route path="/" index element={<LandingPage />} />
       <Route path="/about" element={<AboutPage />} />
@@ -22,7 +21,6 @@ function App() {
       <Route path="/login" element={<LoginSignup />} />
       <Route path="/pricing" element={<PricingPage />} />
     </Routes>
-
   );
 }
 
