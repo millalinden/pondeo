@@ -20,10 +20,12 @@ export default function Carousel() {
 
   const slides = data;
 
+  console.log(next);
+
   return (
     <>
       <ul
-        className="flex overflow-x-auto snap-x snap-mandatory gap-12 px-[30vw]"
+        className="flex overflow-x-auto snap-x snap-mandatory gap-12 px-52"
         style={{ scrollbarWidth: "none" }}
         ref={scrollRef}
       >
