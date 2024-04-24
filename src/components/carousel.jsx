@@ -4,6 +4,9 @@ import data from "../assets/testimonialsData/data";
 import CarouselArrowLeft from "../assets/CarouselArrowLeft.svg";
 import CarouselArrowRight from "../assets/CarouselArrowRight.svg";
 
+import { SlArrowLeft } from "react-icons/sl";
+import { SlArrowRight } from "react-icons/sl";
+
 export default function Carousel() {
   const {
     scrollRef,
