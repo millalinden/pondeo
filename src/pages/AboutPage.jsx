@@ -2,7 +2,8 @@ import Button from "../components/shared/Button";
 import { Link } from "react-router-dom";
 import ImageCaptionCard from "../components/shared/ImageCaptionCard";
 import TextImageCard from "../components/shared/TextImageCard";
-import FeatureCard from "../components/shared/FeatureCard";
+import VisionCard from "../components/shared/VisionCard";
+import SocialIcon from "../components/shared/SocialIcon";
 
 import plugIcon from "/src/assets/Plug.svg";
 import heroImage from "/src/assets/aboutHero.png";
@@ -28,13 +29,32 @@ export default function AboutPage() {
             meaningful and tailored to its recipient, we're on a mission to
             revolutionize how businesses engage with their prospects.
           </p>
-          <div className="flex justify-flex-start">
+          <div className="flex justify-flex-start mb-5">
             <Link to="/contact">
               <Button
                 label={"Contact Us"}
                 color={" bg-neon-green hover:bg-neon-green hover:text-black"}
               />
             </Link>
+          </div>
+          <div className="flex gap-4 justify-start">
+            <SocialIcon
+              icon="/src/assets/Mail.svg"
+              alt="Mail icon"
+              color="bg-neon-green"
+            />
+            <SocialIcon
+              link="https://discord.com/invite/zxFvvQMu9K"
+              icon="/src/assets/Discord.svg"
+              alt="Discord icon"
+              color="bg-neon-green"
+            />
+            <SocialIcon
+              link="https://www.linkedin.com/company/graymatterhq/"
+              icon="/src/assets/linkedinIcon.svg"
+              alt="LinkedIn icon"
+              color="bg-neon-green"
+            />
           </div>
         </div>
         <img
@@ -43,44 +63,43 @@ export default function AboutPage() {
         />
       </section>
 
-      {/* Feature SECTION */}
-      <section className="bg-deep-black w-full h-svh flex justify-center items-center">
+      {/* VISION SECTION */}
+      <section className="bg-deep-black w-full h-auto flex justify-center items-center">
         <div className="text-center">
           <h2 className="text-neon-green text-custom-heading-2 font-semibold pb-16">
             Reimagining Business:
             <br />
-            our Feature for the future
+            our vision for the future
           </h2>
-          <div className="flex justify-center gap-20">
-            <FeatureCard
+          <div className="flex justify-center gap-5 sm:gap-10 md:gap-20">
+            <VisionCard
               image="/src/assets/Intersect.svg"
               alt="intersect icon"
               text="Transform B2B sales conversations through personalized engagement"
             />
-            <FeatureCard
+            <VisionCard
               image={plugIcon}
               alt="plug icon"
               text="Empower businesses to connect with customers on a deeper level"
             />
-            <FeatureCard
+            <VisionCard
               image="/src/assets/ArrowRight.svg"
               alt="Arrow icon"
-              text="Lead the way in targeted lead generation and customer understanding
-           "
+              text="Lead the way in targeted lead generation and customer understanding"
             />
           </div>
         </div>
       </section>
 
       {/* PRIVACY SECTION */}
-      <section className="px-16 py-16 bg-deep-black w-full flex justify-center items-center">
-        <div className="py-16 w-full text-center">
-          <h2 className="text-center text-custom-heading-2 font-semibold text-neon-green p-2 mx-10 mb-4">
+      <section className="px-4 py-8 sm:px-6 sm:py-12 md:px-8 md:py-16 bg-deep-black w-full flex justify-center items-center">
+        <div className="py-8 sm:py-12 md:py-16 w-full text-center">
+          <h2 className="text-center text-custom-heading-2 font-semibold text-neon-green p-2 mx-4 sm:mx-6 md:mx-10 mb-4 sm:mb-8 md:mb-12">
             Ensuring your privacy:
             <br />
             Our Commitment to Data Security
           </h2>
-          <div className="py-16 flex justify-center items-start justify-around gap-4">
+          <div className="py-8 sm:py-12 md:py-16 flex flex-wrap justify-center items-start justify-around gap-4 sm:gap-8">
             <ImageCaptionCard
               heading="Transparency in Data Handling"
               text="We prioritize openness about how we collect, use, and store data."
@@ -97,7 +116,7 @@ export default function AboutPage() {
               image="/src/assets/controlled.png"
             />
           </div>
-          <div className="mt-16">
+          <div className="mt-8 sm:mt-12 md:mt-16">
             <Link to="/privacy">
               <Button
                 label="Learn more"
@@ -110,10 +129,10 @@ export default function AboutPage() {
       </section>
 
       {/* TEAM SECTION */}
-      <section className="py-16 px-16 bg-graymatter-gray flex justify-center items-center">
-        <div className="w-full py-16 text-center px-20">
+      <section className="py-8 px-4 sm:py-12 sm:px-6 md:py-16 md:px-8 bg-graymatter-gray flex justify-center items-center">
+        <div className="w-full py-8 text-center sm:py-12 md:py-16 px-4 sm:px-6 md:px-8">
           <div className="text-center">
-            <h2 className="pb-16 text-center text-custom-heading-2 font-semibold text-neon-green">
+            <h2 className="pb-8 sm:pb-12 md:pb-16 text-center text-custom-heading-2 font-semibold text-neon-green">
               Meet Our Team:
               <br />
               The Faces Behind Pondeo's
@@ -121,7 +140,7 @@ export default function AboutPage() {
               Innovation
             </h2>
           </div>
-          <div className="flex justify-center items-center gap-20">
+          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-16">
             <TextImageCard
               heading="Person 1"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
