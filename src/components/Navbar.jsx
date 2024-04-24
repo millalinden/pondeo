@@ -27,17 +27,17 @@ export default function Navbar() {
       </div>
       <div className="flex justify-end gap-[48px]">
         <div className="flex justify-end gap-[16px]">
-          <Button
+          <Link to="/login"><Button
             label={"Login"}
             color={
               "border-2 border-neon-green text-neon-green bg-none hover:bg-neon-green hover:text-black"
             }>Login
-          </Button>
-          <Button
+          </Button></Link>
+          <Link to="/demo"><Button
             label={"Start Free Trial"}
             color={
               "border-2 border-neon-green text-neon-green bg-none hover:bg-neon-green hover:text-black"
-            }>Start Free Trial</Button>
+            }>Start Free Trial</Button></Link>
         </div>
         <div className="flex justify-end">
           <Menu as="div" className="relative inline-block">
