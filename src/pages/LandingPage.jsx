@@ -1,7 +1,7 @@
 import Button from "../components/shared/Button";
-import FeatureCard from "../components/FeatureCard";
+import FeatureCard from "../components/shared/FeatureCard";
 import FaqCard from "../components/FaqCard";
-import Carousel from "../components/carousel";
+import Carousel from "../components/CarouselComponent";
 import Section from "../components/shared/Section";
 
 import FeatureCardImage1 from "../assets/FeatureCard1.svg";
@@ -117,21 +117,21 @@ export default function LandingPage() {
             <FeatureCard
               image={FeatureCardImage1}
               heading={"PROSPECT RESEARCH"}
-              body={
+              text={
                 "Explore your prospects' landscape with precision. Pondeo uncovers and interprets key data, enriching your approach with tailored insights."
               }
             />
             <FeatureCard
               image={FeatureCardImage2}
               heading={"MESSAGE PERSONALIZATION"}
-              body={
+              text={
                 "Fine-tune your approach with Pondeo. We crafts your message to echo your prospects’ objectives, ensuring your pitch not only aligns with their needs."
               }
             />
             <FeatureCard
               image={FeatureCardImage3}
               heading={"OUTREACH OPTIMIZATION"}
-              body={
+              text={
                 "Shape impactful interactions with Pondeo AI. It refines your message and timing, enhancing connection and response rates."
               }
             />
