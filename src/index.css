@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Comic Neue";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fonts.gstatic.com/s/comicneue/v1/4UaHrEJCrhhnVA3DgluAx60AmwKM4nNCVJI4G0rRvU8.woff2")
+    format("woff2");
+}
+
+.comic {
+  font-family: "Comic Neue", cursive; /* Fallback to generic cursive font */
+}
+
+.collapsed {
+  transition: height 0.5s ease; /* Adjust timing and easing as needed */
+  /*height: 5rem; /* Initial height */
+}
+
+.expanded {
+  transition: height 0.5s ease; /* Adjust timing and easing as needed */
+  height: 200px; /* Height when clicked */
+}
+
+/* Hide the increment and decrement buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
