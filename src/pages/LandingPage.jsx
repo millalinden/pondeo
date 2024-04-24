@@ -1,7 +1,7 @@
 import Button from "../components/shared/Button";
 import FeatureCard from "../components/shared/FeatureCard";
 import FaqCard from "../components/FaqCard";
-import Carousel from "../components/Carousel";
+import Carousel from "../components/CarouselComponent";
 import Section from "../components/shared/Section";
 
 import FeatureCardImage1 from "../assets/FeatureCard1.svg";
