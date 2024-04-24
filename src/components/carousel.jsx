@@ -8,7 +8,7 @@ import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 
 export default function Carousel() {
-const {
+  const {
     scrollRef,
     snapPointIndexes,
     next,
@@ -18,13 +18,13 @@ const {
     goTo,
   } = useSnapCarousel();
 
-const slides = data;
+  const slides = data;
 
-console.log(next);
+  console.log(next);
 
   return (
     <>
-    <ul
+      <ul
         className="flex overflow-x-auto snap-x snap-mandatory gap-12 px-52"
         style={{ scrollbarWidth: "none" }}
         ref={scrollRef}
@@ -37,32 +37,32 @@ console.log(next);
               scrollSnapAlign: snapPointIndexes.has(i) ? "center" : "",
             }}
           >
-        <img
+            <img
               className="bg-neon-green ml-6 rounded-full h-11 w-11"
               // src={`${data[i].img}`}
 
               alt={`Item ${i}`}
             />
-        <div className="flex flex-col">
-        <div>
-        <div className="text-neon-green">{slides[i].comment}</div>
-        <div className="text-neon-green text-sm">{slides[i].name}</div>
-     </div> 
-     <div className="text-adventure-white text-2xl pt-3">
+            <div className="flex flex-col">
+              <div>
+                <div className="text-neon-green">{slides[i].comment}</div>
+                <div className="text-neon-green text-sm">{slides[i].name}</div>
+              </div>
+              <div className="text-adventure-white text-2xl pt-3">
                 “{slides[i].comment}”
-    </div>
-    </div>
-</li>
+              </div>
+            </div>
+          </li>
         ))}
       </ul>
-    <div className="flex justify-center space-x mt-2" aria-hidden>
-            <button
+      <div className="flex justify-center space-x mt-2" aria-hidden>
+        <button
           className="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded mx-2 mr-20"
           onClick={() => prev()}
         >
           <img className="" src={CarouselArrowLeft} />
-            </button>
-{pages.map((_, i) => (
+        </button>
+        {pages.map((_, i) => (
           <button
             key={i}
             className="bg-blue-500 hover:bg-blue-700 text-black font-bold py-1 px-2 rounded"
@@ -71,7 +71,7 @@ console.log(next);
             <div
               className={`${
                 activePageIndex === i ? "bg-neon-green" : "bg-gray-300"
-                    } h-3 w-3 rounded-full`}
+              } h-3 w-3 rounded-full`}
             ></div>
           </button>
         ))}
@@ -79,9 +79,9 @@ console.log(next);
           className="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded ml-16"
           onClick={() => next()}
         >
-            <img className="" src={CarouselArrowRight} />
-            </button>
-    </div>
+          <img className="" src={CarouselArrowRight} />
+        </button>
+      </div>
     </>
   );
 }
