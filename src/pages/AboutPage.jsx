@@ -2,7 +2,7 @@ import Button from "../components/shared/Button";
 import { Link } from "react-router-dom";
 import ImageCaptionCard from "../components/shared/ImageCaptionCard";
 import TextImageCard from "../components/shared/TextImageCard";
-import VisionCard from "../components/shared/VisionCard";
+import FeatureCard from "../components/shared/FeatureCard";
 
 import plugIcon from "/src/assets/Plug.svg";
 import heroImage from "/src/assets/aboutHero.png";
@@ -43,26 +43,26 @@ export default function AboutPage() {
         />
       </section>
 
-      {/* VISION SECTION */}
+      {/* Feature SECTION */}
       <section className="bg-deep-black w-full h-svh flex justify-center items-center">
         <div className="text-center">
           <h2 className="text-neon-green text-custom-heading-2 font-semibold pb-16">
             Reimagining Business:
             <br />
-            our vision for the future
+            our Feature for the future
           </h2>
           <div className="flex justify-center gap-20">
-            <VisionCard
+            <FeatureCard
               image="/src/assets/Intersect.svg"
               alt="intersect icon"
               text="Transform B2B sales conversations through personalized engagement"
             />
-            <VisionCard
+            <FeatureCard
               image={plugIcon}
               alt="plug icon"
               text="Empower businesses to connect with customers on a deeper level"
             />
-            <VisionCard
+            <FeatureCard
               image="/src/assets/ArrowRight.svg"
               alt="Arrow icon"
               text="Lead the way in targeted lead generation and customer understanding

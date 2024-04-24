@@ -20,19 +20,17 @@ export default function Carousel() {
 
   const slides = data;
 
-  console.log(next);
-
   return (
     <>
       <ul
-        className="flex overflow-x-auto snap-x snap-mandatory gap-12 px-52"
+        className="flex overflow-x-auto snap-x snap-mandatory gap-12 px-[30vw]"
         style={{ scrollbarWidth: "none" }}
         ref={scrollRef}
       >
         {Array.from({ length: 6 }).map((_, i) => (
           <li
             key={i}
-            className="flex flex-shrink-0 items-center bg-black rounded-3xl gap-8 min-h-32 w-[880px]"
+            className="flex flex-shrink-0 items-center bg-black rounded-3xl gap-8 min-h-32 w-[60vw]"
             style={{
               scrollSnapAlign: snapPointIndexes.has(i) ? "center" : "",
             }}
