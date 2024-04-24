@@ -51,7 +51,7 @@ export default function AboutPage() {
             />
             <SocialIcon
               link="https://www.linkedin.com/company/graymatterhq/"
-              icon="/src/assets/linkedinIcon.svg"
+              icon="/src/assets/Linkedin.svg"
               alt="LinkedIn icon"
               color="bg-neon-green"
             />
