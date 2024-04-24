@@ -2,6 +2,7 @@ import Button from "../components/shared/Button";
 import FeatureCard from "../components/FeatureCard";
 import FaqCard from "../components/FaqCard";
 import Carousel from "../components/Carousel";
+import Section from "../components/shared/Section";
 
 import FeatureCardImage1 from "../assets/FeatureCard1.svg";
 import FeatureCardImage2 from "../assets/FeatureCard2.svg";
@@ -10,7 +11,7 @@ import FeatureCardImage3 from "../assets/FeatureCard3.svg";
 export default function LandingPage() {
   return (
     <>
-      <section className="flex gap-12 p-24 w-full  bg-black">
+      <Section styling={"gap-12 bg-black"}>
         <div className="flex flex-col py-10 gap-8 w-1/2">
           <p className="text-neon-green">With the help of Pondeo,</p>
           <h1 className="text-5xl font-bold text-neon-green">
@@ -31,9 +32,9 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="bg-slate-400 w-[500px] h-[500px]  "></div>
-      </section>
-      <section className="flex justify-center p-10 bg-graymatter-gray border-neon-green border-t-4 ">
-        <div className="flex flex-col  gap-4 w-1/2">
+      </Section>
+      <Section styling={"justify-center p-10 bg-black"}>
+        <div className="flex flex-col bg-graymatter-gray py-20 px-48 gap- rounded-xl">
           <h1 className="text-4xl text-neon-green text-center">
             Talk to Humans as Humans, but with Lorem Ipsum
           </h1>
@@ -43,8 +44,11 @@ export default function LandingPage() {
             potential customers.
           </p>
         </div>
-      </section>
-      <section className="flex gap-8 p-24 w-full  bg-graymatter-gray">
+      </Section>
+      <Section
+        styling={""}
+        className="flex gap-8 p-24 w-full  bg-graymatter-gray"
+      >
         <div className="bg-gray-300 w-[1000px] h-[480px] rounded-xl "></div>
 
         <div className="flex flex-col py-16 gap-4">
@@ -100,8 +104,11 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="bg-black h-full p-28 pb-40 gap-10 flex flex-col items-center">
+      </Section>
+      <Section
+        styling={""}
+        className="bg-black h-full p-28 pb-40 gap-10 flex flex-col items-center"
+      >
         <h1 className="text-4xl text-neon-green text-center">
           De-risk your revenue strategy with <br /> account-based sales
         </h1>
@@ -134,14 +141,20 @@ export default function LandingPage() {
             />
           </div>
         </div>
-      </section>
-      <section className=" flex flex-col bg-graymatter-gray py-24 gap-20">
+      </Section>
+      <Section
+        styling={""}
+        className=" flex flex-col bg-graymatter-gray py-24 gap-20"
+      >
         <div className="text-neon-green text-center text-5xl">
           Hear from our customers!
         </div>
         <Carousel />
-      </section>
-      <section className="flex p-20 w-full justify-center align-middle  bg-black">
+      </Section>
+      <Section
+        styling={""}
+        className="flex p-20 w-full justify-center align-middle  bg-black"
+      >
         <div className="flex w-1/2 justify-center items-center align-middle">
           <div className="bg-white w-[400px] h-[300px] rounded-xl "></div>
         </div>
@@ -158,8 +171,11 @@ export default function LandingPage() {
             outreach more effective and saves time.
           </p>
         </div>
-      </section>
-      <section className=" flex gap-12 px-24 py-8 w-full justify-center  bg-graymatter-gray">
+      </Section>
+      <Section
+        styling={""}
+        className=" flex gap-12 px-24 py-8 w-full justify-center  bg-graymatter-gray"
+      >
         <div className="flex flex-col py-10 gap-4 w-1/2">
           <h1 className="text-5xl  text-neon-green">
             Prepare to see a significant shift in your engagement metrics{" "}
@@ -176,8 +192,11 @@ export default function LandingPage() {
         <div className="flex items-center">
           <div className="bg-white w-[400px] h-[250px] "></div>
         </div>
-      </section>
-      <section className="flex justify-center px-10 pt-24 bg-black ">
+      </Section>
+      <Section
+        styling={""}
+        className="flex justify-center px-10 pt-24 bg-black "
+      >
         <div className="flex flex-col  gap-4 w-1/2">
           <h1 className="text-4xl text-neon-green text-center">
             Frequently asked question{" "}
@@ -186,8 +205,11 @@ export default function LandingPage() {
             Ask everything you need to know about our product.
           </p>
         </div>
-      </section>{" "}
-      <section className="bg-black p-20  flex flex-col items-center overflow-hidden">
+      </Section>{" "}
+      <Section
+        styling={""}
+        className="bg-black p-20  flex flex-col items-center overflow-hidden"
+      >
         <FaqCard
           header={"What is Pondeo?"}
           body={
@@ -208,8 +230,8 @@ export default function LandingPage() {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam. Odit natus earum dolorem ipsam perspiciatis nemo, porro fugiat maiores error explicabo nihil voluptas unde delectus sit commodi doloribus placeat!"
           }
         />
-      </section>
-      <section className="bg-black p-28">
+      </Section>
+      <Section styling={""} className="bg-black p-28">
         <div className="flex flex-col justify-center items-center p-10 rounded-xl bg-graymatter-gray ">
           <div className="flex flex-col items-center gap-8">
             <h1 className="text-5xl text-center font-bold text-neon-green">
@@ -226,7 +248,7 @@ export default function LandingPage() {
             />
           </div>
         </div>
-      </section>
+      </Section>
     </>
   );
 }
