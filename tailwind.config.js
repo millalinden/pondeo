@@ -12,8 +12,8 @@ export default {
         "error-red": "rgba(255, 107, 107, 1)",
         "success-green": "rgba(76, 175, 80, 1)",
         "information-blue": "rgba(0, 116, 217, 1)",
-        'rgba-green-20': 'rgba(202, 255, 51, 0.2)',
-        'rgba-green-10': 'rgba(202, 255, 51, 0.1)',
+        "rgba-green-20": "rgba(202, 255, 51, 0.2)",
+        "rgba-green-10": "rgba(202, 255, 51, 0.1)",
         blue: "rgba(72, 98, 132, 0.16)",
       },
       fontFamily: {
@@ -71,7 +71,7 @@ export default {
           {
             lineHeight: "2.5rem",
             letterSpacing: "0.02813rem",
-            fontWeight: "400"
+            fontWeight: "400",
           },
         ],
         // SUBTITLE 2
@@ -95,9 +95,9 @@ export default {
         ],
         // BODY 1 (Regular)
         "custom-body-1": [
-          "1.125rem",
+          "1.2vw",
           {
-            lineHeight: "1.75rem",
+            lineHeight: "1.6vw",
             letterSpacing: "0.02813rem",
             fontWeight: "500",
           },
