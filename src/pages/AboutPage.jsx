@@ -2,7 +2,7 @@ import Button from "../components/shared/Button";
 import { Link } from "react-router-dom";
 import ImageCaptionCard from "../components/shared/ImageCaptionCard";
 import TextImageCard from "../components/shared/TextImageCard";
-import VisionCard from "../components/shared/VisionCard";
+import FeatureCard from "../components/shared/FeatureCard";
 import SocialIcon from "../components/shared/SocialIcon";
 
 import plugIcon from "/src/assets/Plug.svg";
@@ -51,7 +51,7 @@ export default function AboutPage() {
             />
             <SocialIcon
               link="https://www.linkedin.com/company/graymatterhq/"
-              icon="/src/assets/linkedinIcon.svg"
+              icon="/src/assets/Linkedin.svg"
               alt="LinkedIn icon"
               color="bg-neon-green"
             />
@@ -72,17 +72,17 @@ export default function AboutPage() {
             our vision for the future
           </h2>
           <div className="flex justify-center gap-5 sm:gap-10 md:gap-20">
-            <VisionCard
+            <FeatureCard
               image="/src/assets/Intersect.svg"
               alt="intersect icon"
               text="Transform B2B sales conversations through personalized engagement"
             />
-            <VisionCard
+            <FeatureCard
               image={plugIcon}
               alt="plug icon"
               text="Empower businesses to connect with customers on a deeper level"
             />
-            <VisionCard
+            <FeatureCard
               image="/src/assets/ArrowRight.svg"
               alt="Arrow icon"
               text="Lead the way in targeted lead generation and customer understanding"
