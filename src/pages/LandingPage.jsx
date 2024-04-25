@@ -110,8 +110,10 @@ export default function LandingPage() {
           De-risk your revenue strategy with <br /> account-based sales
         </h1>
         <p className="text-adventure-white text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut lab
+          With 2024 bringing in new requirements from email giants like Gmail
+          and Yahoo, the stakes for your cold emails to stand out have never
+          been higher. The key to having higher conversion rates?
+          Personalization.
         </p>
         <div className="flex gap-12">
           <FeatureCard
