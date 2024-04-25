@@ -1,4 +1,4 @@
-import Button from "../components/shared/Button";
+import ButtonSmall from "../components/shared/ButtonSmall";
 import { Link } from "react-router-dom";
 import ImageCaptionCard from "../components/shared/ImageCaptionCard";
 import TextImageCard from "../components/shared/TextImageCard";
@@ -48,9 +48,9 @@ export default function AboutPage() {
           </p>
           <div className="flex justify-center md:justify-start mb-5">
             <Link to="/contact">
-              <Button
+              <ButtonSmall
                 label={"Contact Us"}
-                color={" bg-neon-green hover:bg-neon-green hover:text-black"}
+                type={""}
               />
             </Link>
           </div>
@@ -135,10 +135,8 @@ export default function AboutPage() {
           </div>
           <div className="mt-8 sm:mt-12 md:mt-16 flex justify-center items-center">
             <Link to="/privacy">
-              <Button
+              <ButtonSmall
                 label="Learn more"
-                color="bg-neon-green"
-                onClick={handleClick}
               />
             </Link>
           </div>
