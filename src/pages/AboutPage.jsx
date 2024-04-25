@@ -118,16 +118,19 @@ export default function AboutPage() {
               heading="Transparency in Data Handling"
               text="We prioritize openness about how we collect, use, and store data."
               image={transparency}
+              alt="Futuristic touch panel with icons and the word transparency"
             />
             <ImageCaptionCard
               heading="Robust Security Measures"
               text="Our strict security protocols ensure the protection of customer information."
               image={security}
+              alt="Zoomed in chip with glowing lock"
             />
             <ImageCaptionCard
               heading="User-Controlled Data"
               text="We follow opt-in principles, giving users authority over their data usage and privacy preferences."
               image={controlled}
+              alt="Futuristic touch panel"
             />
           </div>
           <div className="mt-8 sm:mt-12 md:mt-16 flex justify-center items-center">
@@ -163,21 +166,25 @@ export default function AboutPage() {
               heading="Person 1"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
               image={kwadwo}
+              alt="Portrait image of CEO Kwadwo from Gray Matter"
             />
             <TextImageCard
               heading="Person 2"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
               image={belen}
+              alt="Portrait image of Belen from Gray Matter"
             />
             <TextImageCard
               heading="Person 3"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
               image={carlos}
+              alt="Portrait image of Carlos from Gray Matter"
             />
             <TextImageCard
               heading="Person 4"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
               image={santiago}
+              alt="Portrait image of Santiago from Gray Matter"
             />
           </div>
         </div>
