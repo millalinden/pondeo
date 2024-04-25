@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom"
-import Button from "../components/shared/Button"
+import ButtonLarge from "../components/shared/ButtonLarge"
 import britishFlag from "../assets/britishFlag.svg"
 import swedishFlag from "../assets/swedishFlag.svg"
 import spanishFlag from "../assets/spanishFlag.svg"
@@ -27,17 +27,8 @@ export default function Navbar() {
       </div>
       <div className="flex justify-end gap-[48px]">
         <div className="flex justify-end gap-[16px]">
-          <Link to="/login"><Button
-            label={"Login"}
-            color={
-              "border-2 border-neon-green text-neon-green bg-none hover:bg-neon-green hover:text-black"
-            }>Login
-          </Button></Link>
-          <Link to="/demo"><Button
-            label={"Start Free Trial"}
-            color={
-              "border-2 border-neon-green text-neon-green bg-none hover:bg-neon-green hover:text-black"
-            }>Start Free Trial</Button></Link>
+          <Link to="/login"><ButtonLarge type="primary"></ButtonLarge></Link>
+          <Link to="/demo"><ButtonLarge type="secondary"></ButtonLarge></Link>
         </div>
         <div className="flex justify-end">
           <Menu as="div" className="relative inline-block">
