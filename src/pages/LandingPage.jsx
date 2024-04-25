@@ -114,13 +114,14 @@ export default function LandingPage() {
           eiusmod tempor incididunt ut lab
         </p>
         <div className="flex">
-          <div className="inline-grid grid-cols-3 gap-4 gap-y-16 justify-items-center">
+          <div className="flex gap-4 justify-items-center">
             <FeatureCard
               image={FeatureCardImage1}
               heading={"PROSPECT RESEARCH"}
               text={
                 "Explore your prospects' landscape with precision. Pondeo uncovers and interprets key data, enriching your approach with tailored insights."
               }
+              heightvw={"45"}
             />
             <FeatureCard
               image={FeatureCardImage2}
