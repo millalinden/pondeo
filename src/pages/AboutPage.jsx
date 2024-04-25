@@ -4,9 +4,16 @@ import ImageCaptionCard from "../components/shared/ImageCaptionCard";
 import TextImageCard from "../components/shared/TextImageCard";
 import FeatureCard from "../components/shared/FeatureCard";
 import SocialIcon from "../components/shared/SocialIcon";
+import Section from "../components/shared/Section"
 
-import plugIcon from "/src/assets/Plug.svg";
-import heroImage from "/src/assets/aboutHero.png";
+import plugIcon from "../assets/Plug.svg";
+import heroImage from "../assets/aboutHero.png";
+import mailIcon from "../assets/mailIcon.svg"
+import discordIcon from "../assets/Discord.svg"
+import linkedinIcon from "../assets/linkedinIcon.svg"
+import intersectIcon from "../assets/Intersect.svg"
+import arrowIcon from "../assets/ArrowRight.svg"
+
 
 export default function AboutPage() {
   const handleClick = () => {
@@ -15,7 +22,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <section className="flex px-16 gap-26 py-16 w-full bg-black">
+      <Section styling={"gap-12 bg-deep-black"}>
         <div className="flex flex-col py-10">
           <h2 className="text-custom-heading-2 font-bold text-adventure-white uppercase">
             Pondeo:
@@ -39,19 +46,19 @@ export default function AboutPage() {
           </div>
           <div className="flex gap-4 justify-start">
             <SocialIcon
-              icon="/src/assets/Mail.svg"
+              icon={mailIcon}
               alt="Mail icon"
               color="bg-neon-green"
             />
             <SocialIcon
               link="https://discord.com/invite/zxFvvQMu9K"
-              icon="/src/assets/Discord.svg"
+              icon={discordIcon}
               alt="Discord icon"
               color="bg-neon-green"
             />
             <SocialIcon
               link="https://www.linkedin.com/company/graymatterhq/"
-              icon="/src/assets/Linkedin.svg"
+              icon={linkedinIcon}
               alt="LinkedIn icon"
               color="bg-neon-green"
             />
@@ -61,10 +68,10 @@ export default function AboutPage() {
           src={heroImage}
           className="bg-slate-400 w-[34.46669rem] h-[32.3125rem] rounded-3xl"
         />
-      </section>
+      </Section>
 
       {/* VISION SECTION */}
-      <section className="bg-deep-black w-full h-auto flex justify-center items-center">
+      <Section styling={"gap-12 bg-deep-black justify-center items-center"}>
         <div className="text-center">
           <h2 className="text-neon-green text-custom-heading-2 font-semibold pb-16">
             Reimagining Business:
@@ -73,7 +80,7 @@ export default function AboutPage() {
           </h2>
           <div className="flex justify-center gap-5 sm:gap-10 md:gap-20">
             <FeatureCard
-              image="/src/assets/Intersect.svg"
+              image={intersectIcon}
               alt="intersect icon"
               text="Transform B2B sales conversations through personalized engagement"
             />
@@ -83,16 +90,16 @@ export default function AboutPage() {
               text="Empower businesses to connect with customers on a deeper level"
             />
             <FeatureCard
-              image="/src/assets/ArrowRight.svg"
+              image={arrowIcon}
               alt="Arrow icon"
               text="Lead the way in targeted lead generation and customer understanding"
             />
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* PRIVACY SECTION */}
-      <section className="px-4 py-8 sm:px-6 sm:py-12 md:px-8 md:py-16 bg-deep-black w-full flex justify-center items-center">
+      <Section styling={"gap-12 bg-deep-black justify-center items-center"}>
         <div className="py-8 sm:py-12 md:py-16 w-full text-center">
           <h2 className="text-center text-custom-heading-2 font-semibold text-neon-green p-2 mx-4 sm:mx-6 md:mx-10 mb-4 sm:mb-8 md:mb-12">
             Ensuring your privacy:
@@ -116,7 +123,7 @@ export default function AboutPage() {
               image="/src/assets/controlled.png"
             />
           </div>
-          <div className="mt-8 sm:mt-12 md:mt-16">
+          <div className="mt-8 sm:mt-12 md:mt-16 flex justify-center items-center">
             <Link to="/privacy">
               <Button
                 label="Learn more"
@@ -126,10 +133,10 @@ export default function AboutPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* TEAM SECTION */}
-      <section className="py-8 px-4 sm:py-12 sm:px-6 md:py-16 md:px-8 bg-graymatter-gray flex justify-center items-center">
+      <Section styling={"gap-12 bg-graymatter-gray justify-center items-center py-8 px-4 sm:py-12 sm:px-6"}>
         <div className="w-full py-8 text-center sm:py-12 md:py-16 px-4 sm:px-6 md:px-8">
           <div className="text-center">
             <h2 className="pb-8 sm:pb-12 md:pb-16 text-center text-custom-heading-2 font-semibold text-neon-green">
@@ -163,7 +170,7 @@ export default function AboutPage() {
             />
           </div>
         </div>
-      </section>
+      </Section>
     </>
   );
 }

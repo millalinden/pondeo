@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import Button from "./shared/Button";
 import SocialIcon from "./shared/SocialIcon";
 
+import discordIcon from "../assets/Discord.svg"
+import linkedinIcon from "../assets/linkedinIcon.svg"
+import mailIcon from "../assets/mailIcon.svg"
+
 export default function Footer() {
   return (
     <footer className="flex  w-full  bg-deep-black pt-[2%]  px-[4vw] pb-[2.5vw] text-adventure-white border-t-2 border-neon-green">
@@ -16,14 +20,14 @@ export default function Footer() {
             <div className="flex gap-[3%] mt-2">
               <SocialIcon
                 link="https://discord.com/invite/zxFvvQMu9K"
-                icon="/src/assets/Discord.svg"
+                icon={discordIcon}
                 alt="Discord icon"
                 color="bg-adventure-white"
                 size="2vw"
               />
               <SocialIcon
                 link="https://www.linkedin.com/company/graymatterhq/"
-                icon="/src/assets/Linkedin.svg"
+                icon={linkedinIcon}
                 alt="LinkedIn icon"
                 color="bg-adventure-white"
                 size="2vw"
@@ -35,7 +39,7 @@ export default function Footer() {
           <div className="flex flex-col w-[70%] ali">
             <div className="flex items-center mb-[3%]">
               <SocialIcon
-                icon="/src/assets/Mail.svg"
+                icon={mailIcon}
                 alt="Mail icon"
                 color="bg-adventure-white"
                 size="2vw"
