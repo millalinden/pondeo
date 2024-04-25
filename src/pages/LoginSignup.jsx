@@ -27,7 +27,7 @@ export default function LoginSignup() {
   return (
     <Section
       styling={
-        "gap-12 bg-deep-black text-adventurous-white flex-col items-center justify-center"
+        "gap-4 bg-deep-black text-adventurous-white flex-col items-center justify-center"
       }
     >
       {isLogin ? (
@@ -45,14 +45,14 @@ export default function LoginSignup() {
           setIsLogin={setIsLogin}
         />
       )}
-      <div className="flex items-center justify-center mt-10 w-full mb-10">
+      <div className="flex items-center justify-center mt-10 w-full">
         <hr className="border-t border-[rgba(179, 179, 179, 1)] w-1/3 mr-4" />
         <span className="text-adventure-white px-4 text-nowrap text-custom-body-1 font-regular">
           Or Continue with
         </span>
         <hr className="border-t border-[rgba(179, 179, 179, 1)] w-1/3 ml-4" />
       </div>
-      <div className="flex gap-12">
+      <div className="flex gap-8">
         <button className="flex items-center justify-center focus:outline-none">
           <GradientCircle icon={googleIcon} alt="Google Icon" />
         </button>
