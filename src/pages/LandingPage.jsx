@@ -11,7 +11,7 @@ import FeatureCardImage3 from "../assets/FeatureCard3.svg";
 export default function LandingPage() {
   return (
     <>
-      <Section styling={"gap-12 bg-black"}>
+      <Section styling={"gap-12 bg-deep-black"}>
         <div className="flex flex-col py-10 gap-8 w-1/2">
           <p className="text-neon-green">With the help of Pondeo,</p>
           <h1 className="text-5xl font-bold text-neon-green">
@@ -33,7 +33,7 @@ export default function LandingPage() {
         </div>
         <div className="bg-slate-400 w-[500px] h-[500px]  "></div>
       </Section>
-      <Section styling={"justify-center p-10 bg-black"}>
+      <Section styling={"justify-center p-10 bg-deep-black"}>
         <div className="flex flex-col bg-graymatter-gray py-20 px-48 gap- rounded-xl">
           <h1 className="text-4xl text-neon-green text-center">
             Talk to Humans as Humans, but with Lorem Ipsum
@@ -103,7 +103,7 @@ export default function LandingPage() {
         </div>
       </Section>
       <Section
-        styling={"flex-col items-center bg-black h-full p-28 pb-40 gap-10"}
+        styling={"flex-col items-center bg-deep-black h-full p-28 pb-40 gap-10"}
       >
         <h1 className="text-4xl text-neon-green text-center">
           De-risk your revenue strategy with <br /> account-based sales
@@ -144,7 +144,7 @@ export default function LandingPage() {
         </div>
         <Carousel />
       </Section>
-      <Section styling={"p-20 justify-center align-middle  bg-black"}>
+      <Section styling={"p-20 justify-center align-middle  bg-deep-black"}>
         <div className="flex w-1/2 justify-center items-center align-middle">
           <div className="bg-white w-[400px] h-[300px] rounded-xl "></div>
         </div>
@@ -180,7 +180,7 @@ export default function LandingPage() {
           <div className="bg-white w-[400px] h-[250px] "></div>
         </div>
       </Section>
-      <Section styling={"justify-center px-10 bg-black"}>
+      <Section styling={"justify-center px-10 bg-deep-black"}>
         <div className="flex flex-col  gap-4 w-1/2">
           <h1 className="text-4xl text-neon-green text-center">
             Frequently asked question{" "}
@@ -190,7 +190,7 @@ export default function LandingPage() {
           </p>
         </div>
       </Section>{" "}
-      <Section styling={"bg-black p-20 flex-col items-center overflow-hidden"}>
+      <Section styling={"bg-deep-black p-20 flex-col items-center overflow-hidden"}>
         <FaqCard
           header={"What is Pondeo?"}
           body={
@@ -212,7 +212,7 @@ export default function LandingPage() {
           }
         />
       </Section>
-      <Section styling={"bg-black p-28"}>
+      <Section styling={"bg-deep-black p-28"}>
         <div className="flex flex-col justify-center items-center p-10 rounded-xl bg-graymatter-gray ">
           <div className="flex flex-col items-center gap-8">
             <h1 className="text-5xl text-center font-bold text-neon-green">
