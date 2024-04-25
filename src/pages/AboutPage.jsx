@@ -4,16 +4,15 @@ import ImageCaptionCard from "../components/shared/ImageCaptionCard";
 import TextImageCard from "../components/shared/TextImageCard";
 import FeatureCard from "../components/shared/FeatureCard";
 import SocialIcon from "../components/shared/SocialIcon";
-import Section from "../components/shared/Section"
+import Section from "../components/shared/Section";
 
 import plugIcon from "../assets/Plug.svg";
 import heroImage from "../assets/aboutHero.png";
-import mailIcon from "../assets/mailIcon.svg"
-import discordIcon from "../assets/Discord.svg"
-import linkedinIcon from "../assets/linkedinIcon.svg"
-import intersectIcon from "../assets/Intersect.svg"
-import arrowIcon from "../assets/ArrowRight.svg"
-
+import mailIcon from "../assets/mailIcon.svg";
+import discordIcon from "../assets/Discord.svg";
+import linkedinIcon from "../assets/linkedinIcon.svg";
+import intersectIcon from "../assets/Intersect.svg";
+import arrowIcon from "../assets/ArrowRight.svg";
 
 export default function AboutPage() {
   const handleClick = () => {
@@ -22,21 +21,23 @@ export default function AboutPage() {
 
   return (
     <>
-      <Section styling={"gap-12 bg-deep-black"}>
-        <div className="flex flex-col py-10">
+      <Section
+        styling={"gap-12 bg-deep-black flex flex-col md:flex-row items-center"}
+      >
+        <div className="flex flex-col">
           <h2 className="text-custom-heading-2 font-bold text-adventure-white uppercase">
             Pondeo:
           </h2>
           <h2 className="text-custom-heading-2 font-bold uppercase text-neon-green mb-2">
             Empowering Engagement Through AI
           </h2>
-          <p className="text-adventure-whitegray text-custom-subtitle-1 font-light mb-8 mr-10">
+          <p className="text-adventure-whitegray text-custom-subtitle-1 font-light mb-8 sm:mb-10 md:mb-12 mr-10">
             We believe in the power of personalized connections.
             <br /> Founded on the principle that every interaction should be
             meaningful and tailored to its recipient, we're on a mission to
             revolutionize how businesses engage with their prospects.
           </p>
-          <div className="flex justify-flex-start mb-5">
+          <div className="flex justify-center md:justify-start mb-5">
             <Link to="/contact">
               <Button
                 label={"Contact Us"}
@@ -44,12 +45,8 @@ export default function AboutPage() {
               />
             </Link>
           </div>
-          <div className="flex gap-4 justify-start">
-            <SocialIcon
-              icon={mailIcon}
-              alt="Mail icon"
-              color="bg-neon-green"
-            />
+          <div className="flex gap-4 justify-center md:justify-start">
+            <SocialIcon icon={mailIcon} alt="Mail icon" color="bg-neon-green" />
             <SocialIcon
               link="https://discord.com/invite/zxFvvQMu9K"
               icon={discordIcon}
@@ -66,7 +63,8 @@ export default function AboutPage() {
         </div>
         <img
           src={heroImage}
-          className="bg-slate-400 w-[34.46669rem] h-[32.3125rem] rounded-3xl"
+          className="bg-slate-400 w-full md:w-[40%] h-auto rounded-3xl"
+          alt="Hero Image"
         />
       </Section>
 
@@ -136,7 +134,11 @@ export default function AboutPage() {
       </Section>
 
       {/* TEAM SECTION */}
-      <Section styling={"gap-12 bg-graymatter-gray justify-center items-center py-8 px-4 sm:py-12 sm:px-6"}>
+      <Section
+        styling={
+          "gap-12 bg-graymatter-gray justify-center items-center py-8 px-4 sm:py-12 sm:px-6"
+        }
+      >
         <div className="w-full py-8 text-center sm:py-12 md:py-16 px-4 sm:px-6 md:px-8">
           <div className="text-center">
             <h2 className="pb-8 sm:pb-12 md:pb-16 text-center text-custom-heading-2 font-semibold text-neon-green">
