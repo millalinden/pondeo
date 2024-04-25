@@ -164,10 +164,10 @@ export default function LandingPage() {
       </Section>
       <Section styling={"gap-12 py-8 justify-center  bg-graymatter-gray"}>
         <div className="flex flex-col py-10 gap-4 w-1/2">
-          <h1 className="text-5xl  text-neon-green">
+          <h1 className="text-5xl text-neon-green">
             Prepare to see a significant shift in your engagement metrics{" "}
           </h1>
-          <h2 className="  text-neon-green text-2xl">
+          <h2 className="text-neon-green text-2xl">
             And start meaningful conversations.{" "}
           </h2>
           <p className="text-adventure-white">
@@ -218,7 +218,7 @@ export default function LandingPage() {
             <h1 className="text-5xl text-center font-bold text-neon-green">
               Let's get started!
             </h1>
-            <p className="text-slate-400 text-lg text-center w-[80%]">
+            <p className="text-adventure-white text-lg text-center w-[80%]">
               Transform cold outreach into engaging conversations. Pondeo blends
               technology and a human-centric approach to redefine how you
               connect with leads.
