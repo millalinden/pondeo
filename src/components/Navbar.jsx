@@ -17,18 +17,17 @@ export default function Navbar() {
   return (
     <div className="grid grid-cols-2 bg-deep-black px-[32px] py-[16px]">
       <div className="grid grid-cols-2 gap-[64px] content-center">
-        <p className="self-stretch text-custom-body-2-semibold text-adventure-white p-[8px]">Pondeo</p>
+        <p className="self-stretch text-custom-body-2-semibold text-adventure-white p-[8px]"><NavLink to={"/"}>Product</NavLink></p>
         <ul className="flex justify-center content-center gap-[48px]">
           <li className="custom-body-1 text-adventure-white self-center hover:underline underline-offset-8"><NavLink to="/product" className={({ isActive }) => isActive ? "underline underline-offset-8" : ""}>Product</NavLink></li>
-          <li className="custom-body-1 text-adventure-white self-center hover:underline underline-offset-8"><NavLink to="/pricing" className={({ isActive }) => isActive ? "underline underline-offset-8" : ""} >Pricing</NavLink></li>
           <li className="custom-body-1 text-adventure-white self-center hover:underline underline-offset-8"><NavLink to="/about" className={({ isActive }) => isActive ? "underline underline-offset-8" : ""}>About Us</NavLink></li>
           <li className="custom-body-1 text-adventure-white self-center hover:underline underline-offset-8"><NavLink to="/contact" className={({ isActive }) => isActive ? "underline underline-offset-8" : ""}>Contact</NavLink></li>
         </ul>
       </div>
-      <div className="flex justify-end gap-[48px]">
+      <div className="flex justify-end gap-[48px] items-center">
         <div className="flex justify-end gap-[16px]">
-          <Link to="/login"><ButtonLarge type="primary"></ButtonLarge></Link>
-          <Link to="/demo"><ButtonLarge type="secondary"></ButtonLarge></Link>
+          <Link to="/login"><ButtonLarge type="primary" label="Login"></ButtonLarge></Link>
+          <Link to="/demo"><ButtonLarge type="secondary" label="Start Free Trial"></ButtonLarge></Link>
         </div>
         <div className="flex justify-end">
           <Menu as="div" className="relative inline-block">
