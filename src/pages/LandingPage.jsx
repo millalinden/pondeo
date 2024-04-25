@@ -181,8 +181,10 @@ export default function LandingPage() {
           <div className="bg-white w-[400px] h-[250px] "></div>
         </div>
       </Section>
-      <Section styling={"justify-center px-10 bg-deep-black"}>
-        <div className="flex flex-col  gap-4 w-1/2">
+      <Section
+        styling={"bg-deep-black p-20 flex-col items-center overflow-hidden"}
+      >
+        <div className="flex flex-col  gap-4 w-1/2 mb-10">
           <h1 className="text-4xl text-neon-green text-center">
             Frequently asked question{" "}
           </h1>
@@ -190,10 +192,6 @@ export default function LandingPage() {
             Ask everything you need to know about our product.
           </p>
         </div>
-      </Section>{" "}
-      <Section
-        styling={"bg-deep-black p-20 flex-col items-center overflow-hidden"}
-      >
         <FaqCard
           header={"What is Pondeo?"}
           body={
@@ -226,10 +224,7 @@ export default function LandingPage() {
               technology and a human-centric approach to redefine how you
               connect with leads.
             </p>
-            <Button
-              label={"Book a Demo"}
-              color={"bg-neon-green text-black hover:bg-purple-500"}
-            />
+            <ButtonLarge label={"Free Trial"} type={"secondary"} />
           </div>
         </div>
       </Section>
