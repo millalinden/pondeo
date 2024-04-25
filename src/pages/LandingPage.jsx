@@ -1,4 +1,9 @@
 import Button from "../components/shared/Button";
+import ButtonSmall from "../components/shared/ButtonSmall";
+import ButtonMedium from "../components/shared/ButtonMedium";
+import ButtonLarge from "../components/shared/ButtonLarge";
+import ButtonLong from "../components/shared/ButtonLong";
+
 import FeatureCard from "../components/shared/FeatureCard";
 import FaqCard from "../components/FaqCard";
 import Carousel from "../components/CarouselComponent";
@@ -23,12 +28,7 @@ export default function LandingPage() {
             with leads.
           </p>
           <div className="flex justify-flex-start">
-            <Button
-              label={"Book a Demo"}
-              color={
-                "border-2 border-neon-green text-neon-green bg-none hover:bg-neon-green hover:text-black"
-              }
-            />
+            <ButtonLong label={"Submit"} type={""} />
           </div>
         </div>
         <div className="bg-slate-400 w-[500px] h-[500px]  "></div>
@@ -190,7 +190,9 @@ export default function LandingPage() {
           </p>
         </div>
       </Section>{" "}
-      <Section styling={"bg-deep-black p-20 flex-col items-center overflow-hidden"}>
+      <Section
+        styling={"bg-deep-black p-20 flex-col items-center overflow-hidden"}
+      >
         <FaqCard
           header={"What is Pondeo?"}
           body={
