@@ -14,6 +14,8 @@ export default {
         "information-blue": "rgba(0, 116, 217, 1)",
         "rgba-green-20": "rgba(202, 255, 51, 0.2)",
         "rgba-green-10": "rgba(202, 255, 51, 0.1)",
+        "hover-button": "#E5FF99",
+        "clicked-button": "#A3CE29",
         blue: "rgba(72, 98, 132, 0.16)",
       },
       fontFamily: {
