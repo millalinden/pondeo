@@ -1,4 +1,4 @@
-export default function ButtonSmall(props) {
+export default function ButtonLong(props) {
   const { onClick, label, type } = props;
 
   return (
