@@ -4,9 +4,9 @@ import SignUpForm from "../components/SignupForm";
 import GradientCircle from "../components/shared/GradientCircle";
 import Section from "../components/shared/Section";
 
-import googleIcon from "../assets/google.svg"
-import facebookIcon from "../assets/facebook.svg"
-import appleIcon from "../assets/apple.svg"
+import googleIcon from "../assets/google.svg";
+import facebookIcon from "../assets/facebook.svg";
+import appleIcon from "../assets/apple.svg";
 
 export default function LoginSignup() {
   const [isLogin, setIsLogin] = useState(true);
@@ -25,7 +25,11 @@ export default function LoginSignup() {
   };
 
   return (
-    <Section styling={"gap-12 bg-deep-black text-adventurous-white flex-col items-center justify-center"}>
+    <Section
+      styling={
+        "gap-12 bg-deep-black text-adventurous-white flex-col items-center justify-center"
+      }
+    >
       {isLogin ? (
         <LoginForm
           formData={formData}
@@ -49,9 +53,15 @@ export default function LoginSignup() {
         <hr className="border-t border-[rgba(179, 179, 179, 1)] w-1/3 ml-4" />
       </div>
       <div className="flex gap-12">
-        <GradientCircle icon={googleIcon} alt="Google Icon" />
-        <GradientCircle icon={facebookIcon} alt="Facebook Icon" />
-        <GradientCircle icon={appleIcon} alt="Apple Icon" />
+        <button className="flex items-center justify-center focus:outline-none">
+          <GradientCircle icon={googleIcon} alt="Google Icon" />
+        </button>
+        <button className="flex items-center justify-center focus:outline-none">
+          <GradientCircle icon={facebookIcon} alt="Facebook Icon" />
+        </button>
+        <button className="flex items-center justify-center focus:outline-none">
+          <GradientCircle icon={appleIcon} alt="Apple Icon" />
+        </button>
       </div>
     </Section>
   );
