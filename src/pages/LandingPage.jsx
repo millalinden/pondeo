@@ -1,8 +1,16 @@
 import Button from "../components/shared/Button";
+import ButtonSmall from "../components/shared/ButtonSmall";
+import ButtonMedium from "../components/shared/ButtonMedium";
+import ButtonLarge from "../components/shared/ButtonLarge";
+import ButtonLong from "../components/shared/ButtonLong";
+
 import FeatureCard from "../components/shared/FeatureCard";
 import FaqCard from "../components/FaqCard";
 import Carousel from "../components/CarouselComponent";
 import Section from "../components/shared/Section";
+import Hero from "../components/shared/Hero";
+
+import Milla from "../assets/Milla.png";
 
 import FeatureCardImage1 from "../assets/FeatureCard1.svg";
 import FeatureCardImage2 from "../assets/FeatureCard2.svg";
@@ -11,29 +19,22 @@ import FeatureCardImage3 from "../assets/FeatureCard3.svg";
 export default function LandingPage() {
   return (
     <>
-      <Section styling={"gap-12 bg-black"}>
-        <div className="flex flex-col py-10 gap-8 w-1/2">
-          <p className="text-neon-green">With the help of Pondeo,</p>
-          <h1 className="text-5xl font-bold text-neon-green">
-            FIND AND CLOSE MORE DEALS
-          </h1>
-          <p className="text-gray-200">
-            Transform cold outreach into engaging conversations. Pondeo blends
-            technology and a human-centric approach to redefine how you connect
-            with leads.
-          </p>
-          <div className="flex justify-flex-start">
-            <Button
-              label={"Book a Demo"}
-              color={
-                "border-2 border-neon-green text-neon-green bg-none hover:bg-neon-green hover:text-black"
-              }
-            />
-          </div>
+      <Hero styling={""} image={Milla} heightvw="40" widthvw="40">
+        <p className="text-neon-green">With the help of Pondeo,</p>
+        <h1 className="text-5xl font-bold text-neon-green">
+          FIND AND CLOSE MORE DEALS
+        </h1>
+        <p className="text-gray-200">
+          Transform cold outreach into engaging conversations. Pondeo blends
+          technology and a human-centric approach to redefine how you connect
+          with leads.
+        </p>
+        <div className="flex justify-flex-start gap-8">
+          <ButtonLarge label={"Free Trial"} type={""} />
+          <ButtonLarge label={"Learn More"} type={"secondary"} />
         </div>
-        <div className="bg-slate-400 w-[500px] h-[500px]  "></div>
-      </Section>
-      <Section styling={"justify-center p-10 bg-black"}>
+      </Hero>
+      <Section styling={"justify-center p-10 bg-deep-black"}>
         <div className="flex flex-col bg-graymatter-gray py-20 px-48 gap- rounded-xl">
           <h1 className="text-4xl text-neon-green text-center">
             Talk to Humans as Humans, but with Lorem Ipsum
@@ -103,7 +104,7 @@ export default function LandingPage() {
         </div>
       </Section>
       <Section
-        styling={"flex-col items-center bg-black h-full p-28 pb-40 gap-10"}
+        styling={"flex-col items-center bg-deep-black h-full p-28 pb-40 gap-10"}
       >
         <h1 className="text-4xl text-neon-green text-center">
           De-risk your revenue strategy with <br /> account-based sales
@@ -144,7 +145,7 @@ export default function LandingPage() {
         </div>
         <Carousel />
       </Section>
-      <Section styling={"p-20 justify-center align-middle  bg-black"}>
+      <Section styling={"p-20 justify-center align-middle  bg-deep-black"}>
         <div className="flex w-1/2 justify-center items-center align-middle">
           <div className="bg-white w-[400px] h-[300px] rounded-xl "></div>
         </div>
@@ -164,10 +165,10 @@ export default function LandingPage() {
       </Section>
       <Section styling={"gap-12 py-8 justify-center  bg-graymatter-gray"}>
         <div className="flex flex-col py-10 gap-4 w-1/2">
-          <h1 className="text-5xl  text-neon-green">
+          <h1 className="text-5xl text-neon-green">
             Prepare to see a significant shift in your engagement metrics{" "}
           </h1>
-          <h2 className="  text-neon-green text-2xl">
+          <h2 className="text-neon-green text-2xl">
             And start meaningful conversations.{" "}
           </h2>
           <p className="text-adventure-white">
@@ -180,8 +181,10 @@ export default function LandingPage() {
           <div className="bg-white w-[400px] h-[250px] "></div>
         </div>
       </Section>
-      <Section styling={"justify-center px-10 bg-black"}>
-        <div className="flex flex-col  gap-4 w-1/2">
+      <Section
+        styling={"bg-deep-black p-20 flex-col items-center overflow-hidden"}
+      >
+        <div className="flex flex-col  gap-4 w-1/2 mb-10">
           <h1 className="text-4xl text-neon-green text-center">
             Frequently asked question{" "}
           </h1>
@@ -189,8 +192,6 @@ export default function LandingPage() {
             Ask everything you need to know about our product.
           </p>
         </div>
-      </Section>{" "}
-      <Section styling={"bg-black p-20 flex-col items-center overflow-hidden"}>
         <FaqCard
           header={"What is Pondeo?"}
           body={
@@ -212,21 +213,18 @@ export default function LandingPage() {
           }
         />
       </Section>
-      <Section styling={"bg-black p-28"}>
+      <Section styling={"bg-deep-black p-28"}>
         <div className="flex flex-col justify-center items-center p-10 rounded-xl bg-graymatter-gray ">
           <div className="flex flex-col items-center gap-8">
             <h1 className="text-5xl text-center font-bold text-neon-green">
               Let's get started!
             </h1>
-            <p className="text-slate-400 text-lg text-center w-[80%]">
+            <p className="text-adventure-white text-lg text-center w-[80%]">
               Transform cold outreach into engaging conversations. Pondeo blends
               technology and a human-centric approach to redefine how you
               connect with leads.
             </p>
-            <Button
-              label={"Book a Demo"}
-              color={"bg-neon-green text-black hover:bg-purple-500"}
-            />
+            <ButtonLarge label={"Free Trial"} type={"secondary"} />
           </div>
         </div>
       </Section>

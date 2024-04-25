@@ -14,6 +14,8 @@ export default {
         "information-blue": "rgba(0, 116, 217, 1)",
         "rgba-green-20": "rgba(202, 255, 51, 0.2)",
         "rgba-green-10": "rgba(202, 255, 51, 0.1)",
+        "hover-button": "#E5FF99",
+        "clicked-button": "#A3CE29",
         blue: "rgba(72, 98, 132, 0.16)",
       },
       fontFamily: {
@@ -120,6 +122,10 @@ export default {
             fontWeight: "500",
           },
         ],
+      },
+      boxShadow: {
+        "custom-green":
+          "-1px 4px 6px 0px rgba(202, 255, 51, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 1px 0px 6px 0px #CAFF33",
       },
     },
   },
