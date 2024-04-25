@@ -121,6 +121,10 @@ export default {
           },
         ],
       },
+      boxShadow: {
+        "custom-green":
+          "-1px 4px 6px 0px rgba(202, 255, 51, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 1px 0px 6px 0px #CAFF33",
+      },
     },
   },
   plugins: [],
