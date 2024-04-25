@@ -26,7 +26,7 @@ export default function Carousel() {
         {Array.from({ length: 6 }).map((_, i) => (
           <li
             key={i}
-            className="flex flex-shrink-0 items-center bg-black rounded-3xl gap-8 min-h-32 w-[60vw]"
+            className="flex flex-shrink-0 items-center bg-deep-black rounded-3xl gap-8 min-h-32 w-[60vw]"
             style={{
               scrollSnapAlign: snapPointIndexes.has(i) ? "center" : "",
             }}
