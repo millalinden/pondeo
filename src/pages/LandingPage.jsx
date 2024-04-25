@@ -20,7 +20,7 @@ export default function LandingPage() {
   return (
     <>
       <Hero styling={""} image={Milla} heightvw="40" widthvw="40">
-        <p className="text-neon-green">With the help of Pondeo,</p>
+        <p className="text-adventure-white">With the help of Pondeo,</p>
         <h1 className="text-5xl font-bold text-neon-green">
           FIND AND CLOSE MORE DEALS
         </h1>
@@ -113,31 +113,31 @@ export default function LandingPage() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut lab
         </p>
-        <div className="flex">
-          <div className="flex gap-4 justify-items-center">
-            <FeatureCard
-              image={FeatureCardImage1}
-              heading={"PROSPECT RESEARCH"}
-              text={
-                "Explore your prospects' landscape with precision. Pondeo uncovers and interprets key data, enriching your approach with tailored insights."
-              }
-              heightvw={"45"}
-            />
-            <FeatureCard
-              image={FeatureCardImage2}
-              heading={"MESSAGE PERSONALIZATION"}
-              text={
-                "Fine-tune your approach with Pondeo. We crafts your message to echo your prospects’ objectives, ensuring your pitch not only aligns with their needs."
-              }
-            />
-            <FeatureCard
-              image={FeatureCardImage3}
-              heading={"OUTREACH OPTIMIZATION"}
-              text={
-                "Shape impactful interactions with Pondeo AI. It refines your message and timing, enhancing connection and response rates."
-              }
-            />
-          </div>
+        <div className="flex gap-12">
+          <FeatureCard
+            image={FeatureCardImage1}
+            heading={"Prospect research"}
+            text={
+              "Explore your prospects' landscape with precision. Pondeo uncovers and interprets key data, enriching your approach with tailored insights."
+            }
+            heightvw={"80"}
+          />
+          <FeatureCard
+            image={FeatureCardImage2}
+            heading={"Message Personalization"}
+            text={
+              "Fine-tune your approach with Pondeo. We crafts your message to echo your prospects’ objectives, ensuring your pitch not only aligns with their needs."
+            }
+            heightvw={"80"}
+          />
+          <FeatureCard
+            image={FeatureCardImage3}
+            heading={"Outreach Optimization"}
+            text={
+              "Shape impactful interactions with Pondeo AI. It refines your message and timing, enhancing connection and response rates."
+            }
+            heightvw={"80"}
+          />
         </div>
       </Section>
       <Section styling={"flex-col bg-graymatter-gray py-24 px-0 gap-20"}>
