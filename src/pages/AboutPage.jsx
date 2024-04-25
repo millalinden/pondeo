@@ -14,6 +14,15 @@ import linkedinIcon from "../assets/linkedinIcon.svg";
 import intersectIcon from "../assets/Intersect.svg";
 import arrowIcon from "../assets/ArrowRight.svg";
 
+import transparency from "../assets/about1.png"
+import security from "../assets/security.png"
+import controlled from "../assets/controlled.png"
+import kwadwo from "../assets/Kwadwo1.png"
+import belen from "../assets/Belen.png"
+import carlos from "../assets/Carlos.png"
+import santiago from "../assets/santiago.png"
+
+
 export default function AboutPage() {
   const handleClick = () => {
     console.log("Button clicked!");
@@ -108,17 +117,17 @@ export default function AboutPage() {
             <ImageCaptionCard
               heading="Transparency in Data Handling"
               text="We prioritize openness about how we collect, use, and store data."
-              image="/src/assets/about1.png"
+              image={transparency}
             />
             <ImageCaptionCard
               heading="Robust Security Measures"
               text="Our strict security protocols ensure the protection of customer information."
-              image="/src/assets/security.png"
+              image={security}
             />
             <ImageCaptionCard
               heading="User-Controlled Data"
               text="We follow opt-in principles, giving users authority over their data usage and privacy preferences."
-              image="/src/assets/controlled.png"
+              image={controlled}
             />
           </div>
           <div className="mt-8 sm:mt-12 md:mt-16 flex justify-center items-center">
@@ -153,22 +162,22 @@ export default function AboutPage() {
             <TextImageCard
               heading="Person 1"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
-              image="/src/assets/Kwadwo1.png"
+              image={kwadwo}
             />
             <TextImageCard
               heading="Person 2"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
-              image="/src/assets/Belen.png"
+              image={belen}
             />
             <TextImageCard
               heading="Person 3"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
-              image="/src/assets/Carlos.png"
+              image={carlos}
             />
             <TextImageCard
               heading="Person 4"
               text="Welcome to Burger Bliss, where we take your cravings to a whole new level! Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns."
-              image="/src/assets/santiago.png"
+              image={santiago}
             />
           </div>
         </div>
