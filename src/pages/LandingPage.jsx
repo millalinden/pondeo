@@ -10,6 +10,8 @@ import Carousel from "../components/CarouselComponent";
 import Section from "../components/shared/Section";
 import Hero from "../components/shared/Hero";
 
+import Milla from "../assets/Milla.png";
+
 import FeatureCardImage1 from "../assets/FeatureCard1.svg";
 import FeatureCardImage2 from "../assets/FeatureCard2.svg";
 import FeatureCardImage3 from "../assets/FeatureCard3.svg";
@@ -17,25 +19,12 @@ import FeatureCardImage3 from "../assets/FeatureCard3.svg";
 export default function LandingPage() {
   return (
     <>
-      <Section styling={"gap-12 bg-deep-black"}>
-        <div className="flex flex-col py-10 gap-8 w-1/2">
-          <p className="text-neon-green">With the help of Pondeo,</p>
-          <h1 className="text-5xl font-bold text-neon-green">
-            FIND AND CLOSE MORE DEALS
-          </h1>
-          <p className="text-gray-200">
-            Transform cold outreach into engaging conversations. Pondeo blends
-            technology and a human-centric approach to redefine how you connect
-            with leads.
-          </p>
-          <div className="flex justify-flex-start gap-8">
-            <ButtonLarge label={"Free Trial"} type={""} />
-            <ButtonLarge label={"Learn More"} type={"secondary"} />
-          </div>
-        </div>
-        <div className="bg-slate-400 w-[500px] h-[500px]  "></div>
-      </Section>
-      <Hero styling={"gap-12 bg-deep-black"}>
+      <Hero
+        styling={"gap-12 bg-deep-black"}
+        image={Milla}
+        heightvw="40"
+        widthvw="40"
+      >
         <p className="text-neon-green">With the help of Pondeo,</p>
         <h1 className="text-5xl font-bold text-neon-green">
           FIND AND CLOSE MORE DEALS
