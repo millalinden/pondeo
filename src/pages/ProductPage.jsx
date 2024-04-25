@@ -1,5 +1,9 @@
 import Button from "../components/shared/Button";
 import TextImageCard from "../components/shared/TextImageCard";
+import stepButton from "../components/shared/stepButton";
+// import ButtonLarge from "../components/shared/ButtonLarge";
+
+
 import AI from "../assets/benefits,AI.png"
 import Sales from "../assets/benefits,sales.png"
 import Messages from "../assets/benefits,messages.png"
@@ -15,10 +19,10 @@ import productHero from "../assets/productHero.mp4"
 import efficiency from "../assets/efficiency.png"
 import dataDriven from "../assets/dataDriven.png"
 import reply from "../assets/reply.png"
-import HPW1 from "../assets/HPW-userInput.png"
-import HPW2 from "../assets/HPW-AI-based.png"
-import HPW3 from "../assets/HPW-lead.png"
-import HPW4 from "../assets/HPW-Personalized.png"
+import step1 from "../assets/step1.png"
+import step2 from "../assets/step2.png"
+import step3 from "../assets/step3.png"
+import step4 from "../assets/step4.png"
 
 
 
@@ -30,6 +34,12 @@ import HPW4 from "../assets/HPW-Personalized.png"
 
 
 export default function ProductPage() {
+  const handleClick = () => {
+    console.log("Button clicked!");
+  };
+
+
+
     return (
     <>
     {/* pondeo section */}
@@ -40,7 +50,7 @@ export default function ProductPage() {
           <p className="text-adventure-white text-custom-subtitle-1 max-w-screen-sm">
           With Pondeo, transform massive cold outreach into personal and engaging conversations. Pondeo blends technology and a human-centric approach to redefine how you connect with leads.           </p>
           <div className="flex justify-flex-start">
-            <Button label={"Free Trial"} color={"bg-black text-white"}/>
+            <Button label={"Get 7 Days Free Trial"} color={"bg-black text-neon-green border-neon-green"}/>
           </div>
         </div>
         {/* <div className= "w-[632px] h-[525px] rounded-lg"><iframe className="w-full aspect-square " src={productHero}></iframe></div> */}
@@ -194,68 +204,100 @@ feedback. </p>
 <path d="M0 1H1312" stroke="#DEE5ED" stroke-width="2"/>
 </svg>
 
+
+
       {/* how it works section */}
       <section className="bg-deep-black flex justify-center items-center">
-        <div  className=" w-full py-16 px-20 ">
+        <div  className=" w-full px-16 gap-16">
             <div className="text-center">
-                <h1 className="text-custom-heading-2-bold p-2 mx-10 mb-4 text-neon-green">How Pondeo works</h1>
+                <h1 className="text-custom-heading-2-bold py-16 mx-10 mb-4 text-adventure-white">How Pondeo works</h1>
 
             </div>
-    
-           <div className="flex justify-center items-center justify-around mb-10">
 
-           <div className="max-w-64">
-        <h4 className="text-lg mb-3 text-left">User  Input and Company Information</h4>
-        <p className="text-xl text-left">
-               Users provide information about their company, including details about their products or services, target audience, and messaging preferences. You can also inform us about the main benefits your company offers or the problems you solve.
 
-               This information is input into the system, allowing Pondeo to understand the company's goals and offerings.
-        </p>
-        <div className="h-80 w-64 rounded-3xl mt-7 bg-black object-fit"><img src={HIW1}/></div>
-      </div>
+            <div className="flex justify-center items-center gap-16 px-4 py-8">
+              <div className="flex flex-col justify-center items-start gap-10 max-w-xl">
+                <stepButton 
+                label={"Step 1"}
+                />
+                <h3 className="text-custom-heading-3 text-adventure-white ">User Input and Company Information</h3>
+                <p className="text-adventure-white text-custom-body-2 ">Users provide information about their company, including details about their products or services, target audience, and messaging preferences. You can also inform us about the main benefits your company offers or the problems you solve.
 
-      <div className="max-w-64">
-        <h4 className="text-lg mb-3 text-left">AI-Based Learning</h4>
-        <p className="text-xl text-left">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
-        </p>
-        <div className="h-80 w-64 rounded-3xl mt-7 bg-black "><img className="object-fill" src={HIW2}/></div>
-      </div>
+                <br /> This information is input into the system, allowing Pondeo to understand the company's goals and offerings.</p>
+              </div>
+              <img className="w-[598px] h-[668px]" src={step1}/>
+            </div>
 
-      <div className="max-w-64">
-        <h4 className="text-lg mb-3 text-left">Lead Integration</h4>
-        <p className="text-xl text-left">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
-        </p>
-        <div className="h-80 w-64 rounded-3xl mt-7 bg-black"><img src={HIW3}/></div>
-      </div>
+            <div className="flex justify-center items-center  gap-20 px-4 py-8">
+              <img className="w-[618px] h-[481px]" src={step2}/>
+              <div className="flex flex-col max-w-xl gap-8">
+                <stepButton 
+                label={"Step 2"}
+                />
+                <h3 className="text-custom-heading-3 text-adventure-white">AI-Based Learning</h3>
+                <p className="text-adventure-white text-custom-body-2">Pondeo employs machine learning algorithms to analyze the provided company information.
 
-      <div className="max-w-64">
-        <h4 className="text-lg mb-3 text-left">Personalized Message Generation</h4>
-        <p className="text-xl text-left">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
-        </p>
-        <div className="h-80 w-64 rounded-3xl mt-7 bg-black"><img src={HIW4}/></div>
-      </div>
+                <br /> The algorithms learn about the company's products, services, target audience, and messaging preferences based on the input data.
 
-          </div>
+                <br /> Through this analysis, Pondeo gains insights into the company's unique selling points and messaging strategies.</p>
+              </div>
+            </div>
+
+            <div className="flex justify-center items-center gap-24 px-4 py-8">
+              <div className="flex flex-col w-[539px] gap-8">
+                <stepButton 
+                label={"Step 3"}
+                />
+                <h3 className="text-custom-heading-3 text-adventure-white">Lead Integration</h3>
+                <p className="text-adventure-white text-custom-body-2">Users input leads' names or LinkedIn accounts into the system's chat interface.
+
+                <br /> This action initiates the process of personalised messaging for each lead.</p>
+              </div>
+              <img className="w-[626px] h-[330px]"  src={step3}/>
+            </div>
+
+            <div className="flex justify-center items-center  gap-20 px-4 py-8">
+              <img className="w-[609px] h-[443px]" src={step4}/>
+              <div className="flex flex-col  max-w-xl gap-8">
+                <stepButton 
+                label={"Step 4"}
+                />
+                <h3 className="text-custom-heading-3 text-adventure-white">Personalized Message Generation</h3>
+                <p className="text-adventure-white text-custom-body-2"> Pondeo utilises learned company information to craft personalised sales messages tailored to each prospect. Operating on a sophisticated chatbot framework.
+
+                <br /> Pondeo generates messages based on specified prompts and variables, sounding just like you. It's like having a personal writer, ensuring relevance and engagement.</p>
+              </div>
+            </div>
+
+  
+
 
         </div>
+
       </section>
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="1312" height="2" viewBox="0 0 1312 2" fill="none">
-  <path d="M0 1H1312" stroke="#DEE5ED" stroke-width="2"/>
-</svg>
+
+      <div>
+      <stepButton 
+                label={"Step 4"}
+                />
+                
+      </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
       {/* content section */}
-      <section className="mt-10 flex flex-col justify-center items-center">
+      {/* <section className="mt-10 flex flex-col justify-center items-center">
         <div className="bg-white w-full py-16 text-center px-20">
         <div className="text-center ">
             <h2 className="text-center text-5xl w-1/2 p-2 mx-10 mb-4 text-neon-green">Ensuring Your Privacy
@@ -299,7 +341,7 @@ Data</h4>
 
         <Button label={"Contact Us"} color={"bg-black text-white"}/>
 
-      </section>
+      </section> */}
     </>
 
     )
