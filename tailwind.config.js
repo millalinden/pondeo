@@ -8,7 +8,7 @@ export default {
         "graymatter-gray": "#1C1C1C",
         "adventure-white": "#E4E4E7",
         "adventure-whitegray": "rgba(228, 228, 231, 1)",
-        "deep-black": "#000000",
+        "deep-black": "#0D0D0D",
         "error-red": "rgba(255, 107, 107, 1)",
         "success-green": "rgba(76, 175, 80, 1)",
         "information-blue": "rgba(0, 116, 217, 1)",
