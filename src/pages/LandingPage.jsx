@@ -27,8 +27,9 @@ export default function LandingPage() {
             technology and a human-centric approach to redefine how you connect
             with leads.
           </p>
-          <div className="flex justify-flex-start">
-            <ButtonLong label={"Submit"} type={""} />
+          <div className="flex justify-flex-start gap-8">
+            <ButtonLarge label={"Free Trial"} type={""} />
+            <ButtonLarge label={"Learn More"} type={"secondary"} />
           </div>
         </div>
         <div className="bg-slate-400 w-[500px] h-[500px]  "></div>

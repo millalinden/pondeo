@@ -3,7 +3,7 @@ export default function ButtonSmall(props) {
 
   return (
     <button
-      className={` text-[1.3vw] font-medium flex items-center justify-center 
+      className={` text-custom-body-1 font-medium flex items-center justify-center 
       py-[0.45vw] px-[1.3vw] shadow-none rounded-[0.8vw] hover:shadow hover:bg-hover-button 
       active:bg-clicked-button ${
         type === "secondary"
