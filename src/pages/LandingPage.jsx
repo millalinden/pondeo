@@ -19,12 +19,7 @@ import FeatureCardImage3 from "../assets/FeatureCard3.svg";
 export default function LandingPage() {
   return (
     <>
-      <Hero
-        styling={"gap-12 bg-deep-black"}
-        image={Milla}
-        heightvw="40"
-        widthvw="40"
-      >
+      <Hero styling={""} image={Milla} heightvw="40" widthvw="40">
         <p className="text-neon-green">With the help of Pondeo,</p>
         <h1 className="text-5xl font-bold text-neon-green">
           FIND AND CLOSE MORE DEALS
