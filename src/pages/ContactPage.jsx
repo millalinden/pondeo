@@ -6,7 +6,7 @@ export default function ContactPage() {
       <section className="bg-deep-black flex flex-col items-center min-h-dvh gap-[64px]">
         <div className="flex flex-col align-center text-center self-stretch">
           <h1 className="text-custom-heading-2-uppercase text-neon-green uppercase mt-[40px]">Contact Us</h1>
-          <p className="text-custom-body-2 text-adventure-white">Any questions or remarks? Just write us a message!</p>
+          <p className="text-custom-body-1 text-adventure-white">Any questions or remarks? Just write us a message!</p>
         </div>
 
         <form className="flex flex-col text-adventure-white text-custom-body-1">
