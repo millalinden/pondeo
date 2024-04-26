@@ -1,50 +1,68 @@
+import Hero from "../components/shared/Hero"
+import Milla from "../assets/Milla.png";
+import Button from "../components/shared/ButtonLarge"
+import { useEffect, useState } from "react";
+
 
 export default function DemoPage() {
+
+    const [messageSent, setMessageSent] = useState(false);
+
+
     return (
-        <>
-            <section className="grid grid-cols-2 gap-5 m-20">
-                <div className="flex flex-col gap-5 mx-20">
-                    <h1 className="text-3xl font-bold mb-5">Book the Demo to become <br></br> a better person!</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Tincidunt praesent semper feugiat nibh.</p>
-                    <p>Molestie ac feugiat sed lectus vestibulum mattis. Diam in arcu cursus euismod quis viverra nibh. Nulla aliquet porttitor lacus
-                        luctus accumsan tortor posuere ac ut. Pulvinar etiam non quam lacus suspendisse faucibus.</p>
-                    <p>Libero volutpat sed cras ornare. Morbi quis commodo odio aenean sed adipiscing. Eget aliquet nibh praesent tristique magna sit amet purus.
-                        Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Massa enim nec dui nunc mattis enim ut.
-                        Urna cursus eget nunc scelerisque viverra.</p>
-                    <p>Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Adipiscing bibendum est ultricies integer quis auctor elit.
-                        Nulla porttitor massa id neque aliquam. Augue neque gravida in fermentum et sollicitudin ac orci. Turpis in eu mi bibendum neque.
-                        Malesuada pellentesque elit eget gravida cum sociis natoque.</p>
-                    <p>Nibh venenatis cras sed felis eget. Neque sodales ut etiam sit amet.</p>
-                    <p>In metus vulputate eu scelerisque felis imperdiet proin fermentum. Vitae justo eget magna fermentum iaculis.
-                        Aliquet nibh praesent tristique magna sit amet. Donec et odio pellentesque diam volutpat commodo sed.</p>
-                    <p>Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Tristique sollicitudin nibh sit amet commodo.
-                        Pharetra convallis posuere morbi leo urna molestie. Viverra nibh cras pulvinar mattis nunc sed blandit.
-                    </p>
+        <div className="bg-deep-black flex flex-col items-center">
+            <Hero styling={""} image={Milla} heightvw="40" widthvw="40">
+                <h1 className="text-neon-green uppercase text-5xl font-bold">Empower your potential: <span className="text-adventure-white uppercase text-5xl font-bold">begin your trial, today!</span></h1>
+                <p className="text-gray-200">Ready to revolutionize sales outreach? Sign up for enhanced efficiency and new possibilities. Just a few clicks unlock powerful tools to elevate your outreach. Join us today!</p>
+            </Hero>
+            {messageSent ? (
+                <div className="text-adventure-white flex flex-col justify-center gap-[24px] mb-[64px]">
+                    <p className="font-light text-[28px] border rounded-[8px] border-neon-green px-[70px] py-[45px] text-center">Your Pondeo journey starts soon!</p>
+                    <p className="text-custom-body-1">Check your email inbox within 2-5 days for a link with
+                        your tailored Pondeo software.</p>
                 </div>
-                <div>
-                    <div className="bg-black rounded-xl flex justify-center py-10 px-5 mx-60 mb-20">
-                        <img src="/src/assets/placeholder-image.svg" alt="Placeholder image icon"></img>
-                    </div>
-                    <form className="px-10 flex flex-col gap-5">
-                        <label className="flex flex-col gap-5">Your Name
-                            <input type="text" className="border-0 outline-none bg-transparent border-b-2" />
+            )
+                : (
+                    <form className="flex flex-col mt-[40px] text-custom-body-1 gap-[16px] items-center mb-[40px]">
+                        <label className="flex flex-col flex-shrink-0 text-adventure-white">Company Name
+                            <input type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px] ">
+                            </input>
                         </label>
-                        <label className="flex flex-col gap-5">Your E-mail
-                            <input type="text" className="border-0 outline-none bg-transparent border-b-2" />
+                        <label className="mt-[15px] flex flex-col  flex-shrink-0 text-adventure-white">Company URL
+                            <input type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px] ">
+                            </input>
                         </label>
-                        <label className="flex flex-col gap-5">Company Name
-                            <input type="text" className="border-0 outline-none bg-transparent border-b-2" />
+                        <label className="mt-[15px] flex flex-col flex-shrink-0 text-adventure-white">Your Email
+                            <input type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px] w-[583px]  ">
+                            </input>
                         </label>
-                        <label className="flex flex-col gap-5">Message
-                            <input type="text" className="border-0 outline-none bg-transparent border-b-2" />
+                        <label className="mt-[15px] flex flex-col flex-shrink-0 place-self-start text-adventure-white">Agents Language
+                            <select className="bg-deep-black w-[114px] h-[40px]">
+                                <option className="bg-deep-black text-adventure-white border-adventure-white">Select</option>
+                            </select>
                         </label>
+                        <label className="mt-[15px] flex flex-col flex-shrink-0 text-adventure-white">Companys Value Proposition
+                            <input type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[100px] w-[583px]  ">
+                            </input>
+                        </label>
+                        <label className="mt-[15px] flex flex-col flex-shrink-0 text-adventure-white">Which type of problems do your company solve?
+                            <input type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[100px] w-[583px]  ">
+                            </input>
+                        </label>
+                        <label className="mt-[15px] flex flex-col flex-shrink-0 text-adventure-white">Company ICP
+                            <input type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[100px] w-[583px]  ">
+                            </input>
+                        </label>
+                        <label className="mt-[15px] flex flex-col flex-shrink-0 text-adventure-white">Any other important notes?
+                            <input type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[100px] w-[583px]  ">
+                            </input>
+                        </label>
+                        <Button
+                            onClick={() => setMessageSent(true)} label={"Start Free Trial"} type="primary" className="text-deep-black"
+                        />
                     </form>
-                    <div className="flex justify-end mt-10">
-                        <button className="bg-black text-white text-lg px-6 py-4 rounded-3xl">Book the demo</button>
-                    </div>
-                </div>
-            </section>
-        </>
+                )
+            }
+        </div>
     )
 }

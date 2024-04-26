@@ -42,7 +42,7 @@ export default function ProductPage() {
 
     return (
     <>
-    {/* pondeo section */}
+      {/* pondeo section */}
 
       <section className="flex gap-12 p-16 w-full  bg-black">
         <div className="flex flex-col py-10 gap-8 w-1/2">
@@ -119,7 +119,7 @@ sales reps to focus on
 high-value tasks.</p>
 
           </div>
-          <img src={efficiency}/>
+          <img src={efficiency} />
         </div>
 
         <div className="flex gap-4 p-4  h-72 w-[600px] rounded-lg bg-deep-black">
@@ -132,14 +132,11 @@ based on real-time
 feedback. </p>
 
           </div>
-          <img src={dataDriven}/>
+          <img src={dataDriven} />
         </div>
-
       </section>
 
       
-
-
 
       {/* features section */}
       <section className="py-16 px-16 flex justify-center items-center bg-deep-black">
@@ -171,7 +168,9 @@ feedback. </p>
             {/* <hr className="border-slate-200 mb-7 mx-9" />
             <div className="flex justify-center items-center justify-around mb-10">
             <div className="max-w-64">
-        <div className="h-80 w-64 rounded-3xl mt-7 bg-black object-fit"><img src={AI}/></div>
+              <div className="h-80 w-64 rounded-3xl mt-7 bg-black object-fit">
+                <img src={AI} />
+              </div>
 
         <h4 className="text-lg mb-3 text-left text-neon-green">AI-Based Learning Chatbot</h4>
         <p className="text-xl text-left text-adventure-white">
@@ -197,7 +196,6 @@ feedback. </p>
       </div>
           </div> */}
         </div>
-
       </section>
 
       <svg xmlns="http://www.w3.org/2000/svg" width="1312" height="2" viewBox="0 0 1312 2" fill="none">
@@ -272,6 +270,44 @@ feedback. </p>
   
 
 
+            <div className="max-w-64">
+              <h4 className="text-lg mb-3 text-left">AI-Based Learning</h4>
+              <p className="text-xl text-left">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+              <div className="h-80 w-64 rounded-3xl mt-7 bg-black ">
+                <img className="object-fill" src={HIW2} />
+              </div>
+            </div>
+
+            <div className="max-w-64">
+              <h4 className="text-lg mb-3 text-left">Lead Integration</h4>
+              <p className="text-xl text-left">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+              <div className="h-80 w-64 rounded-3xl mt-7 bg-black">
+                <img src={HIW3} />
+              </div>
+            </div>
+
+            <div className="max-w-64">
+              <h4 className="text-lg mb-3 text-left">
+                Personalized Message Generation
+              </h4>
+              <p className="text-xl text-left">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+              <div className="h-80 w-64 rounded-3xl mt-7 bg-black">
+                <img src={HIW4} />
+              </div>
+            </div>
+          </div>
         </div>
 
       </section>
@@ -299,51 +335,56 @@ feedback. </p>
       {/* content section */}
       {/* <section className="mt-10 flex flex-col justify-center items-center">
         <div className="bg-white w-full py-16 text-center px-20">
-        <div className="text-center ">
-            <h2 className="text-center text-5xl w-1/2 p-2 mx-10 mb-4 text-neon-green">Ensuring Your Privacy
-Our Commitment to Data Security</h2>
-            
+          <div className="text-center ">
+            <h2 className="text-center text-5xl w-1/2 p-2 mx-10 mb-4 text-neon-green">
+              Ensuring Your Privacy Our Commitment to Data Security
+            </h2>
           </div>
         </div>
 
-
         <div className="flex justify-center items-center justify-around mb-10 gap-14">
-
           <div className="max-w-64">
-            <div className="h-80 w-64 rounded-3xl mt-7 bg-black"><img src={GDPR}/></div>
-              <h4 className="text-lg mb-3 text-left text-neon-green">General Data Protection Regulation (GDPR)</h4>
-                 <p className="text-xl text-left">
-               Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s
-                   </p>
-
+            <div className="h-80 w-64 rounded-3xl mt-7 bg-black">
+              <img src={GDPR} />
+            </div>
+            <h4 className="text-lg mb-3 text-left text-neon-green">
+              General Data Protection Regulation (GDPR)
+            </h4>
+            <p className="text-xl text-left">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
           </div>
           <div className="max-w-64">
-            <div className="h-80 w-64 rounded-3xl mt-7 bg-black"><img src={UserControlled}/></div>
-              <h4 className="text-lg mb-3 text-left text-neon-green">User-Controlled 
-Data</h4>
-                 <p className="text-xl text-left">
-                 We follow opt-in principles, giving users authority over their data usage and privacy preferences.
-                   </p>
-
+            <div className="h-80 w-64 rounded-3xl mt-7 bg-black">
+              <img src={UserControlled} />
+            </div>
+            <h4 className="text-lg mb-3 text-left text-neon-green">
+              User-Controlled Data
+            </h4>
+            <p className="text-xl text-left">
+              We follow opt-in principles, giving users authority over their
+              data usage and privacy preferences.
+            </p>
           </div>
           <div className="max-w-64 ">
-            <div className="h-80 w-64 rounded-3xl mt-7 bg-black "><img src={Transparency}/></div>
-              <h4 className="text-lg mb-3 text-left text-neon-green">Transparency in Data Handling</h4>
-                 <p className="text-xl text-left">
-                 We follow opt-in principles, giving users authority over their data usage and privacy preferences.
-                   </p>
-
+            <div className="h-80 w-64 rounded-3xl mt-7 bg-black ">
+              <img src={Transparency} />
+            </div>
+            <h4 className="text-lg mb-3 text-left text-neon-green">
+              Transparency in Data Handling
+            </h4>
+            <p className="text-xl text-left">
+              We follow opt-in principles, giving users authority over their
+              data usage and privacy preferences.
+            </p>
           </div>
-
         </div>
 
         <Button label={"Contact Us"} color={"bg-black text-white"}/>
 
       </section> */}
     </>
-
-    )
-    
+  );
 }

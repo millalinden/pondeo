@@ -1,4 +1,3 @@
-
 # GitHub 
 
 Branches
@@ -39,10 +38,6 @@ Use this for longer comments:
  */
 
 # Tests
-
-For unit testing we will use Jest
-When adding a test create a seperate file close to the component/thing you want to test and that follows the naming convention
-"Button.tests.js" "ValidationFirstname.tests.js"
 
 We will work with Github Actions to automate testing and have a pipeline for CI/CD
 

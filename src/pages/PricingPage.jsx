@@ -3,6 +3,7 @@ import PricingCard from "../components/PricingCard";
 import { useRef } from "react";
 
 export default function PricingPage() {
+
   return (
     <div>
       <section className="flex gap-12 p-24 w-full bg-black text-white">

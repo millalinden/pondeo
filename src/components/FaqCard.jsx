@@ -7,7 +7,7 @@ export default function FaqCard(props) {
 
   return (
     <div
-      className={`flex items-start border-b border-adventure-white bg-black w-[75%] h-[85px] ${
+      className={`flex items-start border-b border-adventure-white w-[75%] h-[85px] ${
         isClicked ? "expanded" : "collapsed"
       } px-4 pb-8 pt-10 overflow-hidden`}
     >
