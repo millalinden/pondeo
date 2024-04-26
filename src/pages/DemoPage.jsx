@@ -12,12 +12,12 @@ export default function DemoPage() {
     return (
         <div className="bg-deep-black flex flex-col items-center">
             <Hero styling={""} media={Video} isVideo={true} heightvw="40" widthvw="40">
-                <h1 className="text-neon-green uppercase text-5xl font-bold">Empower your potential: <span className="text-adventure-white uppercase text-5xl font-bold">begin your trial, today!</span></h1>
-                <p className="text-gray-200">Ready to revolutionize sales outreach? Sign up for enhanced efficiency and new possibilities. Just a few clicks unlock powerful tools to elevate your outreach. Join us today!</p>
+                <h1 className="text-neon-green text-custom-heading-2-uppercase uppercase ">Empower your potential: <span className="text-adventure-white uppercase text-5xl font-bold">begin your trial, today!</span></h1>
+                <p className="text-gray-200 text-custom-subtitle-1 opacity-45">Ready to revolutionize sales outreach? Sign up for enhanced efficiency and new possibilities. Just a few clicks unlock powerful tools to elevate your outreach. Join us today!</p>
             </Hero>
             {messageSent ? (
                 <div className="text-adventure-white flex flex-col justify-center gap-[24px] mb-[64px]">
-                    <p className="font-light text-[28px] border rounded-[8px] border-neon-green px-[70px] py-[45px] text-center">Your Pondeo journey starts soon!</p>
+                    <p className="font-light text-[28px] border rounded-[8px] border-neon-green text-custom-subtitle-1 px-[70px] py-[45px] text-center">Your Pondeo journey starts soon!</p>
                     <p className="text-custom-body-1">Check your email inbox within 2-5 days for a link with
                         your tailored Pondeo software.</p>
                 </div>
