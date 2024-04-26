@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 import TextImageCard from "../components/shared/TextImageCard";
-import stepButton from "../components/shared/stepButton";
+import StepSquare from "../components/shared/stepSquare";
 import ButtonLarge from "../components/shared/ButtonLarge";
 
 
@@ -42,7 +44,10 @@ export default function ProductPage() {
           <p className="text-adventure-white text-custom-subtitle-1 max-w-screen-sm">
           With Pondeo, transform massive cold outreach into personal and engaging conversations. Pondeo blends technology and a human-centric approach to redefine how you connect with leads.           </p>
           <div className="flex justify-flex-start">
+            <Link to="/demo">
             <ButtonLarge label={"Get 7 Days Free Trial"} type={"secondary"} />
+            </Link>
+            
           </div>
         </div>
         {/* <div className= "w-[632px] h-[525px] rounded-lg"><iframe className="w-full aspect-square " src={productHero}></iframe></div> */}
@@ -90,7 +95,10 @@ export default function ProductPage() {
             Open rates by up to 50% <br /> Achieve reply rates as high as 15%
             </p>
             </div>
+            <Link to="/demo">
             <ButtonLarge label={"Free Trial"} type={"secondary"} />
+            </Link>
+            
 
           </div>
 
@@ -178,7 +186,7 @@ feedback. </p>
 
             <div className="flex justify-center items-center gap-16 px-4 py-8">
               <div className="flex flex-col justify-center items-start gap-10 max-w-xl">
-                <stepButton 
+                <StepSquare 
                 label={"Step 1"}
                 />
                 <h3 className="text-custom-heading-3 text-adventure-white ">User Input and Company Information</h3>
@@ -192,7 +200,7 @@ feedback. </p>
             <div className="flex justify-center items-center  gap-20 px-4 py-8">
               <img className="w-[618px] h-[481px]" src={step2}/>
               <div className="flex flex-col max-w-xl gap-8">
-                <stepButton 
+                <StepSquare 
                 label={"Step 2"}
                 />
                 <h3 className="text-custom-heading-3 text-adventure-white">AI-Based Learning</h3>
@@ -206,7 +214,7 @@ feedback. </p>
 
             <div className="flex justify-center items-center gap-24 px-4 py-8">
               <div className="flex flex-col w-[539px] gap-8">
-                <stepButton 
+                <StepSquare 
                 label={"Step 3"}
                 />
                 <h3 className="text-custom-heading-3 text-adventure-white">Lead Integration</h3>
@@ -220,7 +228,7 @@ feedback. </p>
             <div className="flex justify-center items-center  gap-20 px-4 py-8">
               <img className="w-[609px] h-[443px]" src={step4}/>
               <div className="flex flex-col  max-w-xl gap-8">
-                <stepButton 
+                <StepSquare 
                 label={"Step 4"}
                 />
                 <h3 className="text-custom-heading-3 text-adventure-white">Personalized Message Generation</h3>
@@ -235,15 +243,6 @@ feedback. </p>
         </div>
 
       </section>
-
-
-      <div>
-      <stepButton 
-                label={"Step 4"}
-                />
-                
-      </div>
-
 
 
 
