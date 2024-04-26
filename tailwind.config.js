@@ -6,6 +6,8 @@ export default {
       colors: {
         "neon-green": "#CAFF33",
         "graymatter-gray": "#1C1C1C",
+        "graymatter-30" : "rgba(0, 0, 0, 0.30)",
+        "graymatter-grey-40" : "rgba(0, 0, 0, 0.40)",
         "adventure-white": "#E4E4E7",
         "adventure-whitegray": "rgba(228, 228, 231, 1)",
         "deep-black": "#0D0D0D",
@@ -86,6 +88,15 @@ export default {
             textTransform: "uppercase",
           },
         ],
+        // SMAL SUBTITLE 
+        "custom-subtitle-small": [
+          "1.625rem",
+          {
+            lineHeight: "2.5rem",
+            letterSpacing: "0.025rem",
+            fontWeight: "400",
+          },
+        ],
         // BODY 1 (SemiBold)
         "custom-body-1-semibold": [
           "3.75rem",
@@ -126,6 +137,12 @@ export default {
       boxShadow: {
         "custom-green":
           "-1px 4px 6px 0px rgba(202, 255, 51, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 1px 0px 6px 0px #CAFF33",
+        "dark-black":
+        "3px 6px 6px 0px rgba(0, 0, 0, 0.25)" , 
+        "dark-black1": 
+        "0px 4px 4px 0px rgba(0, 0, 0, 0.25), 1px 4px 4px 0px rgba(0, 0, 0, 0.15)",
+        "hero-box":
+        "0px 4px 4px 0px  rgba(228, 228, 231, 0.15)",
       },
     },
   },
