@@ -1,39 +1,75 @@
-import { Link, NavLink } from "react-router-dom"
-import ButtonLarge from "../components/shared/ButtonLarge"
-import britishFlag from "../assets/britishFlag.svg"
-import swedishFlag from "../assets/swedishFlag.svg"
-import spanishFlag from "../assets/spanishFlag.svg"
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-
-
+import { Link, NavLink } from "react-router-dom";
+import ButtonLarge from "../components/shared/ButtonLarge";
+import britishFlag from "../assets/britishFlag.svg";
+import swedishFlag from "../assets/swedishFlag.svg";
+import spanishFlag from "../assets/spanishFlag.svg";
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
 
 export default function Navbar() {
-
   function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(" ");
   }
 
   return (
-    <div className="grid grid-cols-2 bg-deep-black px-[32px] py-[16px]">
-      <div className="grid grid-cols-2 gap-[64px] content-center">
-        <p className="self-stretch text-custom-body-2-semibold text-adventure-white p-[8px]"><NavLink to={"/"}>Pondeo</NavLink></p>
+    <div className="sm:flex justify-between bg-deep-black px-[3vw] py-[16px]">
+      <p className="flex self-stretch text-[1.3vw] font-semibold items-center text-adventure-white p-[8px]">
+        <NavLink to={"/"}>Pondeo</NavLink>
+      </p>
+      <div className="flex content-center">
         <ul className="flex justify-center content-center gap-[48px]">
-          <li className="custom-body-1 text-adventure-white self-center hover:underline underline-offset-8"><NavLink to="/product" className={({ isActive }) => isActive ? "underline underline-offset-8" : ""}>Product</NavLink></li>
-          <li className="custom-body-1 text-adventure-white self-center hover:underline underline-offset-8"><NavLink to="/about" className={({ isActive }) => isActive ? "underline underline-offset-8" : ""}>About Us</NavLink></li>
-          <li className="custom-body-1 text-adventure-white self-center hover:underline underline-offset-8"><NavLink to="/contact" className={({ isActive }) => isActive ? "underline underline-offset-8" : ""}>Contact</NavLink></li>
+          <li className="text-custom-body-1 text-adventure-white self-center hover:underline underline-offset-8">
+            <NavLink
+              to="/product"
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-8" : ""
+              }
+            >
+              Product
+            </NavLink>
+          </li>
+          <li className="text-custom-body-1 text-adventure-white self-center hover:underline underline-offset-8">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-8" : ""
+              }
+            >
+              About Us
+            </NavLink>
+          </li>
+          <li className="text-custom-body-1 text-adventure-white self-center hover:underline underline-offset-8">
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-8" : ""
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
         </ul>
       </div>
-      <div className="flex justify-end gap-[48px] items-center">
+      <div className="flex justify-self-end gap-[48px] items-center">
         <div className="flex justify-end gap-[16px]">
-          <Link to="/login"><ButtonLarge type="primary" label="Login"></ButtonLarge></Link>
-          <Link to="/demo"><ButtonLarge type="secondary" label="Start Free Trial"></ButtonLarge></Link>
+          <Link to="/login">
+            <ButtonLarge type="primary" label="Login"></ButtonLarge>
+          </Link>
+          <Link to="/demo">
+            <ButtonLarge
+              type="secondary"
+              label="Start Free Trial"
+            ></ButtonLarge>
+          </Link>
         </div>
         <div className="flex justify-end">
           <Menu as="div" className="relative inline-block">
             <div>
               <Menu.Button className="flex">
-                <img src={britishFlag}></img>
+                <img
+                  style={{ height: "3.5vw", width: "auto" }}
+                  src={britishFlag}
+                ></img>
               </Menu.Button>
             </div>
             <Transition
@@ -51,12 +87,13 @@ export default function Navbar() {
                     {({ active }) => (
                       <a
                         href="#"
-                        className={classNames(
-                          active ? '' : '',
-                          'block'
-                        )}
+                        className={classNames(active ? "" : "", "block")}
+                        style={{ height: "3.5vw", display: "inline-block" }}
                       >
-                        <img src={swedishFlag}></img>
+                        <img
+                          src={swedishFlag}
+                          style={{ height: "3.5vw", width: "auto" }}
+                        ></img>
                       </a>
                     )}
                   </Menu.Item>
@@ -64,12 +101,13 @@ export default function Navbar() {
                     {({ active }) => (
                       <a
                         href="#"
-                        className={classNames(
-                          active ? '' : '',
-                          'block'
-                        )}
+                        className={classNames(active ? "" : "", "block")}
+                        style={{ height: "3.5vw", display: "inline-block" }}
                       >
-                        <img src={spanishFlag}></img>
+                        <img
+                          src={spanishFlag}
+                          style={{ height: "3.5vw", width: "auto" }}
+                        ></img>
                       </a>
                     )}
                   </Menu.Item>
@@ -80,5 +118,5 @@ export default function Navbar() {
         </div>
       </div>
     </div>
-  )
+  );
 }
