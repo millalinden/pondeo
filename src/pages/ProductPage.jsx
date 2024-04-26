@@ -1,7 +1,6 @@
-import Button from "../components/shared/Button";
 import TextImageCard from "../components/shared/TextImageCard";
 import stepButton from "../components/shared/stepButton";
-// import ButtonLarge from "../components/shared/ButtonLarge";
+import ButtonLarge from "../components/shared/ButtonLarge";
 
 
 import AI from "../assets/benefits,AI.png"
@@ -43,7 +42,7 @@ export default function ProductPage() {
           <p className="text-adventure-white text-custom-subtitle-1 max-w-screen-sm">
           With Pondeo, transform massive cold outreach into personal and engaging conversations. Pondeo blends technology and a human-centric approach to redefine how you connect with leads.           </p>
           <div className="flex justify-flex-start">
-            <Button label={"Get 7 Days Free Trial"} color={"bg-black text-neon-green border-neon-green"}/>
+            <ButtonLarge label={"Get 7 Days Free Trial"} type={"secondary"} />
           </div>
         </div>
         {/* <div className= "w-[632px] h-[525px] rounded-lg"><iframe className="w-full aspect-square " src={productHero}></iframe></div> */}
@@ -91,7 +90,7 @@ export default function ProductPage() {
             Open rates by up to 50% <br /> Achieve reply rates as high as 15%
             </p>
             </div>
-            <button><Button label={"Book a Demo"} color={"bg-gray-200 text-white"}/></button>
+            <ButtonLarge label={"Free Trial"} type={"secondary"} />
 
           </div>
 
