@@ -13,11 +13,8 @@ import Hero from "../components/shared/Hero";
 
 import HeroHome from "../assets/HeroHome.png";
 import PondeoChat from "../assets/PondeoChatt.png";
-import write from "../assets/write.png"; 
-import chat from "../assets/Chat.png"; 
-
-
-
+import write from "../assets/write.png";
+import chat from "../assets/Chat.png";
 
 import FeatureCardImage1 from "../assets/FeatureCard1.svg";
 import FeatureCardImage2 from "../assets/FeatureCard2.svg";
@@ -26,7 +23,13 @@ import FeatureCardImage3 from "../assets/FeatureCard3.svg";
 export default function LandingPage() {
   return (
     <>
-      <Hero styling={""} image={HeroHome} heightvw="40" widthvw="40" alt="Screenshot of Pondeo Chat">
+      <Hero
+        styling={""}
+        image={HeroHome}
+        heightvw="40"
+        widthvw="40"
+        alt="Screenshot of Pondeo Chat"
+      >
         <p className="text-adventure-white text-custom-body-1">
           With the help of Pondeo,
         </p>
@@ -61,7 +64,12 @@ export default function LandingPage() {
       </Section>
       <Section styling={"gap-8 bg-graymatter-gray"}>
         <div className="flex justify-center items-center">
-          <img src={PondeoChat} width={"1000vw"} height={"900vw"} alt="Screenshot of Pondeo Chat"/>
+          <img
+            src={PondeoChat}
+            width={"1000vw"}
+            height={"900vw"}
+            alt="Screenshot of Pondeo Chat"
+          />
         </div>
 
         <div className="flex flex-col py-16 gap-4">
@@ -118,7 +126,9 @@ export default function LandingPage() {
         </div>
       </Section>
       <Section
-        styling={"flex-col items-center bg-black h-full p-28 pt-[40] gap-10"}
+        styling={
+          "flex-col items-center bg-deep-black h-full p-28 pt-[40] gap-10"
+        }
       >
         <h2 className="text-custom-heading-3 text-neon-green text-center">
           De-risk your revenue strategy with <br /> account-based sales
@@ -131,7 +141,7 @@ export default function LandingPage() {
         </p>
       </Section>
       <Section
-        styling={"flex-col items-center bg-black h-full p-28 pb-40 gap-10"}
+        styling={"flex-col items-center bg-deep-black h-full p-28 pb-40 gap-10"}
       >
         <div className="flex gap-12">
           <FeatureCard
@@ -171,7 +181,7 @@ export default function LandingPage() {
       </Section>
       <Section styling={"p-36 justify-center align-right bg-deep-black"}>
         <div className="flex w-1/2 justify-center items-center align-middle">
-            <img src={write} alt="Zoomed images on person writing on paper"/>
+          <img src={write} alt="Zoomed images on person writing on paper" />
         </div>
 
         <div className="flex flex-col py-10 gap-4 w-1/2">
@@ -202,10 +212,12 @@ export default function LandingPage() {
           </p>
         </div>
         <div className="flex items-center">
-            <img src={chat} alt="Screenshot of Pondeo Chat"/>
+          <img src={chat} alt="Screenshot of Pondeo Chat" />
         </div>
       </Section>
-      <Section styling={"bg-black p-20 flex-col items-center overflow-hidden"}>
+      <Section
+        styling={"bg-deep-black p-20 flex-col items-center overflow-hidden"}
+      >
         <div className="flex flex-col gap-4 w-1/2 mb-10">
           <h2 className="text-custom-heading-3 text-neon-green text-center">
             Frequently asked question{" "}
