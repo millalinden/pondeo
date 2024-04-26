@@ -11,7 +11,13 @@ import Carousel from "../components/CarouselComponent";
 import Section from "../components/shared/Section";
 import Hero from "../components/shared/Hero";
 
-import Milla from "../assets/Milla.png";
+import HeroHome from "../assets/HeroHome.png";
+import PondeoChat from "../assets/PondeoChatt.png";
+import write from "../assets/write.png"; 
+import chat from "../assets/Chat.png"; 
+
+
+
 
 import FeatureCardImage1 from "../assets/FeatureCard1.svg";
 import FeatureCardImage2 from "../assets/FeatureCard2.svg";
@@ -20,7 +26,7 @@ import FeatureCardImage3 from "../assets/FeatureCard3.svg";
 export default function LandingPage() {
   return (
     <>
-      <Hero styling={""} image={Milla} heightvw="40" widthvw="40">
+      <Hero styling={""} image={HeroHome} heightvw="40" widthvw="40" alt="Screenshot of Pondeo Chat">
         <p className="text-adventure-white text-custom-body-1">
           With the help of Pondeo,
         </p>
@@ -54,10 +60,12 @@ export default function LandingPage() {
         </div>
       </Section>
       <Section styling={"gap-8 bg-graymatter-gray"}>
-        <div className="bg-gray-300 w-[1000px] h-[480px] rounded-xl "></div>
+        <div className="flex justify-center items-center">
+          <img src={PondeoChat} width={"1000vw"} height={"900vw"} alt="Screenshot of Pondeo Chat"/>
+        </div>
 
         <div className="flex flex-col py-16 gap-4">
-          <div className="flex gap-4 h-32">
+          <div className="flex gap-4 h-28">
             <div>
               <span className="flex justify-start items-center w-2 h-2 rounded-full bg-neon-green mt-2.5"></span>
             </div>
@@ -73,7 +81,7 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="flex gap-4 h-32">
+          <div className="flex gap-4 h-28">
             <div>
               <div>
                 <span className="flex justify-start items-center w-2 h-2 rounded-full bg-neon-green mt-2.5"></span>
@@ -90,7 +98,7 @@ export default function LandingPage() {
               </p>
             </div>
           </div>
-          <div className="flex gap-4 h-32">
+          <div className="flex gap-4 h-28">
             <div>
               <div>
                 <span className="flex justify-start items-center w-2 h-2 rounded-full bg-neon-green mt-2.5"></span>
@@ -161,12 +169,12 @@ export default function LandingPage() {
         </div>
         <Carousel />
       </Section>
-      <Section styling={"p-36 justify-center align-middle bg-deep-black"}>
+      <Section styling={"p-36 justify-center align-right bg-deep-black"}>
         <div className="flex w-1/2 justify-center items-center align-middle">
-          <div className="bg-white w-[400px] h-[300px] rounded-xl "></div>
+            <img src={write} alt="Zoomed images on person writing on paper"/>
         </div>
 
-        <div className="flex flex-col py-10 gap-8 w-1/2">
+        <div className="flex flex-col py-10 gap-4 w-1/2">
           <h2 className="text-custom-heading-2 text-neon-green">
             Effective Connections, <br /> Effortlessly Crafted
           </h2>
@@ -179,7 +187,7 @@ export default function LandingPage() {
           </p>
         </div>
       </Section>
-      <Section styling={"gap-12 py-8 justify-center  bg-graymatter-gray"}>
+      <Section styling={"gap-12 py-20 justify-center  bg-graymatter-gray"}>
         <div className="flex flex-col py-10 gap-4 w-1/2">
           <h2 className="text-custom-heading-2 text-neon-green">
             Prepare to see a significant shift in your engagement metrics{" "}
@@ -194,7 +202,7 @@ export default function LandingPage() {
           </p>
         </div>
         <div className="flex items-center">
-          <div className="bg-white w-[400px] h-[250px] "></div>
+            <img src={chat} alt="Screenshot of Pondeo Chat"/>
         </div>
       </Section>
       <Section styling={"bg-black p-20 flex-col items-center overflow-hidden"}>
