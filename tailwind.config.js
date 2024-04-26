@@ -72,7 +72,7 @@ export default {
           "2vw",
           {
             lineHeight: "3vw",
-            letterSpacing: "0.02813rem",
+            letterSpacing: "0.025rem",
             fontWeight: "400",
           },
         ],

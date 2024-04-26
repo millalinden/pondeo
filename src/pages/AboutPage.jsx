@@ -1,10 +1,12 @@
-import ButtonSmall from "../components/shared/ButtonSmall";
 import { Link } from "react-router-dom";
+
+import ButtonLarge from "../components/shared/ButtonLarge";
 import ImageCaptionCard from "../components/shared/ImageCaptionCard";
 import TextImageCard from "../components/shared/TextImageCard";
 import FeatureCard from "../components/shared/FeatureCard";
 import SocialIcon from "../components/shared/SocialIcon";
 import Section from "../components/shared/Section";
+import Hero from "../components/shared/Hero";
 
 import plugIcon from "../assets/Plug.svg";
 import heroImage from "../assets/aboutHero.png";
@@ -24,14 +26,11 @@ import santiago from "../assets/santiago.png"
 
 
 export default function AboutPage() {
-  const handleClick = () => {
-    console.log("Button clicked!");
-  };
 
   return (
     <>
-      <Section
-        styling={"gap-12 bg-deep-black flex flex-col md:flex-row items-center"}
+      <Hero
+        styling={"items-center"} image={heroImage} heightvw="40" widthvw="40"
       >
         <div className="flex flex-col">
           <h2 className="text-custom-heading-2 font-bold text-adventure-white uppercase">
@@ -40,15 +39,14 @@ export default function AboutPage() {
           <h2 className="text-custom-heading-2 font-bold uppercase text-neon-green mb-2">
             Empowering Engagement Through AI
           </h2>
-          <p className="text-adventure-whitegray text-custom-subtitle-1 font-light mb-8 sm:mb-10 md:mb-12 mr-10">
-            We believe in the power of personalized connections.
-            <br /> Founded on the principle that every interaction should be
+          <p className="text-adventure-whitegray text-custom-subtitle-1 mb-8 sm:mb-10 md:mb-12">
+            We believe in the power of personalized connections. Founded on the principle that every interaction should be
             meaningful and tailored to its recipient, we're on a mission to
             revolutionize how businesses engage with their prospects.
           </p>
-          <div className="flex justify-center md:justify-start mb-5">
+          <div className="md:justify-start mb-5">
             <Link to="/contact">
-              <ButtonSmall
+              <ButtonLarge
                 label={"Contact Us"}
                 type={""}
               />
@@ -70,12 +68,7 @@ export default function AboutPage() {
             />
           </div>
         </div>
-        <img
-          src={heroImage}
-          className="bg-slate-400 w-full md:w-[40%] h-auto rounded-3xl"
-          alt="Hero Image"
-        />
-      </Section>
+      </Hero>
 
       {/* VISION SECTION */}
       <Section styling={"gap-12 bg-deep-black justify-center items-center"}>
@@ -135,7 +128,7 @@ export default function AboutPage() {
           </div>
           <div className="mt-8 sm:mt-12 md:mt-16 flex justify-center items-center">
             <Link to="/privacy">
-              <ButtonSmall
+              <ButtonLarge
                 label="Learn more"
               />
             </Link>
