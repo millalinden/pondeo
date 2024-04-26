@@ -50,7 +50,7 @@ export default function LandingPage() {
           </Link>
         </div>
       </Hero>
-      <Section styling={"justify-center p-10 bg-deep-black"}>
+      <Section styling={"justify-center p-10 bg-red-500"}>
         <div className="flex flex-col bg-graymatter-gray py-20 px-[15vw] gap-8 rounded-xl">
           <h2 className="text-custom-heading-3 text-neon-green text-center">
             Talk to Humans as Humans but with AI.
