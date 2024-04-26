@@ -12,8 +12,8 @@ export default function Navbar() {
   }
 
   return (
-    <div className="sm:flex justify-between bg-deep-black px-[32px] py-[16px]">
-      <p className="self-stretch text-custom-body-2-semibold text-adventure-white p-[8px]">
+    <div className="sm:flex justify-between bg-deep-black px-[3vw] py-[16px]">
+      <p className="flex self-stretch text-[1.3vw] font-semibold items-center text-adventure-white p-[8px]">
         <NavLink to={"/"}>Pondeo</NavLink>
       </p>
       <div className="flex content-center">

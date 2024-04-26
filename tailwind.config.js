@@ -88,9 +88,9 @@ export default {
         ],
         // BODY 1 (SemiBold)
         "custom-body-1-semibold": [
-          "3.75rem",
+          "1.2vw",
           {
-            lineHeight: "4.5rem",
+            lineHeight: "1.6vw",
             letterSpacing: "0.02813rem",
             fontWeight: "700",
           },
@@ -106,9 +106,9 @@ export default {
         ],
         // BODY 2 (SemiBold)
         "custom-body-2-semibold": [
-          "1rem",
+          "1.2vw",
           {
-            lineHeight: "1.5rem",
+            lineHeight: "1.6vw",
             letterSpacing: "0.02813rem",
             fontWeight: "600",
           },
