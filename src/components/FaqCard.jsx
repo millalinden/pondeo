@@ -7,15 +7,17 @@ export default function FaqCard(props) {
 
   return (
     <div
-      className={`flex items-start border-b border-adventure-white w-[75%] h-[85px] ${
+      className={`flex items-start border-b border-adventure-white w-[60vw] h-[5vw] ${
         isClicked ? "expanded" : "collapsed"
       } px-4 pb-8 pt-10 overflow-hidden`}
     >
       <div className={`${isClicked ? "" : ""} w-[80%]`}>
-        <p className=" text-adventure-white font-medium  ">{header}</p>
+        <p className=" text-adventure-white text-custom-body-1 font-medium  ">
+          {header}
+        </p>
 
         {isClicked ? (
-          <p className="py-6 text-sm text-adventure-white">{body}</p>
+          <p className="py-6 text-custom-body-1 text-adventure-white">{body}</p>
         ) : (
           ""
         )}
