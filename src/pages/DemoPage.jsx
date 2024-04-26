@@ -1,5 +1,5 @@
 import Hero from "../components/shared/Hero"
-import Milla from "../assets/Milla.png";
+import Video from "../assets/productHero.mp4";
 import Button from "../components/shared/ButtonLarge"
 import { useEffect, useState } from "react";
 
@@ -11,7 +11,7 @@ export default function DemoPage() {
 
     return (
         <div className="bg-deep-black flex flex-col items-center">
-            <Hero styling={""} image={Milla} heightvw="40" widthvw="40">
+            <Hero styling={""} media={Video} isVideo={true} heightvw="40" widthvw="40">
                 <h1 className="text-neon-green uppercase text-5xl font-bold">Empower your potential: <span className="text-adventure-white uppercase text-5xl font-bold">begin your trial, today!</span></h1>
                 <p className="text-gray-200">Ready to revolutionize sales outreach? Sign up for enhanced efficiency and new possibilities. Just a few clicks unlock powerful tools to elevate your outreach. Join us today!</p>
             </Hero>
