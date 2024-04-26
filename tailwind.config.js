@@ -69,7 +69,7 @@ export default {
         ],
         // SUBTITLE 1
         "custom-subtitle-1": [
-          "2vw",
+          "1.8vw",
           {
             lineHeight: "3vw",
             letterSpacing: "0.025rem",

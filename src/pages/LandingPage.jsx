@@ -26,7 +26,7 @@ import FeatureCardImage3 from "../assets/FeatureCard3.svg";
 export default function LandingPage() {
   return (
     <>
-      <Hero styling={""} image={HeroHome} heightvw="40" widthvw="40" alt="Screenshot of Pondeo Chat">
+      <Hero styling={""} image={HeroHome} heightvw="30" widthvw="30" alt="Screenshot of Pondeo Chat">
         <p className="text-adventure-white text-custom-body-1">
           With the help of Pondeo,
         </p>

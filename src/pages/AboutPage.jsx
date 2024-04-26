@@ -16,21 +16,22 @@ import linkedinIcon from "../assets/linkedinIcon.svg";
 import intersectIcon from "../assets/Intersect.svg";
 import arrowIcon from "../assets/ArrowRight.svg";
 
-import transparency from "../assets/about1.png"
-import security from "../assets/security.png"
-import controlled from "../assets/controlled.png"
-import kwadwo from "../assets/Kwadwo1.png"
-import belen from "../assets/Belen.png"
-import carlos from "../assets/Carlos.png"
-import santiago from "../assets/santiago.png"
-
+import transparency from "../assets/about1.png";
+import security from "../assets/security.png";
+import controlled from "../assets/controlled.png";
+import kwadwo from "../assets/Kwadwo1.png";
+import belen from "../assets/Belen.png";
+import carlos from "../assets/Carlos.png";
+import santiago from "../assets/santiago.png";
 
 export default function AboutPage() {
-
   return (
     <>
       <Hero
-        styling={"items-center"} image={heroImage} heightvw="40" widthvw="40"
+        styling={"items-center"}
+        image={heroImage}
+        heightvw="40"
+        widthvw="40"
       >
         <div className="flex flex-col">
           <h2 className="text-custom-heading-2 font-bold text-adventure-white uppercase">
@@ -39,17 +40,15 @@ export default function AboutPage() {
           <h2 className="text-custom-heading-2 font-bold uppercase text-neon-green mb-2">
             Empowering Engagement Through AI
           </h2>
-          <p className="text-adventure-whitegray text-custom-subtitle-1 mb-8 sm:mb-10 md:mb-12">
-            We believe in the power of personalized connections. Founded on the principle that every interaction should be
+          <p className="text-adventure-whitegray text-custom-subtitle-1 mb-8 sm:mb-4 md:mb-8 justify-start">
+            We believe in the power of personalized connections.
+            <br /> Founded on the principle that every interaction should be
             meaningful and tailored to its recipient, we're on a mission to
             revolutionize how businesses engage with their prospects.
           </p>
           <div className="md:justify-start mb-5">
             <Link to="/contact">
-              <ButtonLarge
-                label={"Contact Us"}
-                type={""}
-              />
+              <ButtonLarge label={"Contact Us"} type={""} />
             </Link>
           </div>
           <div className="flex gap-4 justify-center md:justify-start">
@@ -128,9 +127,7 @@ export default function AboutPage() {
           </div>
           <div className="mt-8 sm:mt-12 md:mt-16 flex justify-center items-center">
             <Link to="/privacy">
-              <ButtonLarge
-                label="Learn more"
-              />
+              <ButtonLarge label="Learn more" />
             </Link>
           </div>
         </div>
