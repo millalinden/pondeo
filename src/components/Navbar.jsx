@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <div className="grid grid-cols-2 bg-deep-black px-[32px] py-[16px]">
       <div className="grid grid-cols-2 gap-[64px] content-center">
-        <p className="self-stretch text-custom-body-2-semibold text-adventure-white p-[8px]"><NavLink to={"/"}>Product</NavLink></p>
+        <p className="self-stretch text-custom-body-2-semibold text-adventure-white p-[8px]"><NavLink to={"/"}>Pondeo</NavLink></p>
         <ul className="flex justify-center content-center gap-[48px]">
           <li className="custom-body-1 text-adventure-white self-center hover:underline underline-offset-8"><NavLink to="/product" className={({ isActive }) => isActive ? "underline underline-offset-8" : ""}>Product</NavLink></li>
           <li className="custom-body-1 text-adventure-white self-center hover:underline underline-offset-8"><NavLink to="/about" className={({ isActive }) => isActive ? "underline underline-offset-8" : ""}>About Us</NavLink></li>
