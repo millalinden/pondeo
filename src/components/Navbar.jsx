@@ -13,14 +13,18 @@ export default function Navbar() {
 
   return (
     <div className="sm:flex justify-between bg-deep-black px-[3vw] py-[16px]">
+      {/* Adding aria-label for accessibility */}
       <p className="flex self-stretch text-[1.3vw] font-semibold items-center text-adventure-white p-[8px]">
-        <NavLink to={"/"}>Pondeo</NavLink>
+        <NavLink to={"/"} aria-label="Home">
+          Pondeo
+        </NavLink>
       </p>
       <div className="flex content-center">
         <ul className="flex justify-center content-center gap-[48px]">
           <li className="text-custom-body-1 text-adventure-white self-center hover:underline underline-offset-8">
             <NavLink
               to="/product"
+              aria-label="Product"
               className={({ isActive }) =>
                 isActive ? "underline underline-offset-8" : ""
               }
@@ -31,6 +35,7 @@ export default function Navbar() {
           <li className="text-custom-body-1 text-adventure-white self-center hover:underline underline-offset-8">
             <NavLink
               to="/about"
+              aria-label="About Us"
               className={({ isActive }) =>
                 isActive ? "underline underline-offset-8" : ""
               }
@@ -41,6 +46,7 @@ export default function Navbar() {
           <li className="text-custom-body-1 text-adventure-white self-center hover:underline underline-offset-8">
             <NavLink
               to="/contact"
+              aria-label="Contact"
               className={({ isActive }) =>
                 isActive ? "underline underline-offset-8" : ""
               }
@@ -52,10 +58,10 @@ export default function Navbar() {
       </div>
       <div className="flex justify-self-end gap-[48px] items-center">
         <div className="flex justify-end gap-[16px]">
-          <Link to="/login">
+          <Link to="/login" aria-label="Login">
             <ButtonLarge type="primary" label="Login"></ButtonLarge>
           </Link>
-          <Link to="/demo">
+          <Link to="/demo" aria-label="Start Free Trial">
             <ButtonLarge
               type="secondary"
               label="Start Free Trial"
@@ -69,6 +75,7 @@ export default function Navbar() {
                 <img
                   style={{ height: "3.5vw", width: "auto" }}
                   src={britishFlag}
+                  alt="British Flag"
                 ></img>
               </Menu.Button>
             </div>
@@ -92,8 +99,9 @@ export default function Navbar() {
                       >
                         <img
                           src={swedishFlag}
+                          alt="Swedish Flag"
                           style={{ height: "3.5vw", width: "auto" }}
-                        ></img>
+                        />
                       </a>
                     )}
                   </Menu.Item>
@@ -107,6 +115,7 @@ export default function Navbar() {
                         <img
                           src={spanishFlag}
                           style={{ height: "3.5vw", width: "auto" }}
+                          alt="Spanish Flag"
                         ></img>
                       </a>
                     )}
