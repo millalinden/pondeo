@@ -1,6 +1,7 @@
 import checkmarkSVG from "../assets/pricingpage-checkmark.svg";
 import ButtonPricing from "./ButtonPricing";
 
+
 export default function PricingCard(props) {
   const { color, text, popular } = props;
 

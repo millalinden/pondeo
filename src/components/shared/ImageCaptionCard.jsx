@@ -1,13 +1,14 @@
-export default function ImageCaptionCard() {
+export default function ImageCaptionCard({ heading, text, image, alt }) {
   return (
-    <div className="max-w-96">
-      <div className="h-72 w-96 rounded-3xl bg-black mb-16"></div>
-      <h4 className="text-2xl mb-7"> Heading</h4>
-      <p className="text-xl mx-12">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s
-      </p>
+    <div className="">
+      {/* Placeholder for the image */}
+      <img src={image}className="h-72 w-96 rounded-3xl mb-16" alt={alt}/>
+      <div className="flex flex-col items-center">
+        {/* Custom heading */}
+        <h4 className="text-custom-subtitle-1 font-normal text-neon-green mb-[2.4rem] max-w-72">{heading}</h4>
+        {/* Custom text */}
+        <p className="text-custom-body-1 text-adventure-white font-normal max-w-72 text-center">{text}</p>
+      </div>
     </div>
   );
 }

@@ -21,7 +21,7 @@
 
 .expanded {
   transition: height 0.5s ease; /* Adjust timing and easing as needed */
-  height: 200px; /* Height when clicked */
+  height: 20vw; /* Height when clicked */
 }
 
 /* Hide the increment and decrement buttons */

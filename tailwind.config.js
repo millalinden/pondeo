@@ -6,11 +6,18 @@ export default {
       colors: {
         "neon-green": "#CAFF33",
         "graymatter-gray": "#1C1C1C",
+        "graymatter-30" : "rgba(0, 0, 0, 0.30)",
+        "graymatter-grey-40" : "rgba(0, 0, 0, 0.40)",
         "adventure-white": "#E4E4E7",
-        "deep-black": "#000000",
+        "adventure-whitegray": "rgba(228, 228, 231, 1)",
+        "deep-black": "#0D0D0D",
         "error-red": "rgba(255, 107, 107, 1)",
         "success-green": "rgba(76, 175, 80, 1)",
         "information-blue": "rgba(0, 116, 217, 1)",
+        "rgba-green-20": "rgba(202, 255, 51, 0.2)",
+        "rgba-green-10": "rgba(202, 255, 51, 0.1)",
+        "hover-button": "#E5FF99",
+        "clicked-button": "#A3CE29",
         blue: "rgba(72, 98, 132, 0.16)",
       },
       fontFamily: {
@@ -64,10 +71,10 @@ export default {
         ],
         // SUBTITLE 1
         "custom-subtitle-1": [
-          "1.75rem",
+          "2vw",
           {
-            lineHeight: "2.5rem",
-            letterSpacing: "0.02813rem",
+            lineHeight: "3vw",
+            letterSpacing: "0.025rem",
             fontWeight: "400",
           },
         ],
@@ -81,29 +88,38 @@ export default {
             textTransform: "uppercase",
           },
         ],
+        // SMAL SUBTITLE 
+        "custom-subtitle-small": [
+          "1.625rem",
+          {
+            lineHeight: "2.5rem",
+            letterSpacing: "0.025rem",
+            fontWeight: "400",
+          },
+        ],
         // BODY 1 (SemiBold)
         "custom-body-1-semibold": [
-          "3.75rem",
+          "1.2vw",
           {
-            lineHeight: "4.5rem",
+            lineHeight: "1.6vw",
             letterSpacing: "0.02813rem",
             fontWeight: "700",
           },
         ],
         // BODY 1 (Regular)
         "custom-body-1": [
-          "1.125rem",
+          "1.2vw",
           {
-            lineHeight: "1.75rem",
+            lineHeight: "1.6vw",
             letterSpacing: "0.02813rem",
             fontWeight: "500",
           },
         ],
         // BODY 2 (SemiBold)
         "custom-body-2-semibold": [
-          "1rem",
+          "1.2vw",
           {
-            lineHeight: "1.5rem",
+            lineHeight: "1.6vw",
             letterSpacing: "0.02813rem",
             fontWeight: "600",
           },
@@ -117,6 +133,16 @@ export default {
             fontWeight: "500",
           },
         ],
+      },
+      boxShadow: {
+        "custom-green":
+          "-1px 4px 6px 0px rgba(202, 255, 51, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 1px 0px 6px 0px #CAFF33",
+        "dark-black":
+        "3px 6px 6px 0px rgba(0, 0, 0, 0.25)" , 
+        "dark-black1": 
+        "0px 4px 4px 0px rgba(0, 0, 0, 0.25), 1px 4px 4px 0px rgba(0, 0, 0, 0.15)",
+        "hero-box":
+        "0px 4px 4px 0px  rgba(228, 228, 231, 0.15)",
       },
     },
   },
