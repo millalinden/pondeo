@@ -126,8 +126,8 @@ export default function ProductPage() {
 
         <div className="flex p-4 h-[271px] w-[600px] rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
           <div className="flex flex-col justify-center items-center">
-            <h3 className="text-custom-subtitle-small text-neon-green w-[294px]" aria-label="Efficiency Heading">Efficiency and Workflow Streamlining</h3>
-            <p className="text-custom-body-1 text-adventure-white w-71" aria-label="Efficiency Description">Sales teams value time efficiency. 
+            <h3 className="text-custom-subtitle-1 text-neon-green " aria-label="Efficiency Heading">Efficiency and Workflow Streamlining</h3>
+            <p className="text-custom-body-2 text-adventure-white w-71" aria-label="Efficiency Description">Sales teams value time efficiency. 
 Pondeo automates message 
 generation, freeing up 
 sales reps to focus on 
@@ -139,8 +139,8 @@ high-value tasks.</p>
 
         <div className="flex p-4  h-[271px] w-[600px] rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
         <div className="flex flex-col justify-center items-center">
-            <h3 className="text-custom-subtitle-1 text-neon-green " aria-label="Data-Driven Insights Heading">Data-Driven Insights </h3>
-            <p className="text-custom-body-1 text-adventure-white w-71" aria-label="Data-Driven Insights Description">Informed decisions drive success. Pondeo offers valuable insights,
+            <h3 className="text-custom-subtitle-1 text-neon-green w-[294px]" aria-label="Data-Driven Insights Heading">Data-Driven Insights </h3>
+            <p className="text-custom-body-2 text-adventure-white w-71" aria-label="Data-Driven Insights Description">Informed decisions drive success. Pondeo offers valuable insights,
 enabling sales teams to
 optimize strategies 
 based on real-time

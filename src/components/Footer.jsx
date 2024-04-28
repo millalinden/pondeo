@@ -8,7 +8,7 @@ import mailIcon from "../assets/mailIcon.svg"
 
 export default function Footer() {
   return (
-    <footer className="flex  w-full  bg-deep-black pt-[2%]  px-[4vw] pb-[2.5vw] text-adventure-white border-t-2 border-neon-green">
+    <footer data-testid="footer" className="flex  w-full  bg-deep-black pt-[2%]  px-[4vw] pb-[2.5vw] text-adventure-white border-t-2 border-neon-green">
       {/* Pondeo Section */}
       <div className="flex justify-between border-b-graymatter-gray border-b-[1px] pb-[2.5vw]">
         <div className="flex flex-col w-[50vw] justify-between">
