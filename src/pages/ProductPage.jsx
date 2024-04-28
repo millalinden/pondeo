@@ -70,14 +70,14 @@ export default function ProductPage() {
           </div>
         </div>
         {/* <div className= "w-[632px] h-[525px] rounded-lg"><iframe className="w-full aspect-square " src={productHero}></iframe></div> */}
-        <iframe className="w-[632px] h-[525px] rounded-lg  aspect-square " src={productHero} alt=""></iframe>
+        <iframe className="w-[632px] h-[525px] rounded-lg  aspect-square " src={productHero} alt="Product Hero Video" aria-label="Pondeo Product Hero Video"></iframe>
 
         </Section>
 
 
       <Section styling={"justify-center items-center p-10 bg-graymatter-gray "}>
         <div className="flex justify-center w-[1343px] h-[166px] bg-deep-black border-graymatter-gray border shadow-dark-black rounded-lg items-center">
-          <h1 className="text-custom-heading-3 text-neon-green text-center">
+          <h1 className="text-custom-heading-3 text-neon-green text-center" aria-label="Pondeo Subtitle">
           Pondeo: Your AI Sales Assistant Analyzing Benefits
           </h1>
         </div>
@@ -89,13 +89,13 @@ export default function ProductPage() {
       {/* benefits section */}
       <Section styling={"justify-center flex-col items-center gap-16 p-6 pt-4 bg-graymatter-gray"}>
           <div className="bg-black flex flex-col w-[1343px] rounded-lg items-center gap-6  border-graymatter-gray border shadow-dark-black">
-          <h2 className="text-custom-heading-2-uppercase text-neon-green text-center pt-4">Personalised Outreach </h2>
-          <p className="text-adventure-white text-custom-subtitle-1 text-center max-w-2xl">
+          <h2 className="text-custom-heading-2-uppercase text-neon-green text-center pt-4" aria-label="Personalised Outreach Heading">Personalised Outreach </h2>
+          <p className="text-adventure-white text-custom-subtitle-1 text-center max-w-2xl" aria-label="Personalised Outreach Description">
           Pondeo customizes the cold outreach process, making every communication feel unique and tailored to the recipient!          </p>
 
           
           {/* <div className="w-[1344px] h-[899px] rounded-lg"><iframe className="w-full aspect-square " src={Outreach}></iframe></div> */}
-          <iframe className="w-[1344px] h-[899px] rounded-lg  aspect-square " src={Outreach} alt=""></iframe>
+          <iframe className="w-[1344px] h-[899px] rounded-lg  aspect-square " src={Outreach} alt="Personalised Outreach Video" aria-label="Personalised Outreach Video"></iframe>
           </div>
 
           </Section>
@@ -103,17 +103,17 @@ export default function ProductPage() {
 
           <Section styling={"justify-center items-center  bg-graymatter-gray p-9"}>
         <div className="flex place-items-start  gap-4 p-9">
-          <img className="w-[536px] h-[438px]" src={reply} alt=""/>
+          <img className="w-[536px] h-[438px]" src={reply} alt="Increased Open Rates Image" aria-label="Increased Open Rates Image" />
           <div className="flex flex-col place-items-start  gap-20" >
             <div>
-            <h2 className="text-custom-subtitle-1 text-neon-green text-left pb-4">
+            <h2 className="text-custom-subtitle-1 text-neon-green text-left pb-4" aria-label="Increased Open Rates Heading">
             Increased Open Rates and Reply Rates
             </h2>
-            <p className="text-custom-body-1 text-adventure-white max-w-lg text-left leading-10">
+            <p className="text-custom-body-1 text-adventure-white max-w-lg text-left leading-10" aria-label="Increased Open Rates Description">
             Open rates by up to 50% <br /> Achieve reply rates as high as 15%
             </p>
             </div>
-            <Link to="/demo">
+            <Link to="/demo" aria-label="Link to Free Trial">
             <ButtonLarge label={"Free Trial"} type={"secondary"} />
             </Link>
             
@@ -126,28 +126,28 @@ export default function ProductPage() {
 
         <div className="flex p-4 h-[271px] w-[600px] rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
           <div className="flex flex-col justify-center items-center">
-            <h3 className="text-custom-subtitle-small text-neon-green w-[294px]">Efficiency and Workflow Streamlining</h3>
-            <p className="text-custom-body-1 text-adventure-white w-71">Sales teams value time efficiency. 
+            <h3 className="text-custom-subtitle-small text-neon-green w-[294px]" aria-label="Efficiency Heading">Efficiency and Workflow Streamlining</h3>
+            <p className="text-custom-body-1 text-adventure-white w-71" aria-label="Efficiency Description">Sales teams value time efficiency. 
 Pondeo automates message 
 generation, freeing up 
 sales reps to focus on 
 high-value tasks.</p>
 
           </div>
-          <img alt="" src={efficiency} />
+          <img alt="Efficiency and Workflow Streamlining Image" aria-label="Efficiency Image"  src={efficiency} />
         </div>
 
         <div className="flex p-4  h-[271px] w-[600px] rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
         <div className="flex flex-col justify-center items-center">
-            <h3 className="text-custom-subtitle-1 text-neon-green ">Data-Driven Insights </h3>
-            <p className="text-custom-body-1 text-adventure-white w-71">Informed decisions drive success. Pondeo offers valuable insights,
+            <h3 className="text-custom-subtitle-1 text-neon-green " aria-label="Data-Driven Insights Heading">Data-Driven Insights </h3>
+            <p className="text-custom-body-1 text-adventure-white w-71" aria-label="Data-Driven Insights Description">Informed decisions drive success. Pondeo offers valuable insights,
 enabling sales teams to
 optimize strategies 
 based on real-time
 feedback. </p>
 
           </div>
-          <img alt="" src={dataDriven} />
+          <img alt="Data-Driven Insights Image" aria-label="Data-Driven Insights Image" src={dataDriven} />
         </div>
         </Section>
 
@@ -211,11 +211,11 @@ feedback. </p>
 
                 <br /> This information is input into the system, allowing Pondeo to understand the company's goals and offerings.</p>
               </div>
-              <img className="w-[598px] h-[668px]" src={step1} alt=""/>
+              <img className="w-[598px] h-[668px]" src={step1} alt="User Input and Company Information" />
             </div>
 
             <div className="flex  gap-20 px-4 py-8 bg-deep-black border-graymatter-gray border shadow-dark-black">
-              <img className="w-[618px] h-[481px]" src={step2} alt=""/>
+              <img className="w-[618px] h-[481px]" src={step2} alt="AI-Based Learning"/>
               <div className="flex flex-col max-w-xl gap-8">
                 <StepSquare 
                 label={"Step 2"}
@@ -239,11 +239,11 @@ feedback. </p>
 
                 <br /> This action initiates the process of personalised messaging for each lead.</p>
               </div>
-              <img className="w-[626px] h-[330px]"  src={step3} alt=""/>
+              <img className="w-[626px] h-[330px]"  src={step3} alt="Lead Integration" />
             </div>
 
             <div className="flex gap-20 px-4 py-8 bg-deep-black border-graymatter-gray border shadow-dark-black">
-              <img className="w-[609px] h-[443px]" src={step4} alt=""/>
+              <img className="w-[609px] h-[443px]" src={step4} alt="Personalized Message Generation" />
               <div className="flex flex-col  max-w-xl gap-8">
                 <StepSquare 
                 label={"Step 4"}
