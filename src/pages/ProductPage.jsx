@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 import StepSquare from "../components/shared/stepSquare";
 import ButtonLarge from "../components/shared/ButtonLarge";
-import Hero from "../components/shared/Hero";
 import Section from "../components/shared/Section";
 import ProductCard from "../components/shared/ProductCard";
 
@@ -117,6 +116,7 @@ export default function ProductPage() {
             </div>
             <Link to="/demo" aria-label="Link to Free Trial">
               <ButtonLarge label={"Free Trial"} type={"secondary"} />
+              <ButtonLarge label={"Free Trial"} type={"secondary"} />
             </Link>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function ProductPage() {
         </div>
       </Section>
 
-      {/* features section */}
+      {/* Product features section */}
       <Section styling={"justify-center items-center p-16  bg-deep-black"}>
         <div className=" w-full text-center pt-4">
           <div className="text-center ">
