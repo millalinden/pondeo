@@ -30,7 +30,7 @@ export default function AboutPage() {
   return (
     <>
       <Hero
-        styling={"items-center"} image={heroImage} heightvw="40" widthvw="40"
+        styling={"items-center"} media={heroImage} heightvw="40" widthvw="40"
       >
         <div className="flex flex-col">
           <h2 className="text-custom-heading-2 font-bold text-adventure-white uppercase">
