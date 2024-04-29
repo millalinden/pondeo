@@ -26,7 +26,7 @@ export default function LandingPage() {
         widthvw="40"
         alt="Screenshot of Pondeo Chat"
       >
-        <p className="text-adventure-white text-custom-body-1">
+        <p className="text-adventure-white text-custom-body-1 font-normal">
           With the help of Pondeo,
         </p>
         <h2 className="text-custom-heading-2 font-bold uppercase text-neon-green">
