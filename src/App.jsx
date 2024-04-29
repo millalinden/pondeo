@@ -6,7 +6,6 @@ import ContactPage from "./pages/ContactPage";
 import DemoPage from "./pages/DemoPage";
 import ProductPage from "./pages/ProductPage";
 import PrivacyPage from "./pages/PrivacyPage";
-import PricingPage from "./pages/PricingPage";
 import LoginSignup from "./pages/LoginSignup";
 
 function ScrollToTop() {
@@ -31,7 +30,6 @@ function App() {
         <Route path="/product" element={<ProductPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/login" element={<LoginSignup />} />
-        <Route path="/pricing" element={<PricingPage />} />
       </Routes>
     </>
   );

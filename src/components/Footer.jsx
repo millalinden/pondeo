@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "./shared/Button";
+import ButtonForm from "./shared/ButtonForm";
 import SocialIcon from "./shared/SocialIcon";
 
 import discordIcon from "../assets/Discord.svg"
@@ -8,12 +8,12 @@ import mailIcon from "../assets/mailIcon.svg"
 
 export default function Footer() {
   return (
-    <footer data-testid="footer" className="flex  w-full  bg-deep-black pt-[2%]  px-[4vw] pb-[2.5vw] text-adventure-white border-t-2 border-neon-green">
+    <footer data-testid="footer" className="flex  w-full  bg-deep-black pt-[2%]  px-[4vw] pb-[2.5vw] border-t-2 border-neon-green">
       {/* Pondeo Section */}
-      <div className="flex justify-between border-b-graymatter-gray border-b-[1px] pb-[2.5vw]">
-        <div className="flex flex-col w-[50vw] justify-between">
+      <div className=" flex justify-between border-b-graymatter-gray border-b-[1px] pb-[2.5vw]">
+        <div className=" text-adventure-white flex flex-col w-[50vw] justify-between">
           <div className="flex flex-col">
-            <h2 className="text-[2.8vw] pb-[2%] font-medium">Pondeo</h2>
+            <h2 className="text-adventure-white text-[2.8vw] pb-[2%] font-medium">Pondeo</h2>
             <p className="text-[1.2vw] font-normal w-[80%]  pb-[3%]">
               Elevate engagement with Pondeo's AI-Powered Personalization.
             </p>
@@ -57,7 +57,7 @@ export default function Footer() {
         {/* Sections and Legal */}
         <div className="flex justify-self-end justify-between w-[100%]">
           {/* Sections */}
-          <div className="flex ">
+          <div className="flex text-adventure-white">
             <div>
               <h3 className="text-[2vw] pb-[25%]">Sections</h3>
               <Link
@@ -73,7 +73,7 @@ export default function Footer() {
                 About Us
               </Link>
               <Link
-                to="/pricing"
+                to="/"
                 className="text-[1.3vw] block mb-[15%] font-normal"
               >
                 Pricing
@@ -92,7 +92,7 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div className="flex flex-col">
-            <div>
+            <div className="text-adventure-white ">
               <h3 className="text-[2vw] pb-[25%]">Legal</h3>
               <Link
                 to="/privacy"
@@ -123,24 +123,24 @@ export default function Footer() {
 
           {/* Subscribe to Newsletter Section */}
           <div className="flex flex-col justify-self-end w-[25vw] overflow-hidden">
-            <h3 className="text-[2vw] mb-[5%]">Suscribe to our Newsletter!</h3>
-            <p className="text-custom-body-1 font-normal mb-[6%]">
+            <h3 className="text-[2vw] mb-[5%] text-adventure-white ">Suscribe to our Newsletter!</h3>
+            <p className="text-custom-body-1 font-normal mb-[6%] text-adventure-white">
               Be the first to receive our latest news.
             </p>
-            <form className="flex items-start flex-col text-adventure-white">
+            <form className="flex items-start flex-col">
               <input
                 type="email"
                 placeholder="Enter your email adress"
                 className="text-[1.2vw] py-1 px-4 w-[100%] h-[3vw] rounded-lg bg-graymatter-gray focus:outline-none items-center justify-center mb-[15%] "
               />
-              <Button
+              <ButtonForm
                 label={"Subscribe"}
                 color={
-                  "text-[1.2vw] bg-neon-green text-deep-black rounded-lg border-neon-green w-[100%] h-[3.5vw]"
+                  "text-[1.2vw] text-deep-black rounded-lg text-center border-neon-green"
                 }
               />
             </form>
-            <p className="text-[1vw] font-normal pt-[10%] w-[100%] text-right">
+            <p className="text-[1vw] font-normal pt-[10%] w-[100%] text-right text-adventure-white">
               Pondeo is a Graymatter.ai company
             </p>
           </div>
