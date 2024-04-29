@@ -4,6 +4,7 @@ import StepSquare from "../components/shared/stepSquare";
 import ButtonLarge from "../components/shared/ButtonLarge";
 import Section from "../components/shared/Section";
 import ProductCard from "../components/shared/ProductCard";
+import Hero from "../components/shared/Hero";
 
 import AI from "../assets/benefits,AI.png";
 import Sales from "../assets/benefits,sales.png";
