@@ -1,8 +1,4 @@
-import Button from "../components/shared/Button";
-import ButtonSmall from "../components/shared/ButtonSmall";
-import ButtonMedium from "../components/shared/ButtonMedium";
 import ButtonLarge from "../components/shared/ButtonLarge";
-import ButtonLong from "../components/shared/ButtonLong";
 import { Link } from "react-router-dom";
 
 import FeatureCard from "../components/shared/FeatureCard";
@@ -25,7 +21,7 @@ export default function LandingPage() {
     <>
       <Hero
         styling={""}
-        image={HeroHome}
+        media={HeroHome}
         heightvw="40"
         widthvw="40"
         alt="Screenshot of Pondeo Chat"
