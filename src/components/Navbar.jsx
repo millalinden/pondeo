@@ -73,7 +73,7 @@ export default function Navbar() {
             <div>
               <Menu.Button className="flex">
                 <img
-                  style={{ height: "3.5vw", width: "auto" }}
+                  style={{ height: "2.5vw", width: "auto" }}
                   src={britishFlag}
                   alt="British Flag"
                 ></img>
@@ -95,12 +95,12 @@ export default function Navbar() {
                       <a
                         href="#"
                         className={classNames(active ? "" : "", "block")}
-                        style={{ height: "3.5vw", display: "inline-block" }}
+                        style={{ height: "2.5vw", display: "inline-block" }}
                       >
                         <img
                           src={swedishFlag}
                           alt="Swedish Flag"
-                          style={{ height: "3.5vw", width: "auto" }}
+                          style={{ height: "2.5vw", width: "auto" }}
                         />
                       </a>
                     )}
@@ -110,11 +110,11 @@ export default function Navbar() {
                       <a
                         href="#"
                         className={classNames(active ? "" : "", "block")}
-                        style={{ height: "3.5vw", display: "inline-block" }}
+                        style={{ height: "2.5vw", display: "inline-block" }}
                       >
                         <img
                           src={spanishFlag}
-                          style={{ height: "3.5vw", width: "auto" }}
+                          style={{ height: "2.5vw", width: "auto" }}
                           alt="Spanish Flag"
                         ></img>
                       </a>
