@@ -19,27 +19,27 @@ export default function ContactPage() {
 
         <Form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-[40px] text-custom-body-1 gap-[16px] items-center mb-[40px]">
           <Form.Field>
-            <label className="flex flex-col flex-shrink-0 text-adventure-white">First Name
+            <label htmlFor="firstName" className="flex flex-col flex-shrink-0 text-adventure-white">First Name
             </label>
-            <input {...register("firstName", { required: true })} type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px] " />
+            <input {...register("firstName", { required: true })} id="firstName" type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px] " />
           </Form.Field>
           {errors.firstName && <p className="text-adventure-white font-bold">This field is required.</p>}
           <Form.Field>
-            <label className="mt-[15px] flex flex-col  flex-shrink-0 text-adventure-white">Last Name
+            <label htmlFor="lastName" className="mt-[15px] flex flex-col  flex-shrink-0 text-adventure-white">Last Name
             </label>
-            <input {...register("lastName", { required: true })} type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px]  " />
+            <input {...register("lastName", { required: true })} id="lastName" type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px]  " />
           </Form.Field>
           {errors.lastName && <p className="text-adventure-white font-bold">This field is required.</p>}
           <Form.Field>
-            <label className="mt-[15px] flex flex-col  flex-shrink-0 text-adventure-white">Phone Number
+            <label htmlFor="phone" className="mt-[15px] flex flex-col  flex-shrink-0 text-adventure-white">Phone Number
             </label>
-            <input {...register("phoneNumber", { required: true })} type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px]  " />
+            <input {...register("phoneNumber", { required: true })} id="phone" type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px]  " />
           </Form.Field>
           {errors.phoneNumber && <p className="text-adventure-white font-bold">This field is required.</p>}
           <Form.Field>
-            <label className="mt-[15px] flex flex-col  flex-shrink-0 text-adventure-white">Message
+            <label htmlFor="message" className="mt-[15px] flex flex-col  flex-shrink-0 text-adventure-white">Message
             </label>
-            <input {...register("message", { required: true })} type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[100px]  w-[583px]  " />
+            <input {...register("message", { required: true })} type="text" id="message" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[100px]  w-[583px]  " />
           </Form.Field>
           {errors.message && <p className="text-adventure-white font-bold">This field is required.</p>}
 
