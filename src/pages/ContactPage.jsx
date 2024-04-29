@@ -17,7 +17,7 @@ export default function ContactPage() {
           <p className="text-custom-body-1 text-adventure-white">Any questions or remarks? Just write us a message!</p>
         </div>
 
-        <Form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-[40px] text-custom-body-1 gap-[16px] items-center mb-[40px]">
+        <Form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-[5px] text-custom-body-1 gap-[16px] items-center mb-[40px]">
           <Form.Field>
             <label htmlFor="firstName" className="flex flex-col flex-shrink-0 text-adventure-white">First Name
             </label>
@@ -44,7 +44,7 @@ export default function ContactPage() {
           {errors.message && <p className="text-adventure-white font-bold">This field is required.</p>}
 
           <button
-            onSubmit={() => { }} type="submit" className="h-[40px] px-[20px] py-[18px] flex justify-center items-center rounded-[12px] bg-neon-green text-custom-body-1 text-deep-black hover:bg-hover-button active:bg-neon-green"
+            onSubmit={() => { }} type="submit" className="h-[40px] px-[20px] py-[18px] flex justify-center items-center rounded-[12px] bg-neon-green text-custom-body-1 text-deep-black hover:bg-hover-button active:bg-neon-green my-[4vw]"
           >Send</button>
         </Form>
       </section>

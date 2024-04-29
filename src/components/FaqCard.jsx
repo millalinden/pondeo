@@ -9,10 +9,10 @@ export default function FaqCard(props) {
     <div
       className={`flex items-start border-b border-adventure-white w-[60vw] h-[5vw] ${
         isClicked ? "expanded" : "collapsed"
-      } px-4 pb-8 pt-10 overflow-hidden`}
+      } px-4 pb-12 pt-10 overflow-hidden`}
     >
       <div className={`${isClicked ? "" : ""} w-[80%]`}>
-        <p className=" text-adventure-white text-custom-body-1 font-medium  ">
+        <p className=" text-adventure-white text-custom-body-1 font-light">
           {header}
         </p>
 

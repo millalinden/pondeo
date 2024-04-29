@@ -5,10 +5,11 @@ export default function FeatureCard({
   heading,
   widthvw,
   heightvw,
+  styling,
 }) {
   return (
     <div
-      className={`bg-graymatter-gray py-[3vw] px-[3vw] gap-10 rounded-3xl flex flex-col  ${
+      className={`bg-graymatter-gray rounded-3xl flex flex-col ${styling} ${
         widthvw ? `w-[${widthvw}vw]` : "w-[23vw]"
       } ${heightvw ? `h-[${heightvw}vw]` : "h-[30vw]"}`}
     >
@@ -22,7 +23,7 @@ export default function FeatureCard({
           alt={alt}
         />
       </div>
-      <h3 className="text-custom-subtitle-1 text-neon-green text-center">
+      <h3 className="text-custom-subtitle-1 font-light text-neon-green text-center">
         {heading ? `${heading}` : ""}
       </h3>
       <p className="font-normal text-center text-custom-body-1 text-adventure-white">

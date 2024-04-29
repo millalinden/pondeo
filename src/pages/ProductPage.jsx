@@ -34,10 +34,10 @@ export default function ProductPage() {
         widthvw="40"
         isVideo={"true"}
       >
-        <h1 className="text-custom-heading-2-uppercase text-neon-green">
+        <h1 className="text-custom-heading-2-uppercase uppercase text-neon-green">
           Start meaningful <br /> conversations
         </h1>
-        <p className="text-adventure-white text-custom-subtitle-1 max-w-screen-sm">
+        <p className="text-adventure-whitegray opacity-45 text-custom-subtitle-1 font-light max-w-screen-sm">
           With Pondeo, transform massive cold outreach into personal and
           engaging conversations. Pondeo blends technology and a human-centric
           approach to redefine how you connect with leads.
@@ -68,20 +68,19 @@ export default function ProductPage() {
       >
         <div className="bg-black flex flex-col w-[1343px] rounded-lg items-center gap-6  border-graymatter-gray border shadow-dark-black">
           <h2
-            className="text-custom-heading-2-uppercase text-neon-green text-center pt-4"
+            className="text-custom-heading-2-uppercase uppercase text-neon-green text-center pt-16"
             aria-label="Personalised Outreach Heading"
           >
             Personalised Outreach{" "}
           </h2>
           <p
-            className="text-adventure-white text-custom-subtitle-1 text-center max-w-2xl"
+            className="text-adventure-white text-custom-subtitle-1 font-light text-center max-w-2xl"
             aria-label="Personalised Outreach Description"
           >
             Pondeo customizes the cold outreach process, making every
             communication feel unique and tailored to the recipient!{" "}
           </p>
 
-          {/* <div className="w-[1344px] h-[899px] rounded-lg"><iframe className="w-full aspect-square " src={Outreach}></iframe></div> */}
           <iframe
             className="w-[1344px] h-[899px] rounded-lg  aspect-square "
             src={Outreach}
@@ -99,16 +98,16 @@ export default function ProductPage() {
             alt="Increased Open Rates Image"
             aria-label="Increased Open Rates Image"
           />
-          <div className="flex flex-col place-items-start  gap-20">
+          <div className="flex flex-col place-items-start gap-20">
             <div>
               <h2
-                className="text-custom-subtitle-1 text-neon-green text-left pb-4"
+                className="text-custom-subtitle-1 font-light text-neon-green text-left pb-4"
                 aria-label="Increased Open Rates Heading"
               >
                 Increased Open Rates and Reply Rates
               </h2>
               <p
-                className="text-custom-body-1 text-adventure-white max-w-lg text-left leading-10"
+                className="text-custom-body-1 font-light text-adventure-white max-w-lg text-left leading-10"
                 aria-label="Increased Open Rates Description"
               >
                 Open rates by up to 50% <br /> Achieve reply rates as high as
@@ -116,7 +115,6 @@ export default function ProductPage() {
               </p>
             </div>
             <Link to="/demo" aria-label="Link to Free Trial">
-              <ButtonLarge label={"Free Trial"} type={"secondary"} />
               <ButtonLarge label={"Free Trial"} type={"secondary"} />
             </Link>
           </div>
@@ -154,7 +152,7 @@ export default function ProductPage() {
         <div className="flex p-4  h-[271px] w-[600px] rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
           <div className="flex flex-col justify-center items-center">
             <h3
-              className="text-custom-subtitle-1 text-neon-green w-[294px]"
+              className="text-custom-subtitle-1 font-light text-neon-green w-[294px]"
               aria-label="Data-Driven Insights Heading"
             >
               Data-Driven Insights{" "}
@@ -220,11 +218,11 @@ export default function ProductPage() {
       {/* how Pondeo works section */}
       <Section
         styling={
-          "flex-col justify-center items-center px-16 gap-16 bg-deep-black "
+          "flex-col justify-center items-center px-16 gap-8 bg-deep-black "
         }
       >
         <div className="text-center">
-          <h1 className="text-custom-heading-2-bold py-16 mx-10 mb-4 text-adventure-white">
+          <h1 className="text-custom-heading-1 py-16 mx-10 mb-4 text-adventure-white">
             How Pondeo works
           </h1>
         </div>
@@ -235,7 +233,7 @@ export default function ProductPage() {
             <h3 className="text-custom-heading-3 text-adventure-white ">
               User Input and Company Information
             </h3>
-            <p className="text-adventure-white text-custom-body-2 ">
+            <p className="text-adventure-white text-custom-body-1 font-light ">
               Users provide information about their company, including details
               about their products or services, target audience, and messaging
               preferences. You can also inform us about the main benefits your
@@ -262,7 +260,7 @@ export default function ProductPage() {
             <h3 className="text-custom-heading-3 text-adventure-white">
               AI-Based Learning
             </h3>
-            <p className="text-adventure-white text-custom-body-2">
+            <p className="text-adventure-white  text-custom-body-1 font-light">
               Pondeo employs machine learning algorithms to analyze the provided
               company information.
               <br /> The algorithms learn about the company's products,
@@ -280,7 +278,7 @@ export default function ProductPage() {
             <h3 className="text-custom-heading-3 text-adventure-white">
               Lead Integration
             </h3>
-            <p className="text-adventure-white text-custom-body-2">
+            <p className="text-adventure-white  text-custom-body-1 font-light">
               Users input leads' names or LinkedIn accounts into the system's
               chat interface.
               <br /> This action initiates the process of personalised messaging
@@ -305,7 +303,7 @@ export default function ProductPage() {
             <h3 className="text-custom-heading-3 text-adventure-white">
               Personalized Message Generation
             </h3>
-            <p className="text-adventure-white text-custom-body-2">
+            <p className="text-adventure-white  text-custom-body-1 font-light">
               {" "}
               Pondeo utilises learned company information to craft personalised
               sales messages tailored to each prospect. Operating on a
