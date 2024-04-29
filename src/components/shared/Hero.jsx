@@ -1,23 +1,58 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
-export default function Hero({ styling, children, media, widthvw, heightvw, isVideo }) {
+export default function Hero({
+  styling,
+  children,
+  media,
+  widthvw,
+  heightvw,
+  isVideo,
+}) {
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const videoRef = useRef(null);
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsButtonClicked(true);
+    }
+  };
+
   return (
     <section className={`flex p-[5vw] w-full gap-12 bg-deep-black ${styling}`}>
-      {" "}
-      <div className="flex flex-col py-10 gap-8 w-1/2">{children}</div>{" "}
+      <div className="flex flex-col py-10 gap-8 w-1/2">{children}</div>
       {isVideo ? (
-        <iframe src={media} loading="lazy" className="object-cover object-center aspect-square w-1/2 h-[525px]"></iframe>
-      )
-        : (
-          <img
-            className={`bg-slate-400 rounded-lg object-cover object-center
+        <div className="relative w-1/2 h-[40vw]">
+          <video
+            ref={videoRef}
+            controls
+            preload="metadata"
+            className="object-cover object-center aspect-square w-full h-full"
+            onPlay={() => setIsButtonClicked(true)} // Handle play event to hide button
+          >
+            <source src={media} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {!isButtonClicked && ( // Show button only if it's not clicked
+            <div className="absolute top-[48%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <button
+                className="text-white text-[7vw] opacity-75 bg-transparent border-none"
+                onClick={handlePlay}
+              >
+                ▶
+              </button>
+            </div>
+          )}
+        </div>
+      ) : (
+        <img
+          className={`bg-slate-400 rounded-lg object-cover object-center
           ${widthvw ? `w-[${widthvw}vw]` : "w-[30vw]"}
           ${heightvw ? `h-[${heightvw}vw]` : "h-[30vw]"}`}
-            src={media}
-          />
-        )
-      }
-
+          src={media}
+          alt=""
+        />
+      )}
     </section>
   );
 }

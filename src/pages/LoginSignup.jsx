@@ -52,7 +52,7 @@ export default function LoginSignup() {
         </span>
         <hr className="border-t border-[rgba(179, 179, 179, 1)] w-1/3 ml-4" />
       </div>
-      <div className="flex gap-8">
+      <div className="flex gap-10 mt-8">
         <button className="flex items-center justify-center focus:outline-none">
           <GradientCircle icon={googleIcon} alt="Google Icon" />
         </button>

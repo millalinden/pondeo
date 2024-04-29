@@ -39,8 +39,8 @@ export default function Carousel() {
             />
             <div className="flex flex-col">
               <div>
-                <div className="text-neon-green">{slides[i].comment}</div>
-                <div className="text-neon-green text-sm">{slides[i].name}</div>
+                <div className="text-neon-green text-custom-body-1 font-light">{slides[i].comment}</div>
+                <div className="text-neon-green text-custom-body-2 font-light">{slides[i].name}</div>
               </div>
               <div className="text-adventure-white text-2xl pt-3">
                 “{slides[i].comment}”

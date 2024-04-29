@@ -71,9 +71,9 @@ export default {
         ],
         // SUBTITLE 1
         "custom-subtitle-1": [
-          "2vw",
+          "1.8vw",
           {
-            lineHeight: "3vw",
+            lineHeight: "2.8vw",
             letterSpacing: "0.025rem",
             fontWeight: "400",
           },
@@ -101,7 +101,7 @@ export default {
         "custom-body-1-semibold": [
           "1.2vw",
           {
-            lineHeight: "1.6vw",
+            lineHeight: "2vw",
             letterSpacing: "0.02813rem",
             fontWeight: "700",
           },
@@ -110,7 +110,7 @@ export default {
         "custom-body-1": [
           "1.2vw",
           {
-            lineHeight: "1.6vw",
+            lineHeight: "1.7vw",
             letterSpacing: "0.02813rem",
             fontWeight: "500",
           },

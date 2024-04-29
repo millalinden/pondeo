@@ -1,8 +1,4 @@
-import Button from "../components/shared/Button";
-import ButtonSmall from "../components/shared/ButtonSmall";
-import ButtonMedium from "../components/shared/ButtonMedium";
 import ButtonLarge from "../components/shared/ButtonLarge";
-import ButtonLong from "../components/shared/ButtonLong";
 import { Link } from "react-router-dom";
 
 import FeatureCard from "../components/shared/FeatureCard";
@@ -25,18 +21,18 @@ export default function LandingPage() {
     <>
       <Hero
         styling={""}
-        image={HeroHome}
+        media={HeroHome}
         heightvw="40"
         widthvw="40"
         alt="Screenshot of Pondeo Chat"
       >
-        <p className="text-adventure-white text-custom-body-1">
+        <p className="text-adventure-white text-custom-body-1 font-normal">
           With the help of Pondeo,
         </p>
         <h2 className="text-custom-heading-2 font-bold uppercase text-neon-green">
           Find and close more deals
         </h2>
-        <p className="text-custom-subtitle-1 text-adventure-whitegray">
+        <p className="text-custom-subtitle-1 text-adventure-whitegray opacity-45 font-light">
           Transform cold outreach into engaging conversations. Pondeo blends
           technology and a human-centric approach to redefine how you connect
           with leads.
@@ -55,7 +51,7 @@ export default function LandingPage() {
           <h2 className="text-custom-heading-3 text-neon-green text-center">
             Talk to Humans as Humans but with AI.
           </h2>
-          <p className="text-center text-adventure-white text-custom-body-1">
+          <p className="text-center text-adventure-white text-custom-body-1 font-normal">
             Our AI-powered chatbot assists businesses in finding and researching
             relevant leads to creating more meaningful connections with
             potential customers.
@@ -152,6 +148,7 @@ export default function LandingPage() {
             }
             heightvw={"80"}
             alt="Chat icons"
+            styling="py-[3vw] px-[3.5vw] gap-10"
           />
           <FeatureCard
             image={FeatureCardImage2}
@@ -161,6 +158,7 @@ export default function LandingPage() {
             }
             heightvw={"80"}
             alt="Three persons with chat bubbles"
+            styling="py-[3vw] px-[3.5vw] gap-10"
           />
           <FeatureCard
             image={FeatureCardImage3}
@@ -170,6 +168,7 @@ export default function LandingPage() {
             }
             heightvw={"80"}
             alt="Profile of human"
+            styling="py-[3vw] px-[3.5vw] gap-10"
           />
         </div>
       </Section>
@@ -179,7 +178,7 @@ export default function LandingPage() {
         </div>
         <Carousel />
       </Section>
-      <Section styling={"p-36 justify-center align-right bg-deep-black"}>
+      <Section styling={"p-36 justify-center align-right bg-black"}>
         <div className="flex w-1/2 justify-center items-center align-middle">
           <img src={write} alt="Zoomed images on person writing on paper" />
         </div>
@@ -188,7 +187,7 @@ export default function LandingPage() {
           <h2 className="text-custom-heading-2 text-neon-green">
             Effective Connections, <br /> Effortlessly Crafted
           </h2>
-          <p className="text-adventure-white font-semibold text-custom-body-2">
+          <p className="text-adventure-white text-custom-body-2">
             Pondeo acts as a co-pilot for Business Development Representives,
             simplifying the creation of personalized outreach. By automatically
             finding and analyzing customer signals, it helps BDRs craft messages
@@ -248,7 +247,7 @@ export default function LandingPage() {
         />
       </Section>
       <Section styling={"bg-deep-black p-28"}>
-        <div className="flex flex-col justify-center items-center py-10 px-[30vw] rounded-xl bg-graymatter-gray ">
+        <div className="flex flex-col justify-center items-center py-10 px-[20vw] w-[100%] rounded-xl bg-graymatter-gray ">
           <div className="flex flex-col items-center gap-8">
             <h2 className="text-custom-heading-2 text-center font-bold text-neon-green">
               Let's get started!
