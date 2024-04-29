@@ -2,11 +2,8 @@ import { Link } from "react-router-dom";
 
 import StepSquare from "../components/shared/stepSquare";
 import ButtonLarge from "../components/shared/ButtonLarge";
-import Hero from "../components/shared/Hero";
 import Section from "../components/shared/Section";
 import ProductCard from "../components/shared/ProductCard";
-
-
 
 
 import AI from "../assets/benefits,AI.png"
@@ -25,38 +22,15 @@ import step4 from "../assets/step4.png"
 
 
 
-
-
-
-
-
-
 export default function ProductPage() {
   const handleClick = () => {
     console.log("Button clicked!");
   };
 
 
-
     return (
     <>
-      {/* pondeo section */}
-      {/* <Hero styling={"bg-deep-black"} image={productHero} heightvw="40" widthvw="40">
-  
-        <h1 className="text-custom-heading-2-uppercase text-neon-green">
-        Start meaningful <br /> conversations
-        </h1>
-        <p className="text-adventure-white text-custom-subtitle-1 max-w-screen-sm">
-        With Pondeo, transform massive cold outreach into personal and engaging conversations. Pondeo blends technology and a human-centric approach to redefine how you connect with leads.
-        </p>
-        <div className="flex justify-flex-start gap-8">
-           <Link to="/demo">
-              <ButtonLarge label={"Get 7 Days Free Trial"} type={"secondary"} />
-            </Link>
-        </div>
-      </Hero> */}
-
-
+      {/* Hero section */}
       <Section styling={"justify-center gap-12 p-16 bg-deep-black border-graymatter-gray border shadow-dark-black "}>
         <div className="flex flex-col py-10 gap-8 w-1/2">
           <h2 className="text-custom-heading-2-uppercase text-neon-green">Start meaningful <br /> conversations</h2>
@@ -66,41 +40,36 @@ export default function ProductPage() {
             <Link to="/demo">
             <ButtonLarge label={"Get 7 Days Free Trial"} type={"secondary"} />
             </Link>
-            
           </div>
         </div>
-        {/* <div className= "w-[632px] h-[525px] rounded-lg"><iframe className="w-full aspect-square " src={productHero}></iframe></div> */}
         <iframe className="w-[632px] h-[525px] rounded-lg  aspect-square " src={productHero} alt="Product Hero Video" aria-label="Pondeo Product Hero Video"></iframe>
+      </Section>
 
-        </Section>
 
-
+      {/* Pondeo section */}
       <Section styling={"justify-center items-center p-10 bg-graymatter-gray "}>
         <div className="flex justify-center w-[1343px] h-[166px] bg-deep-black border-graymatter-gray border shadow-dark-black rounded-lg items-center">
           <h1 className="text-custom-heading-3 text-neon-green text-center" aria-label="Pondeo Subtitle">
           Pondeo: Your AI Sales Assistant Analyzing Benefits
           </h1>
         </div>
-        
       </Section>
 
 
 
-      {/* benefits section */}
+      {/* Personalised Outreach section */}
       <Section styling={"justify-center flex-col items-center gap-16 p-6 pt-4 bg-graymatter-gray"}>
           <div className="bg-black flex flex-col w-[1343px] rounded-lg items-center gap-6  border-graymatter-gray border shadow-dark-black">
           <h2 className="text-custom-heading-2-uppercase text-neon-green text-center pt-4" aria-label="Personalised Outreach Heading">Personalised Outreach </h2>
           <p className="text-adventure-white text-custom-subtitle-1 text-center max-w-2xl" aria-label="Personalised Outreach Description">
           Pondeo customizes the cold outreach process, making every communication feel unique and tailored to the recipient!          </p>
 
-          
-          {/* <div className="w-[1344px] h-[899px] rounded-lg"><iframe className="w-full aspect-square " src={Outreach}></iframe></div> */}
           <iframe className="w-[1344px] h-[899px] rounded-lg  aspect-square " src={Outreach} alt="Personalised Outreach Video" aria-label="Personalised Outreach Video"></iframe>
           </div>
-
           </Section>
 
 
+          {/* Rates section */}
           <Section styling={"justify-center items-center  bg-graymatter-gray p-9"}>
         <div className="flex place-items-start  gap-4 p-9">
           <img className="w-[536px] h-[438px]" src={reply} alt="Increased Open Rates Image" aria-label="Increased Open Rates Image" />
@@ -114,16 +83,15 @@ export default function ProductPage() {
             </p>
             </div>
             <Link to="/demo" aria-label="Link to Free Trial">
-            <ButtonLarge label={"Free Trial"} type={"secondary"} />
+              <ButtonLarge label={"Free Trial"} type={"secondary"} />
             </Link>
-            
           </div>
-
         </div>
         </Section>
 
-        <Section styling={"justify-center items-center bg-graymatter-gray px-16 py-4 gap-28"}>
 
+        {/* Benefits section */}
+        <Section styling={"justify-center items-center bg-graymatter-gray px-16 py-4 gap-28"}>
         <div className="flex p-4 h-[271px] w-[600px] rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
           <div className="flex flex-col justify-center items-center">
             <h3 className="text-custom-subtitle-1 text-neon-green " aria-label="Efficiency Heading">Efficiency and Workflow Streamlining</h3>
@@ -132,7 +100,6 @@ Pondeo automates message
 generation, freeing up 
 sales reps to focus on 
 high-value tasks.</p>
-
           </div>
           <img alt="Efficiency and Workflow Streamlining Image" aria-label="Efficiency Image"  src={efficiency} />
         </div>
@@ -145,7 +112,6 @@ enabling sales teams to
 optimize strategies 
 based on real-time
 feedback. </p>
-
           </div>
           <img alt="Data-Driven Insights Image" aria-label="Data-Driven Insights Image" src={dataDriven} />
         </div>
@@ -153,12 +119,11 @@ feedback. </p>
 
       
 
-      {/* features section */}
+      {/* Product features section */}
       <Section styling={"justify-center items-center p-16  bg-deep-black"}>
         <div className=" w-full text-center pt-4">
             <div className="text-center ">
                 <h1 className="text-custom-heading-2-bold text-adventure-white p-2 mx-10 mb-4 pb-4">Our Product <span className="text-neon-green">Features</span></h1>
-
             </div>
             <div className="flex flex-wrap justify-center place-items-start pt-12 gap-20">
             <ProductCard
@@ -179,27 +144,21 @@ feedback. </p>
               image={Sales}
               alt="Sales Assistant"
             />
-            
           </div>
-           
         </div>
         </Section>
 
-     
+     {/* SVG */}
 <svg xmlns="http://www.w3.org/2000/svg" width="1312" height="3" viewBox="0 0 1312 3" fill="none">
   <path d="M0 1.5H1312" stroke="#DEE5ED" stroke-width="2"/>
 </svg>
-
-
 
       {/* how Pondeo works section */}
       <Section styling={"flex-col justify-center items-center px-16 gap-16 bg-deep-black "}>
         
             <div className="text-center">
                 <h1 className="text-custom-heading-2-bold py-16 mx-10 mb-4 text-adventure-white">How Pondeo works</h1>
-
             </div>
-
 
             <div className="flex gap-16 px-4 py-8 bg-deep-black border-graymatter-gray border shadow-dark-black">
               <div className="flex flex-col  gap-10 max-w-xl">
@@ -254,7 +213,6 @@ feedback. </p>
                 <br /> Pondeo generates messages based on specified prompts and variables, sounding just like you. It's like having a personal writer, ensuring relevance and engagement.</p>
               </div>
             </div>
-
 
             </Section>
 
