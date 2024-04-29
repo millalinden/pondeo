@@ -35,27 +35,27 @@ export default {
         ],
         // HEADING 2
         "custom-heading-2": [
-          "3rem",
+          "3.3vw",
           {
-            lineHeight: "4rem",
+            lineHeight: "4vw",
             letterSpacing: "0.02813rem",
             fontWeight: "400",
           },
         ],
         // HEADING 2 BOLD
         "custom-heading-2-bold": [
-          "3rem",
+          "3.3vw",
           {
-            lineHeight: "4rem",
+            lineHeight: "4vw",
             letterSpacing: "0.02813rem",
             fontWeight: "700",
           },
         ],
         // HEADING 2 UPPERCASE
         "custom-heading-2-uppercase": [
-          "3rem",
+          "3.3vw",
           {
-            lineHeight: "4rem",
+            lineHeight: "4vw",
             letterSpacing: "0.00625rem",
             fontWeight: "700",
           },
