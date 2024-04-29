@@ -1,4 +1,5 @@
 import Hero from "../components/shared/Hero";
+import Outreach from "../assets/Outreach.mp4";
 
 import { useEffect, useState } from "react";
 import { Button, Form } from "semantic-ui-react";
@@ -19,7 +20,13 @@ export default function DemoPage() {
 
   return (
     <div className="bg-deep-black flex flex-col items-center">
-      <Hero styling={""} isVideo={true} heightvw="40" widthvw="40">
+      <Hero
+        styling={""}
+        isVideo={true}
+        heightvw="40"
+        widthvw="40"
+        media={Outreach}
+      >
         <h1 className="text-neon-green text-custom-heading-2-uppercase uppercase ">
           Empower your potential:{" "}
           <span className="text-adventure-white uppercase text-5xl font-bold">
