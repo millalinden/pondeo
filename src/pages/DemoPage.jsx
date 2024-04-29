@@ -33,7 +33,7 @@ export default function DemoPage() {
             begin your trial, today!
           </span>
         </h1>
-        <p className="text-gray-200 text-custom-subtitle-1 font-light opacity-45">
+        <p className="text-gray-200 text-custom-subtitle-1 opacity-45">
           Ready to revolutionize sales outreach? Sign up for enhanced efficiency
           and new possibilities. Just a few clicks unlock powerful tools to
           elevate your outreach. Join us today!
