@@ -1,71 +1,53 @@
-import Footer from "../components/Footer";
+
+import { Button, Form } from "semantic-ui-react";
+import { useForm } from "react-hook-form";
 
 export default function ContactPage() {
+
+  const { register, handleSubmit, formState: { errors } } = useForm()
+  const onSubmit = (data) => {
+    console.log(data);
+  }
+
   return (
     <>
-      <div className="flex flex-col items-center bg-stone-100 py-10 ">
-        <h2 className="text-2xl font-bold mb-5">
-          Contact Us
-        </h2>
-        <p className="text-lg mb-10">
-          Any question or remarks? Just write us a message!
-        </p>
-        <section className="flex flex-col-2 bg-white pr-5 gap-10" >
-          <div className="flex flex-col bg-black rounded-md px-10 pt-10 w-2/5">
-            <h3 className=" text-lg text-white font-bold ">
-              Contact Information
-            </h3>
-            <p className="text-white">
-              Say something to start live chat
-            </p>
-            <div className="flex flex-col py-10">
-              <div className="flex gap-3 py-10">
-                <img src="/src/assets/phone-contactPage.svg" alt="Phone icon" />
-                <p className="text-sm text-white">+1 234 567-980</p>
-              </div>
-              <div className="flex gap-3 py-10">
-                <img src="/src/assets/email-contactPage.svg" alt="Mail icon" />
-                <p className="text-sm text-white">demo@gmail.com</p>
-              </div>
-              <div className="flex gap-3 py-10">
-                <img src="/src/assets/location-contactPage.svg" alt="Location icon" />
-                <p className="text-sm text-white">132 Dartmouth Street Boston, Massachusetts 02156 United States</p>
-              </div>
-              <div className="flex mt-10 gap-5">
-                <img src="/src/assets/twitter-contactPage.svg" alt="Twitter icon" />
-                <img src="/src/assets/instagram-contactPage.svg" alt="Instagram icon" />
-                <img src="/src/assets/discord-contactPage.svg" alt="Discord icon" />
-              </div>
-            </div>
-          </div>
+      <section className="bg-deep-black flex flex-col items-center min-h-dvh gap-[64px]">
+        <div className="flex flex-col align-center text-center self-stretch">
+          <h1 className="text-custom-heading-2-uppercase text-neon-green uppercase mt-[40px]">Contact Us</h1>
+          <p className="text-custom-body-1 text-adventure-white">Any questions or remarks? Just write us a message!</p>
+        </div>
 
-          <form className="w-3/5 h-64 pt-10">
-            <div className="grid grid-cols-2 grid-rows-2 gap-10">
-              <label className="flex flex-col gap-5">First Name
-                <input type="text" className="border-0 outline-none bg-transparent border-b-2" />
-              </label>
-              <label className="flex flex-col gap-5">Last Name
-                <input type="text" className="border-0 outline-none bg-transparent border-b-2" />
-              </label>
-              <label className="flex flex-col gap-5">E-mail
-                <input type="text" className="border-0 outline-none bg-transparent border-b-2" />
-              </label>
-              <label className="flex flex-col gap-5">Phone Number
-                <input type="text" className="border-0 outline-none bg-transparent border-b-2" />
-              </label>
-            </div>
-            <div className="grid grid-rows-1 mt-10">
-              <label className="flex flex-col gap-5 w-full ">Message
-                <input type="text" className="border-0 outline-none bg-transparent border-b-2" />
-              </label>
-            </div>
-            <div className="flex justify-end mt-10">
-              <button className="bg-black text-white text-lg px-6 py-4 rounded-3xl">Send Message</button>
-            </div>
-          </form>
-        </section>
-      </div>
-      <Footer></Footer>
+        <Form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-[5px] text-custom-body-1 gap-[16px] items-center mb-[40px]">
+          <Form.Field>
+            <label htmlFor="firstName" className="flex flex-col flex-shrink-0 text-adventure-white">First Name
+            </label>
+            <input {...register("firstName", { required: true })} id="firstName" type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px] " />
+          </Form.Field>
+          {errors.firstName && <p className="text-adventure-white font-bold">This field is required.</p>}
+          <Form.Field>
+            <label htmlFor="lastName" className="mt-[15px] flex flex-col  flex-shrink-0 text-adventure-white">Last Name
+            </label>
+            <input {...register("lastName", { required: true })} id="lastName" type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px]  " />
+          </Form.Field>
+          {errors.lastName && <p className="text-adventure-white font-bold">This field is required.</p>}
+          <Form.Field>
+            <label htmlFor="phone" className="mt-[15px] flex flex-col  flex-shrink-0 text-adventure-white">Phone Number
+            </label>
+            <input {...register("phoneNumber", { required: true })} id="phone" type="text" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[50px]  w-[583px]  " />
+          </Form.Field>
+          {errors.phoneNumber && <p className="text-adventure-white font-bold">This field is required.</p>}
+          <Form.Field>
+            <label htmlFor="message" className="mt-[15px] flex flex-col  flex-shrink-0 text-adventure-white">Message
+            </label>
+            <input {...register("message", { required: true })} type="text" id="message" className="bg-deep-black rounded-[5px] text-adventure-white border border-adventure-white h-[100px]  w-[583px]  " />
+          </Form.Field>
+          {errors.message && <p className="text-adventure-white font-bold">This field is required.</p>}
+
+          <button
+            onSubmit={() => { }} type="submit" className="h-[40px] px-[20px] py-[18px] flex justify-center items-center rounded-[12px] bg-neon-green text-custom-body-1 text-deep-black hover:bg-hover-button active:bg-neon-green my-[4vw]"
+          >Send</button>
+        </Form>
+      </section>
     </>
-  );
+  )
 }

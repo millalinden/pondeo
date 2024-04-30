@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./shared/Button";
+import ButtonForm from "./shared/ButtonForm";
 
 const SignUpForm = ({
   formData,
@@ -13,25 +13,35 @@ const SignUpForm = ({
 
   return (
     <div>
-      <section className="flex flex-col justify-center items-center">
-        <h3 className="text-custom-heading-2-uppercase uppercase mb-10 text-neon-green">
+      <section className="flex flex-col justify-center items-center gap-6	">
+        <h3 className="text-custom-heading-2-uppercase uppercase text-neon-green">
           Create an account
         </h3>
+        <p className="text-custom-subtitle-1 font-light text-adventure-white text-center mx-10">
+          Create your Pondeo account in just a few seconds.
+          <br />
+          It's easy and fast!
+        </p>
         <form
-          className="flex flex-col text-center w-[21rem]"
+          className="flex flex-col text-center"
           onSubmit={handleSubmit}
         >
           <input
             type="text"
             placeholder="Enter your Email"
-            className="py-4 px-4 text-center rounded-full mb-6 w-[21rem] bg-graymatter-gray"
+            className="py-[1vw] px-[1vw] text-center rounded-lg mb-4 bg-[#4E4C4C] placeholder-white"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
           ></input>
-          <Button type="submit" label="Continue" color="bg-neon-green" className="py-4" />
+          <ButtonForm
+            type="submit"
+            label="Continue"
+          />
           <div className="flex mt-14 justify-center items-center">
-            <p className="mr-10 text-custom-body-2">Already have an account?</p>
+            <p className="mr-10 text-custom-body-1 font-normal text-adventure-white">
+              Already have an account?
+            </p>
             <a
               onClick={handleLoginClick}
               className="text-neon-green cursor-pointer"
