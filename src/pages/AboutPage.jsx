@@ -30,8 +30,8 @@ export default function AboutPage() {
       <Hero
         styling={"items-center"}
         media={heroImage}
-        heightvw="40"
-        widthvw="40"
+        heightvw="20"
+        widthvw="20"
       >
         <div className="flex flex-col">
           <h1 className="text-custom-heading-2 font-bold text-adventure-white uppercase">

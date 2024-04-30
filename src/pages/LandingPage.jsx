@@ -23,7 +23,7 @@ export default function LandingPage() {
         styling={""}
         media={HeroHome}
         heightvw="20"
-        widthvw=""
+        widthvw="20"
         alt="Screenshot of Pondeo Chat"
       >
         <p className="text-adventure-white text-custom-body-1 font-normal">
