@@ -91,9 +91,9 @@ export default function ProductPage() {
       </Section>
 
       <Section styling={"justify-center items-center  bg-graymatter-gray p-9"}>
-        <div className="flex place-items-start  gap-4 p-9">
+        <div className="flex place-items-start items-center  gap-4 p-9">
           <img
-            className="w-[536px] h-[438px]"
+            className="w-[536px] h-[438px] object-cover object-center"
             src={reply}
             alt="Increased Open Rates Image"
             aria-label="Increased Open Rates Image"
@@ -123,7 +123,7 @@ export default function ProductPage() {
 
       <Section
         styling={
-          "justify-center items-center bg-graymatter-gray px-16 py-4 gap-28"
+          "justify-center items-center bg-graymatter-gray px-16 py-4 gap-5"
         }
       >
         <div className="flex p-4 h-[271px] w-[600px] rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
