@@ -126,8 +126,8 @@ export default function ProductPage() {
           "justify-center items-center bg-graymatter-gray px-16 py-4 gap-5"
         }
       >
-        <div className="flex p-4 h-[271px] w-[600px] rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
-          <div className="flex flex-col justify-center items-center">
+        <div className="flex p-4 rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
+          <div className="flex flex-col justify-center ">
             <h3
               className="text-custom-subtitle-1 text-neon-green "
               aria-label="Efficiency Heading"
@@ -143,14 +143,15 @@ export default function ProductPage() {
             </p>
           </div>
           <img
+            className="h-[17vw] w-[17vw]"
             alt="Efficiency and Workflow Streamlining Image"
             aria-label="Efficiency Image"
             src={efficiency}
           />
         </div>
 
-        <div className="flex p-4  h-[271px] w-[600px] rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
-          <div className="flex flex-col justify-center items-center">
+        <div className="flex p-4  rounded-lg bg-deep-black border-graymatter-gray border shadow-dark-black">
+          <div className="flex flex-col justify-center">
             <h3
               className="text-custom-subtitle-1 font-light text-neon-green w-[294px]"
               aria-label="Data-Driven Insights Heading"
@@ -167,6 +168,7 @@ export default function ProductPage() {
             </p>
           </div>
           <img
+            className="h-[17vw] w-[17vw]"
             alt="Data-Driven Insights Image"
             aria-label="Data-Driven Insights Image"
             src={dataDriven}
