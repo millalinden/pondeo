@@ -83,21 +83,18 @@ export default function AboutPage() {
               alt="intersect icon"
               text="Transform B2B sales conversations through personalized engagement"
               styling="py-[3vw] px-[3vw] gap-5"
-              heightvw={"10"}
             />
             <FeatureCard
               image={plugIcon}
               alt="plug icon"
               text="Empower businesses to connect with customers on a deeper level"
               styling="py-[3vw] px-[3vw] gap-5"
-              heightvw={"10"}
             />
             <FeatureCard
               image={arrowIcon}
               alt="Arrow icon"
               text="Lead the way in targeted lead generation and customer understanding"
               styling="py-[3vw] px-[3vw] gap-5"
-              heightvw={"10"}
             />
           </div>
         </div>
